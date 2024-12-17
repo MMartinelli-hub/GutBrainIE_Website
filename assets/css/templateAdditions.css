@@ -33,11 +33,31 @@ a.nounderline {
 }
 
 
-.btlogo {
+.hereditarylogo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 10%;
+}
+.hereditarylogoGA {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+	min-width: 500px;
+	max-width: 1500px;
+	padding-bottom: 1em;
+	height: auto;
+}
+
+.hereditaryGA {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	min-width: 500px;
+	max-width: 1500px;
+	height: auto;
 }
 
 .image.half {
@@ -57,10 +77,10 @@ a.nounderline {
 
 #headerTask2 {
 		padding: 9em 0 9em 0 ;
-		background-color: #e51975;
-		color: rgba(255, 255, 255, 0.75);
+		background-color: #2A3887;
+		color: rgba(42, 56, 135);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #e51975 5%, #e51975 30%, #e51975);
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(135deg,rgba(33,66,151) 0%,rgb(85,201,228) 100%);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
@@ -69,7 +89,7 @@ a.nounderline {
 	}
 
 		#headerTask2 a {
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			border-bottom-color: rgba(42, 56, 135);
 		}
 
 			#headerTask2 a:hover {
@@ -102,7 +122,7 @@ a.nounderline {
 			#headerTask2 input[type="button"]:hover,
 			#headerTask2 button:hover,
 			#headerTask2 .button:hover {
-				background-color: rgba(255, 255, 255, 0.125);
+				background-color: rgba(42, 56, 135);;
 			}
 
 			#headerTask2 input[type="submit"]:active,
@@ -110,7 +130,7 @@ a.nounderline {
 			#headerTask2 input[type="button"]:active,
 			#headerTask2 button:active,
 			#headerTask2 .button:active {
-				background-color: rgba(255, 255, 255, 0.25);
+				background-color: rgba(42, 56, 135);;
 			}
 
 			#headerTask2 input[type="submit"].special,
@@ -120,7 +140,7 @@ a.nounderline {
 			#headerTask2 .button.special {
 				background-color: #ffffff;
 				box-shadow: inset 0 0 0 1px #ffffff !important;
-				color: #e51975 !important;
+				color: #568ABE !important;
 			}
 
 				#headerTask2 input[type="submit"].special:hover,
@@ -210,7 +230,7 @@ a.nounderline {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #29265b 5%, #29265b 50%);
+			background-image: linear-gradient(45deg, #214297 5%, #214297 50%);
 			content: '';
 			height: 100%;
 			left: 0;
@@ -243,14 +263,16 @@ a.nounderline {
 /* footerTask2 */
 
 	#footerTask2 {
-		padding: 6em 0 6em 0 ;
-		background-color: #29265b;
+		padding: 2em 0 2em 0 ;
+		background-color: #2C3987;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #29265b, #29265b 60%, #29265b 90%);
+		background-image: url("images/overlay2.png"), linear-gradient(45deg, #2C3987, #2C3987 60%, #2C3987 90%);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
+		overflow: hidden;
+		position: relative;
 	}
 
 		#footerTask2 a {
@@ -305,7 +327,7 @@ a.nounderline {
 			#footerTask2 .button.special {
 				background-color: #ffffff;
 				box-shadow: inset 0 0 0 1px #ffffff !important;
-				color: #e51975 !important;
+				color: #568ABE !important;
 			}
 
 				#footerTask2 input[type="submit"].special:hover,
@@ -357,6 +379,16 @@ a.nounderline {
 					margin-left: 0;
 					padding: 0;
 				}
+
+		#footerTask2 .EUGA{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-content: flex-end;
+			line-height: 1em;
+			margin-left: 1em;
+			padding: 1em 0 0 1em;
+		}
 
 
 
