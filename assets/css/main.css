@@ -2714,10 +2714,10 @@
 		}
 
 		.main.style2 {
-			background-color: #333;
-			color: rgba(255, 255, 255, 0.75);
-			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("images/header.jpg");
+			background-color: #2a38878c;
+			color: rgb(6, 18, 85);
+			background-attachment: fixed,							fixed,							fixed;
+			background-image: url("images/overlay2.png"), linear-gradient(135deg,rgba(204, 223, 227, 0.673) 0%,rgba(156, 181, 186, 0.63) 100%); 
 			background-size: auto,							cover;
 		}
 
@@ -2801,8 +2801,8 @@
 				color: #ffffff;
 			}
 
-/* Header */
 
+/* Header */
 	#header {
 		padding: 9em 0 9em 0 ;
 		background-color: #4686a0;

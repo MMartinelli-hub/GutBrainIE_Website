@@ -6,22 +6,47 @@
 -->
 <html>
 	<head>
-		<title>iDPP @ CLEF 2024 Guidelines - Intelligent Disease Progression Prediction</title>
+		<title>GutBrainIE @ CLEF 2025 Guidelines - Gut Brain Information Extraction</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta name="author" content="Marco Martinelli Laura Menotti">
-		<meta name="description" content="Intelligent Disease Progression Prediction - iDPP @ CLEF 2024">
-		<meta name="description" content="iDPP @ CLEF 2025 - An activity of the HEREDITARY project">
+		<meta name="description" content="Gut Brain Information Extraction - GutBrainIE @ CLEF 2025">
+		<meta name="description" content="GutBrainIE @ CLEF 2025 - An activity of the HEREDITARY project">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/templateAdditions.css" />
 		<link rel="icon" href="images/Hereditary_Icon_primary.svg" type="image/svg" />
 
+		<!-- Organizers Section CSS -->
+		<link rel="stylesheet" href="assets/css/organizers.css" />
+
 		<!-- Fontawesome -->
 		<script src="https://kit.fontawesome.com/9ea2daa5f1.js" crossorigin="anonymous"></script>
+
 	</head>
 	<body>
+
+		<!-- Navbar -->
+		<header id="custom-navbar" class="d-flex flex-wrap justify-content-center py-3 mb-0">
+			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+				<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+				<!-- <span class="fs-4">Simple header</span> -->
+			</a>
+		
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a href="#one" class="nav-link active" aria-current="page">Tasks</a></li>
+				<li class="nav-item"><a href="#two" class="nav-link">Important Dates</a></li>
+				<li class="nav-item"><a href="#three" class="nav-link">Datasets</a></li>
+				<li class="nav-item"><a href="#four" class="nav-link">Submitting</a></li>
+				<li class="nav-item"><a href="#five" class="nav-link">Results</a></li>
+				<li class="nav-item"><a href="#six" class="nav-link">FAQs</a></li>
+				<li class="nav-item"><a href="#seven" class="nav-link">Organizers</a></li>
+			</ul>
+		</header>
 
 		<!-- Header -->
 			<section id="headerTask2">
@@ -42,6 +67,7 @@
 				</div>
 			</section>
 
+		<div data-bs-spy="scroll" data-bs-target="#custom-navbar" data-bs-offset="50" class="scrollspy-example" tabindex="0">
 		<!-- One -->
 			<section id="one" class="main style1">
 				<div class="container">
@@ -50,60 +76,34 @@
 							<header class="major">
 								<h2 id="tasks">Tasks</h2>
 							</header>
-							<p>iDPP <i class="fas fa-spinner"></i>CLEF 2024 offers two evaluation tasks focused on predicting the progression of Amyotrophic Lateral Sclerosis (ALS) from prospective data and one task on impact of exposure to pollutants on predicting the progression of Multiple Sclerosis (MS) from retrospective data.</p>
+							<p>GutBrainIE <i class="fas fa-spinner"></i> CLEF 2025 is the 6th task of the BioASQ Laboratory, proposing a Biomedical Natural Language Processing (NLP) challenge. Specifically, it is focused on extracting structured information from biomedical abstracts related to the gut microbiota and its effects on mental health, 
+							aiming to foster the development of Information Extraction (IE) systems that can support experts in understanding the connections between neurological and gut disorders that may play a critical role in mental health-related disorders or diseases lke Multiple Sclerosis, Parkinson's, and Alzheimer's.</p> 
 
-							<p>For Tasks 1 and 2 on ALS participants are given prospective patient data collected over an average of nine months via a dedicated app developed by the BRAINTEASER project and sensor data collected from the sensors of  a fitness smartwatch in the context of clinical trials in Turin, Pavia, Lisbon, and Madrid, fully anonymized.</p>
+							<p>The GutBrainIE task is divided into two main subtasks. In the first task participants are asked to identify and classify specific text spans into predefined categories, while in the second one three they have to determine if a particular relationship defined between two categories holds or not.</p>
 
-							<p>For Task 3 on MS, participants are given a retrospective dataset containing roughly 1.5 years of visits and environmental data. This dataset comes from two clinical institutions, one in Pavia, Italy, and the other in Turin, Italy, and it contains data about real patients, fully anonymized.</p>
+							<p>The training data for all the subtasks are available upon registration for the challenge and the test data will be available one week before the run submission deadline. Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</p>
 
-							<p>All the datasets are highly curated and they are produced from the <a href="https://w3id.org/brainteaser/ontology" target="_blank">BRAINTEASER Ontology (BTO)</a>, developed by the BRAINTEASER project, which ensures the consistency of the data represented. Moreover, several checks have been performed to ensure that all the instances are clean, contain proper values in the expected ranges, and do not have contradictions.
+							<p>All the datasets are highly curated, being produced by a team of 7 expert annotators from the University of Padua, Italy, within the context of the EU-funded project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>.</p>
 
-							<h3 id="task1">Task 1 - Predicting ALSFRS-R Score from Sensor Data (ALS)</h3>
-							<p>It focuses on predicting the twelve scores of the ALSFRS-R (ALS Functional Rating Scale - Revised), assigned by medical doctors roughly every three months, from the sensor data collected via the app.  The ALSFRS-R is a somehow “subjective” evaluation usually performed by a medical doctor and this task will help in answering a currently open question in the research community, i.e. whether it could be derived from objective factors.</p>
+							<h3 id="task1">Task 1 - Named Entity Recognition</h3>
+							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to classify specific text spans (entity mentions) into one of the 15 predefined categories, such as <i>bacteria</i>, <i>chemical</i>, <i>microbiota</i>.</p>
 
-							<p>Participants will be given the ALSFRS-R questionnaire at the first visit with the scores for each question together with the time (number of days from diagnosis) at which the questionnaire was taken.</p> 
-
-							<p>Participants will have to predict the values of the ALSFRS-R sub-scores at the second visit.</p>
-
-							<p>Participants will be given the time of the second visit (number of days from diagnosis) together with all the sensor data up to the time of the second visit.</p>
-
-							<p>The training data are available upon registration for the challenge and the test data will be available one week before the run submission deadline. Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</p>
+							<h3 id="task2a">Task 2a - Binary Relation Extraction </h3>
+							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to identify which entity labels are in relation within a document. No relation type needs to be predicted within this subtask, therefore relations will be expressed as pairs (<i>entityLabel1 ; entityLabel2</i>).</p>
 							
-							<h3 id="task2">Task 2 - Predicting Patient Self-assessment Score from Sensor Data </h3>
-
-							<p>It focuses on predicting the self-assessment score assigned by patients from the sensor data collected via the app. Self-assessment scores correspond to each of the ALSFRS-R scores but, while the latter ones are assigned by medical doctors during visits, the former ones are assigned via auto-evaluation by  patients themselves using the provided app.</p>
-
-							<p>If the self-assessment performed by patients, more frequently than the assessment performed by medical doctors every three months or so, can be reliably predicted by sensor and app data, we can imagine a proactive application which, monitoring the sensor data, alerts the patient if an assessment is needed.</p>
-
-							<p>Participants will be given the first set of self-assessed scores together with the time (number of days from diagnosis) at which the questionnaire was taken.</p>
-
-							<p>Participants will have to predict the values of the self-assessed scores at the second auto-evaluation, happening one or two months after the first one.</p>
-
-							<p>Participants will be given the time of the second auto-evaluation (number of days from diagnosis) together with all the sensor data up to the time of the second auto-evaluation.</p>
-
-							<p>The training data are available upon registration for the challenge and the test data will be available one week before the run submission deadline. Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</p>
-
-							
-
-							<h3 id="task3">Task 3 - Predicting Relapses from EDDS Sub-scores and Environmental Data (MS)</h3>
-
-							<p>It focuses on predicting a relapse using environmental data and EDSS (Expanded Disability Status Scale) sub-scores. This task allows us to assess if exposure to different pollutants is a useful variable in predicting a relapse.</p>
-
-							<p>Participants will be asked to predict the week of the first relapse after the baseline considering environmental data based on a weekly granularity, given the status of the patient at the baseline, which is the first visit available in the considered time span. For each patient, the date of the baseline will be week 0 and all the other weeks will be relative to it.</p>
-
-							<p>Participants will be given all the observations and environmental data about a patient, i.e. also observations which may happen after the relapse to be predicted. All the patients are guaranteed to experience, at least, one relapse after the baseline.</p>
-
-							<p>The training data are available upon registration for the challenge and the test data will be available one week before the run submission deadline. Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</p>
-
-
+							<h3 id="task2b">Task 2b - Ternary Tag-Based Relation Extraction</h3>
+							<p>In this subtask participants are asked to identify which entity labels are in relation within a document and predict the type of relation between them. Within this subtask, relations will be expressed as triples (<i>entityLabel1 ; relationLabel ; entityLabel2</i>).</p>
+				
+							<h3 id="task2c">Task 2c - Ternary Mention-Based Relation Extraction</h3>
+							<p>In this subtask participants are required to identify the actual entity mentions involved in a relation and predict the type of relation. Therefore, within this subtask relations will be expressed as (<i>entityMention1 ; relationLabel ; entityMention2</i>).</p>
 					
 							<h3>Participating</h3>
 							<p>
-								To participate in iDPP <i class="fas fa-spinner"></i> CLEF 2024, groups need to register
+								To participate in GutBrainIE <i class="fas fa-spinner"></i> CLEF 2025, groups need to register to the BioASQ Laboratory
 								at the following link:
 							</p>
 							<p class="textcenter">
-								<span><a href="https://clef2024-labs-registration.dei.unipd.it/" target="_blank" class="button"><i class="fa-solid fa-pen-to-square fa-2xl"></i> Register <i class="fa-solid fa-pen-to-square fa-2xl"></i></a></span>
+								<span><a href="https://clef2025-labs-registration.dei.unipd.it/" target="_blank" class="button"><i class="fa-solid fa-pen-to-square fa-2xl"></i> Register <i class="fa-solid fa-pen-to-square fa-2xl"></i></a></span>
 							</p>
 
 						</div>
@@ -140,162 +140,330 @@
 						<h2 id="datasets">Datasets</h2>
 					</header>
 					
-					<h3><strong>Tasks 1 & 2 Datasets (ALS)</strong></h3>
-					Tasks 1 and 2 share the same training dataset, comprising the following data:
+					<h3><strong>Data Description</strong></h3>
+					<p>The data for this task is a set of abstracts of biomedical articles retrieved from PubMed, focusing on the gut-brain interplay and its implications in neurological and mental health.</p>
+
+					Annotated by a team of seven experts, the datasets include:
 					<ul>
-						<li>Static patient data, including demographic and clinical information;</li>
-						<li>All the ALSFRS-R evaluations (twelve scores for each) from the medical doctor assessment or self-assessed through the app, each with the time of collection;</li>
-						<li>All available sensor data, summarized by day, each with the time of collection.</li>
+						<li><b>Entity Mentions</b>: Text spans classified into predefined categories.</li>
+						<li><b>Relations</b>: Associations between entities, specifying that a particular relationship holds between two entities.</li>
 					</ul>
 
-					<p>All times are expressed in days between the diagnosis and the collection. Note that sensor data is not available for every day and may contain gaps due to lack of adherence from the patient and/or technical problems in the data collection. However, finding ways to work around these limitations is part of the challenge.
-					</p>
-
-					<p>For a reference on the ALSFRS-R scores, please refer to <a href="https://pubmed.ncbi.nlm.nih.gov/10540002/">LINK</a>.</p>
-
-					<p>The test data will contain the same static and sensor data for other patients not in the training set. Only the first ALSFRS-R evaluation will be available, together with the time of the target ALSFRS-R evaluation whose scores are to be predicted.</p>
-
-					<p>Training Dataset</p>
-					<p>52 patients, 189 clinical ALSFRS-R, 301 self-assessed ALSFRS-R, 13946 days of sensor data.</p>
-
-					<p>Training datasets can be downloaded here:</p>
+					The datasets are organized into:
 					<ul>
-						<li> <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK1/train.zip">Task 1</a></li>
-						<li> <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK2/train.zip">Task 2</a></li>
+						<li><b>Gold-Standard Annotations</b>: Expert curated, high-quality annotations.</li>
+						<li><b>Silver-Standard Annotations</b>: Annotated by trained students under expert supervision.</li>
+						<li><b>Distant Annotations</b>: Automatically generated annotations for NER using fine-tuned GLiNER.</li>
 					</ul>
-
-					<p>Check out the <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/assets/other/als/als-variables-description.txt">legend</a> for a description of the data.</p>
-
-
-					<p>Test Dataset</p>
-					<ul>
-						<li> <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK1/test.zip">Task 1 (clinical ALSFRS-R)</a> and <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK1/test/test-target.csv">Ground Truth</a></li>
-						<li><a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK2/test.zip">Task 2 (app ALSFRS-R)</a> and <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK2/test/test-target.csv">Ground Truth</a></li>
-					</ul>
-
 					
-					<h4>Details on the Datasets</h4>
-
-					<p class="nomargin">Each of the training datasets consists of the following files:</p>
+					<h3><strong>Collections</strong></h3>
 					<ul>
-						<li><code>train-static.csv</code>: contains the static variables about each patient.<br/>
-						<!--In the following document, you can find a description of each column in the CSV file.</li> -->
-						<li><code>train-sensors.csv</code>: contains the daily summaries of the sensor data measured by the smartwatch.<br/>
-						<!--In the following document, you can find a description of each column found in the CSV file.</li> -->
-						<li><code>train-alsfrs.csv</code>: contains the twelve ALSFRS-R scores, together with the (relative) time of assessment and whether it was evaluated by a clinician or self assessed.<br/>
-						<!--In the following document, you can find a description of each column found in the CSV file.</li> -->
+						<li><b>Training and Development Data</b>: Available soon...</li>
+						<!--
+						<li><b>Training and Development Data</b>: Participants can download the training and development data 
+							<a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="TODO"><span style="font-size: 1.375rem; text-decoration: underline !important;">HERE</span>
+						  	</a>.</li>
+						-->
+						<li><b>Test Data</b>: The test set will be available one week before the run submission deadline. This data will be used for final system evaluation.</li>
 					</ul>
 
-
-					<p class="nomargin">Each of the test datasets consists of the following files:</p>
+					<h3><strong>Dataset Format</strong></h3>
+					Annotations are provided in JSON format, for ease of use with NLP systems. Each entry in the dataset corresponds to a PubMed article, identified by its PubMed ID (<i>PMID</i>), and includes the following fields:
 					<ul>
-						<li><code>test-static.csv</code>: contains the static variables about each patient.<br/>
-						<!--In the following document, you can find a description of each column in the CSV file.</li> -->
-						<li><code>test-sensors.csv</code>: contains the daily summaries of the sensor data measured by the smartwatch.<br/>
-						<!--In the following document, you can find a description of each column found in the CSV file.</li> -->
-						<li><code>test-alsfrs.csv</code>: contains the twelve ALSFRS-R scores, together with the time of assessment relative to the diagnosis (<code>first_alsfrs_days_from_diagnosis</code>) and the relative time of the second assessment (<code>target_alsfrs_days_from_diagnosis</code>) whose corresponding ALSFRS-R values need to be predicted.<br/>
-						<!--In the following document, you can find a description of each column found in the CSV file.</li> -->
+						<li><code>Metadata</code>: Articles-related information, including <i>title</i>, <i>author</i>, <i>year</i>, and <i>abstract</i>.</li>
+						<li><code>Entities</code>: An array of objects where each object represents an annotated entity mention in the article, with the following attributes:</li>
+						<ul style="padding-left: 2em;">
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>annotator</i>: The identifier of the annotator.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>start</i> and <i>end</i>: Character offsets marking the span of the entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_location</i>: Indicates if the entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_text</i>: The actual text span of the entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_label</i>: The label assigned to the entity mention (e.g., bacteria, microbiome).</li>
+						</ul>
+						<li><code>Relations</code>: An array of objects where each object represents an annotated relationship between two entity mentions in the article, with the following attributes:</li>
+						<ul style="padding-left: 2em;">
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>annotator</i>: The identifier of the annotator.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_start</i> and <i>subject_end</i>: Character offsets marking the span of the subject entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_mention_location</i>: Indicates if the subject entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_mention_text</i>: The actual text span of the subject entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_mention_label</i>: The label assigned to the subject entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>predicate</i>: The label assigned to the relationship.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_start</i> and <i>object_end</i>: Character offsets marking the span of the object entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_mention_location</i>: Indicates if the object entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_mention_text</i>: The actual text span of the object entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_mention_label</i>: The label assigned to the object entity mention (e.g., bacteria, microbiome).</li>
+						</ul>
 					</ul>
 
+					<h3><strong>Entity and Relation Labels</strong></h3>
+					<!--
+					The datasets are built on top of the conceptual system represented below, defining the valid entities and their possible relationships.
+					<img class="u-image u-image-contain u-image-default u-image-1" src="images/conceptual_system.png.png" alt="" data-image-width="647" data-image-height="423">
+					-->
 
-					<h3><strong>Tasks 3 Dataset (MS)</strong></h3>
+					<p>The <b>set of entities</b> considered for annotations includes:</p>
 
-					<p>Task 3 encompasses the following data:</p>
-					<ul>
-						<li>Static patients data, comprising demographic and clinical information;</li>
-						<li>EDSS scores assessed by clinicians, alongside their corresponding sub-scores, each annotated with the week of the EDSS visit;</li>
-						<li>Environmental exposure measurements aggregated weekly;</li>
-						<li>The week of the first relapse occurrence after the baseline for each patient (all patients are guaranteed to experience at least one relapse after the baseline).</li>
-					</ul>
-					<p>All time intervals are expressed in weeks from the baseline. EDSS visits occur between the baseline and the occurrence of the first relapse, while environmental measurements span from January 1st, 2013, to 2023. It's important to note that environmental measurements may not be available for every week and contain missing data.</p>
-					<p>For more information on the EDSS score, please refer to this <a href="https://www.neurology.org/doi/10.1212/WNL.33.11.1444">link</a>.</p>
-					<p>Training and test datasets are divided in a 70-30% proportion. The test data will include the same static, EDSS, and environmental data for patients not included in the training set.</p>
-					<p>Specifically:</p>
-					<ul>
-						<li>Training Dataset: 199 patients, 834 EDSS scores, 113,923 environmental measurements. Training dataset can be downloaded here: <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK3/train.zip">Training Dataset</a></li>
-						<li>Test Dataset: 81 patients, 290 EDSS scores, 46,354 environmental measurements. Test dataset can be downloaded here: <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK3/test.zip">Test Dataset</a></li>
-						<li>Ground Truth: <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK3/test/test_outcome.csv">Ground Truth</a></li>
-					</ul>
+					<div class="custom-expanded u-table u-table-responsive u-table-1">
+						<table class="u-table-entity u-table-entity-1">
+						  <colgroup>
+							<col width="21.74%">
+							<col width="17.39%">
+							<col width="60.87%">
+						  </colgroup>
+						  <thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
+							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">URI </th>
+							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Definition</th>
+							</tr>
+						  </thead>
+						  <tbody class="u-align-left u-table-body">
+							<tr style="height: 48px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="http://purl.obolibrary.org/obo/NCIT_C13717" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">NCIT_C13717</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Named locations of or within the body.&nbsp;<br>
+							  </td>
+							</tr>
+							<tr style="height: 98px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Animal</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="http://purl.obolibrary.org/obo/NCIT_C14182" id="docs-internal-guid-ef4ac612-7fff-1523-b25f-da73c33df1c7" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">NCIT_C14182</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral.</td>
+							</tr>
+							<tr style="height: 73px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Biomedical Technique</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="http://purl.obolibrary.org/obo/NCIT_C15188" id="docs-internal-guid-11bb2172-7fff-5c42-210d-d7a131e88489" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">NCIT_C15188</a>
+								<br>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Research concerned with the application of biological and physiological principles to clinical medicine.</td>
+							</tr>
+							<tr style="height: 137px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Bacteria</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="http://purl.obolibrary.org/obo/NCBITaxon_2" id="docs-internal-guid-f5a9455f-7fff-c5ae-3d8c-98696cb9ec0f" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">NCBITaxon_2</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</td>
+							</tr>
+							<tr style="height: 73px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A59999" id="docs-internal-guid-504314a0-7fff-3b15-8f7c-90858aa66bad" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">CHEBI_59999</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types.</td>
+							</tr>
+							<tr style="height: 137px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Dietary Supplement</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="https://www.ncbi.nlm.nih.gov/mesh/68019587" id="docs-internal-guid-97ed4d5b-7fff-e906-75f4-920ccc432b9e" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6">MESH_68019587</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Products in capsule, tablet or liquid form that provide dietary ingredients, and that are intended to be taken by mouth to increase the intake of nutrients. Dietary supplements can include macronutrients, such as proteins, carbohydrates, and fats; and/or MICRONUTRIENTS, such as VITAMINS; MINERALS; and PHYTOCHEMICALS.</td>
+							</tr>
+							<tr style="height: 98px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding (DDF) </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="http://purl.obolibrary.org/obo/NCIT_C7057" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7">NCIT_C7057</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A condition that is relevant to human neoplasms and non-neoplastic disorders. This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions.</td>
+							</tr>
+							<tr style="height: 98px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A23888" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-8">CHEBI_23888</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Food</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="http://purl.obolibrary.org/obo/NCIT_C1949" id="docs-internal-guid-9af2484a-7fff-b25d-5175-6cb220fed2fb" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-9">NCIT_C1949</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> &nbsp;A substance consumed by humans and animals for nutritional purpose</td>
+							</tr>
+							<tr style="height: 98px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Gene</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="http://purl.bioontology.org/ontology/SNOMEDCT/67271001" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-10">SNOMEDCT_67261001</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function.</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=info&amp;id=9606" id="docs-internal-guid-b61b5d24-7fff-ec7d-2d4e-02ca0abe5d76" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-11">NCBITaxon_9606</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Members of the species Homo sapiens. </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Metabolite</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A25212" id="docs-internal-guid-ea8795e3-7fff-4512-a8c0-bc2b58403ff9" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-12">CHEBI_25212</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">In biochemistry, a metabolite is an intermediate or end product of metabolism.</td>
+							</tr>
+							<tr style="height: 98px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="http://purl.obolibrary.org/obo/OHMI_0000003" id="docs-internal-guid-d73565d3-7fff-fd73-5f84-5b400d03aaa2" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-13">OHMI_0000003</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> This term refers to the entire habitat, including the microorganisms (bacteria, archaea, lower and higher eukaryotes, and viruses), their genomes (i.e., genes), and the surrounding environmental conditions.</td>
+							</tr>
+							<tr style="height: 73px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Neurotransmitter</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+								<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A25512" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-14">CHEBI_25512</a>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> An endogenous compound that is used to transmit information across the synapse between a neuron and another cell.</td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
 
-					<h4>Details on the Dataset</h4>
-
-					<p>The training dataset consists of the following files:</p>
-					<ul>
-						<li><code>train_static.csv</code>: contains the static variables about a patient.</li>
-						<li><code>train_edss.csv</code>: contains the (relative) week when EDSS scores were measured, together with the EDSS scores evaluated by clinicians.</li> 
-						<li><code>train_environmental_meas.csv</code>: contains the environmental measurements aggregated with a weekly granularity.</li> 
-						<li><code>train_outcome.csv</code>: contains the week of the first relapse occurrence after the baseline for each patient.
-						</li>
-
-					</ul>
-
-					<p>The test dataset consists of the following files:</p>
-					<ul>
-						<li><code>test_static.csv</code>: contains the static variables about a patient.</li>
-						<li><code>test_edss.csv</code>: contains the (relative) week when EDSS scores were measured, together with the EDSS scores evaluated by clinicians.</li> 
-						<li><code>test_environmental_meas.csv</code>: contains the environmental measurements aggregated with a weekly granularity.</li> 
-					</ul>
-
-					<p> The test dataset does not contain the <code>test_outcome.csv</code> file as it is the target that needs to be predicted by the challenge participants. </p>
-
-					<p>Check out the <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/assets/other/ms/ms-variables-description.txt">legend</a> for a description of the data</p>
-
-					<p>More in detail, the train_outcome.csv file adopts the following format:</p>
-
-					<pre><code>
-67396654612589370083623092407810766693,190
-267505643482073532971907590162817517438,96
-292211325266845962706770530341466085902,30
-272084949450943266236977822325902693890,216
-291361686090369065397020169907588173057,13
-...
-					</code></pre>
-					  	  	  	  	  	
-					<p>where:</p>
-					<ul>
-						<li>Columns are separated by a comma;</li>
-						<li>The first column is the patient ID, a hashed version of the original patient ID (should be considered just as a string);</li>
-						<li>The second column is the week of the first relapse occurrence after the baseline for each patient.</li>
-					</ul>
-		
-
-					<header class="major">
-					<h2>Participant Repository</h2>
-					</header>
-
-
-					<p>
-						Participants are provided with a single <em>repository</em> for all the tasks they take part in.
-						The repository contains the runs, resources, and possibly the code produced by each participant in order to promote reproducibility and open science.
-					</p>
-
-					<p class="nomargin">The repository is organised as follows:</p>
-					<ul>
-						<li> <code>submission</code>: this folder contains the runs submitted for the different tasks.</li>
-						<li> <code>score</code>: this folder contains the performance scores of the submitted runs.</li>
-						<li> <code>code</code>: this folder contains the source code of the developed system.</li>
-						<li> <code>resource</code>: this folder contains any additional resources created during the participation.</li>
-						<li> <code>report</code>: this folder contains the participant report.</li>
-					</ul>
-
-					<p class="nomargin">
-						The <code>submission</code> and <code>score</code> folders are organized into sub-folders for each task  as follows:
-					</p>
-
-					<ul>
-						<li> <code>submission/task1</code>: for the runs submitted to the first task. Similar structure for the other tasks.</li>
-						<li> <code>score/task1</code>: for the performance scores of the runs submitted to the first task. Similar structure for the other tasks.</li>
-					</ul>
-
-					<p>Participants which do not take part in a given task can simply delete the corresponding sub-folders.</p>
-
-					<p><a href="https://bitbucket.org/brainteaser-health/sample-participant-repository" target="_blank">Here</a>,
-						you can find a sample participant repository to get a better idea of its layout.</p>
-
-					<p>The goal of iDPP <i class="fas fa-spinner"></i> CLEF 2024 is to speed up the creation of systems and resources for MS and ALS progression prediction as well as openly share these systems and resources as much as possible. 
-						Therefore, participants are more than encouraged to share their code and any additional resources they have used or created.</p>
-
-					<p>All the contents of these repositories are released under the <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+					<p>while the defined <b>set of relations</b> includes:</p>
+					<div class="custom-expanded u-table u-table-responsive u-table-1">
+						<table class="u-table-entity u-table-entity-1">
+						  <colgroup>
+							<col width="33.33%">
+							<col width="33.33%">
+							<col width="33.33%">
+						  </colgroup>
+						  <thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Head Entity</th>
+							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Tail Entity</th>
+							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Predicate </th>
+							</tr>
+						  </thead>
+						  <tbody class="u-align-left u-table-body">
+							<tr style="height: 48px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+							  </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome<br>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Part of </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding<br>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Influence</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Bacteria</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene<br>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria<br>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change abundance</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Disease, Disorder, or Finding</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Affect </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change abundance</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug / Chemical / Dietary Supplement</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Disease, Disorder, or Finding</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change effect</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Drug / Chemical / Dietary Supplement</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Impact</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Drug / Chemical / Dietary Supplement</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Impact </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Drug / Chemical / Dietary Supplement</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Human / Animal</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Biomedical Technique </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Used by<br>
+							  </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Metabolite</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome<br>
+							  </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Produced by</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Metabolite</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Biomedical Technique</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Used by</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Is linked to </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Compared to<br>
+							  </td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Neurotransmitter</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Related to</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Neurotransmitter</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location </td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in</td>
+							</tr>
+							<tr style="height: 47px;">
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">* (any)</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">* (any)</td>
+							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Associated with<br>
+							  </td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
 
 				</div>
 			</section>
@@ -304,17 +472,25 @@
 			<section id="four" class="main style2">
 				<div class="container">
 					<header class="major">
-						<h2>Run Submission Guidelines</h2>
+						<h2>Submitting</h2>
 					</header>
 
 					<p>Participating teams should satisfy the following guidelines:</p>
 					<ul>
-						<li>The runs should be submitted in the textual format described below;</li>
-						<li>Each group can submit a maximum of <strong>30 runs</strong> for each of Task 1 and Task 2 and Task 3.</li>
+						<li>The runs should be submitted in the format described below;</li>
+						<li>Each group can submit a maximum of <strong>10 runs</strong> for each subtask.</li>
 					</ul>
 
-					<h3>Task 1 Run Format</h3>
+					<h3><strong>Submission Guidelines</strong></h3>
+					<p>Coming soon...</p>
 
+					<h3><strong>Evaluation Metrics</strong></h3>
+					<p>Coming soon...</p>
+					
+					<h3><strong>Practice [Pre-Evaluation]</strong></h3>
+					<p>Coming soon...</p>
+
+					<!--
 					<p>Runs should be submitted as a text file (.txt) with the following format:</p>
 					<pre><code>
 100619256189067386770484450960632124211 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
@@ -411,21 +587,23 @@
 					<code>&lt;teamname&gt;_T&lt;1|2|3&gt;_&lt;freefield&gt;.score.txt</code>
 					where <code>&lt;teamname&gt;_T&lt;1|2|3&gt;_&lt;freefield&gt;</code> matches the corresponding run. The file will contain performance scores for each of the evaluation measures described below. In the above example
 					<code>upd_T1_myDesc.score.txt</code></p>
-
-
-
+					-->
 				</div>
 			</section>
+
 		<!-- Five -->
 			<section id="five" class="main style1 ">
 				<div class="container">
-					
-
 					<header class="major">
-						<h2>Evaluation Measures</h2>
+						<h2>Results</h2>
 					</header>
 
-					<h3>Task 1 - Predicting ALSFRS-R Score from Sensor Data (ALS)</h3>
+					<h3><strong>Leaderboards</strong></h3>
+					<p>Available after the system submission deadline...</p>
+					<h3><strong>Details</strong></h3>
+					<p>Available after the system submission deadline...</p>
+
+					<!--
 					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted sub-scores with respect to the actual sub-scores.</p>
 
 					<h3>Task 2 - Predicting patient self-assessment score from sensor (ALS)</h3>
@@ -433,42 +611,207 @@
 
 					<h3>Task 3 - Predicting relapses from EDDS sub-scores and environmental data (MS)</h3>
 					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted week of relapse with respect to the actual one.</p>
-
+					-->
 					<!--<h3>Computing the Evaluation Measures</h3>
 					<p>Scripts for computing the above evaluation measures are available in the following <a href="https://bitbucket.org/brainteaser-health/idpp2023-performance-computation/" target="_blank">repository.</a>-->
+				</div>
+			</section>
 
+			<!-- Six -->
+			<section id="six" class="main style2">
+				<div class="container">
 					<header class="major">
-						<h2>Participant Papers</h2>
+						<h2 id="faq">FAQs</h2>
 					</header>
 
-					<p>Participants are expected to write a report describing their participation in iDPP <i class="fas fa-spinner"></i> CLEF 2024,
-						their proposed solution, what features have been used for prediction,
-						the analysis of the experimental results and insights derived from them.</p>
-
-					<p>Participant reports will be peer-reviewed and accepted reports will be published in the CLEF 2023 Working Notes at <a href="http://ceur-ws.org/" target="_blank">CEUR-WS</a>, indexed in DBLP and Scopus.</p>
-
-					<p>A template for the report is contained in the <code><a href="https://bitbucket.org/brainteaser-health/sample-participant-repository/src/master/report/" target="_blank">report</a></code> folder of each participant repository.
-						The template does not only define the layout of the report but it also provides a suggested structure for it and illustrates the kind of expected contents. <br/>
-
-						Participants are strongly encouraged to use LaTeX, whose template provides all the details about the report. However, it is possible to also use Word and a basic template is provided as well.</p>
-
-					<p>Participant papers are expected to be <strong>10-20 pages</strong> in length, excluding references.</p>
-
-					<p>The schedule for submission, revision, and camera ready of the participant report is detailed above in the <a href="#two">Important Dates</a> section.</p>
-
-					<p>
-						Participant papers can be submitted via Easychair at the following link <a href="https://easychair.org/conferences/?conf=clef2024" target="_blank">https://easychair.org/conferences/?conf=clef2024</a>
-						by choosing the <code>Intelligent Disease Progression Prediction (iDPP)</code> track.
-					</p>
+					<p><i>Find answers to common questions about the GutBrainIE challenge, dataset, and submissions.</i></p>
+					<p><i>If you need any additional information, please get in contact with us writing to Marco Martinelli, <a href="mailto:martinell2@dei.unipd.it"><strong>martinell2 @ dei.unipd.it</strong></i></a></p>
 					
-					<header class="major">
-						<h2>Get in Contact</h2>
-					</header>
-					
-					<p>If you need any additional information, please get in contact with us writing to Nicola Ferro, <code>ferro<i class="fas fa-at"></i>dei.unipd.it</code>.
+					<p>Coming soon...</p>
 
 				</div>
 			</section>
+
+			<section id="seven" class="main style1">
+				<div class="container">
+					<header class="major">
+						<h2 id="organizers">Organizers</h2>
+					</header>
+	
+					<div class="py-5 team4">
+						
+						  <div class="row justify-content-center">
+							<!-- column  -->
+							<div class="col-lg-3 mb-4">
+							  <!-- Row -->
+							  <div class="row">
+								<div class="col-md-12">
+									<img src="images\organizers\bonato.jpeg" alt="wrapkit" class="img-fluid h-100 rounded-square" />
+								</div>
+								<div class="col-md-12 text-center">
+								  <div class="pt-2">
+									<h5 class="mt-4 font-weight-medium mb-0">Vanessa Bonato</h5>
+									<h6 class="subtitle mb-3">PhD Student</h6>
+									<ul class="list-inline">
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+									  	<!-- <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-orcid" style="font-size:24px"></i></i></a></li> -->
+									  	<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+									</ul>
+								  </div>
+								</div>
+							  </div>
+							  <!-- Row -->
+							</div>
+							<!-- column  -->
+							<!-- column  -->
+							<div class="col-lg-3 mb-4">
+							  <!-- Row -->
+							  <div class="row">
+								<div class="col-md-12">
+									<img src="images\organizers\dinunzio.png" alt="wrapkit" class="img-fluid h-100 rounded-square" />
+								</div>
+								<div class="col-md-12 text-center">
+								  <div class="pt-2">
+									<h5 class="mt-4 font-weight-medium mb-0">Giorgio Maria Di Nunzio</h5>
+									<h6 class="subtitle mb-3">Associate Professor</h6>
+									<ul class="list-inline">
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+									  	<!-- <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-orcid" style="font-size:24px"></i></i></a></li> -->
+									  	<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+									</ul>
+								  </div>
+								</div>
+							  </div>
+							  <!-- Row -->
+							</div>
+							<!-- column  -->
+							<!-- column  -->
+							<div class="col-lg-3 mb-4">
+							  <!-- Row -->
+							  <div class="row">
+								<div class="col-md-12">
+									<img src="images\organizers\irrera.jpg" alt="wrapkit" class="img-fluid h-100 rounded-square" />
+								</div>
+								<div class="col-md-12 text-center">
+								  <div class="pt-2">
+									<h5 class="mt-4 font-weight-medium mb-0">Ornella Irrera</h5>
+									<h6 class="subtitle mb-3">Post-Doc</h6>
+									<ul class="list-inline">
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+									  	<!-- <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-orcid" style="font-size:24px"></i></i></a></li> -->
+									  	<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+									</ul>
+								  </div>
+								</div>
+							  </div>
+							  <!-- Row -->
+							</div>
+							<!-- column  -->
+							<!-- column  -->
+							<div class="col-lg-3 mb-4">
+							  <!-- Row -->
+							  <div class="row">
+								<div class="col-md-12">
+									<img src="images\organizers\martinelli.jpg" alt="wrapkit" class="img-fluid h-100 rounded-square" />
+								</div>
+								<div class="col-md-12 text-center">
+								  <div class="pt-2">
+									<h5 class="mt-4 font-weight-medium mb-0">Marco Martinelli</h5>
+									<h6 class="subtitle mb-3">PhD Student</h6>
+									<ul class="list-inline">
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+									  	<!-- <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-orcid" style="font-size:24px"></i></i></a></li> -->
+									  	<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+									</ul>
+								  </div>
+								</div>
+							  </div>
+							  <!-- Row -->
+							</div>
+						</div>
+					</div>
+
+					<div class="py-5 team4">
+						<div class="row justify-content-center">
+						  <!-- column  -->
+						  <div class="col-lg-3 mb-4">
+							<!-- Row -->
+							<div class="row">
+							  <div class="col-md-12">
+								  <img src="images\organizers\menotti.jpg" alt="wrapkit" class="img-fluid h-100 rounded-square" />
+							  </div>
+							  <div class="col-md-12 text-center">
+								<div class="pt-2">
+								  <h5 class="mt-4 font-weight-medium mb-0">Laura Menotti</h5>
+								  <h6 class="subtitle mb-3">PhD Student</h6>
+								  <ul class="list-inline">
+									  <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+									  <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<!-- <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-orcid" style="font-size:24px"></i></i></a></li> -->
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+								  </ul>
+								</div>
+							  </div>
+							</div>
+							<!-- Row -->
+						  </div>
+						  <!-- column  -->
+						  <!-- column  -->
+						  <div class="col-lg-3 mb-4">
+							<!-- Row -->
+							<div class="row">
+							  <div class="col-md-12">
+								  <img src="images\organizers\silvello.jpg" alt="wrapkit" class="img-fluid h-100 rounded-square" />
+							  </div>
+							  <div class="col-md-12 text-center">
+								<div class="pt-2">
+								  <h5 class="mt-4 font-weight-medium mb-0">Gianmaria Silvello</h5>
+								  <h6 class="subtitle mb-3">Full Professor</h6>
+								  <ul class="list-inline">
+									  <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+									  <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<!-- <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-orcid" style="font-size:24px"></i></i></a></li> -->
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+								  </ul>
+								</div>
+							  </div>
+							</div>
+							<!-- Row -->
+						  </div>
+						  <!-- column  -->
+						  <!-- column  -->
+						  <div class="col-lg-3 mb-4">
+							<!-- Row -->
+							<div class="row">
+							  <div class="col-md-12">
+								  <img src="images\organizers\vezzani.jpg" alt="wrapkit" class="img-fluid h-100 rounded-square" />
+							  </div>
+							  <div class="col-md-12 text-center">
+								<div class="pt-2">
+								  <h5 class="mt-4 font-weight-medium mb-0">Federica Vezzani</h5>
+								  <h6 class="subtitle mb-3">Assistant Professor</h6>
+								  <ul class="list-inline">
+									  <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+									  <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<!-- <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-orcid" style="font-size:24px"></i></i></a></li> -->
+										<li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+								  </ul>
+								</div>
+							  </div>
+							</div>
+							<!-- Row -->
+						  </div>
+						  <!-- column  -->
+					  </div>
+				  	</div>
+	
+				</div>
+			</section>
+		</div>
 
 		<!-- Six -->
 		<!--
@@ -833,6 +1176,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/templateAdditions.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 	</body>
 </html>
