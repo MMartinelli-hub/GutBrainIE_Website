@@ -2717,7 +2717,7 @@
 			background-color: #2a38878c;
 			color: rgb(6, 18, 85);
 			background-attachment: fixed,							fixed,							fixed;
-			background-image: url("images/overlay2.png"), linear-gradient(135deg,rgba(204, 223, 227, 0.673) 0%,rgba(156, 181, 186, 0.63) 100%); 
+			background-image: url("images/overlay2.png"), linear-gradient(130deg,rgb(117, 175, 186) 0%,rgba(156, 181, 186, 0.63) 65%); 
 			background-size: auto,							cover;
 		}
 
