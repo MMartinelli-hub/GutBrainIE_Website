@@ -70,55 +70,81 @@ height: auto;
 		width: 30%;
 	}		
 
-/* Custom navbar - */
+/* Custom navbar - Fixed and Fully Responsive */
 /* Scoped Navbar Styles */
 #custom-navbar {
-background-color: #2A3887;
-color: rgba(42, 56, 135);
-background-attachment: fixed,							fixed,							fixed;
-background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(135deg,rgba(33,66,151) 0%,rgb(85,201,228) 100%);
-background-position: top left,						center center,					center center;
-background-size: auto,							cover,							cover;	
-position: fixed; /* Fix the navbar at the top */
-top: 0;
-width: 100%;
-z-index: 1000; /* Keeps navbar above all other content */
-text-align: center;
-padding: 0.75rem 1.5rem; /* Smaller padding */
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-opacity: 15;
+	background-color: #2A3887;
+	color: rgba(42, 56, 135);
+	background-attachment: fixed;
+	background-image: url("images/overlay2.png"), url("images/overlay3.svg"), 
+                      linear-gradient(135deg, rgba(33, 66, 151) 0%, rgb(85, 201, 228) 100%);
+	background-position: top left, center center, center center;
+	background-size: auto, cover, cover;	
+	position: fixed; /* Fix the navbar at the top */
+	top: 0;
+	width: 100%;
+	z-index: 1000; /* Keeps navbar above all other content */
+	text-align: center;
+	padding: 0.75rem 1rem; /* Adjust padding */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+	overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Fix Issues with Overflow on Small Screens */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden; /* Prevent scrolling on white space */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+	margin-left: auto;
 }
 
 /* Navbar Links */
 #custom-navbar a {
-color: rgba(255, 255, 255, 0.75);
-border-bottom-color: rgba(255, 255, 255, 0.5);
-text-decoration: none;
-transition: color 0.3s ease, border-bottom 0.3s ease;
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+	transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 #custom-navbar a:hover {
-color: #ffffff;
+	color: #ffffff;
 }
 
 #custom-navbar .nav-link {
-color: rgba(255, 255, 255, 0.75) !important;
-transition: color 0.3s ease, background-color 0.3s ease;
+	color: rgba(255, 255, 255, 0.75) !important;
+	transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 #custom-navbar .nav-link.active {
-background-color: transparent;
-color: #ffffff !important;
-border-bottom: 2px solid rgba(255, 255, 255, 0.85);
+	background-color: transparent;
+	color: #ffffff !important;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.85);
 }
 
 #custom-navbar .nav-link:hover {
-color: #d1d1d1 !important; /* Grey on hover */
+	color: #d1d1d1 !important; /* Grey on hover */
 }
 
 /* Prevent Overlap with Content */
 #headerTask2 {
-margin-top: 4.5rem; /* Adjust according to navbar height */
+	margin-top: 4.5rem; /* Adjust according to navbar height */
+}
+
+/* Images Responsive Adjustment */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Ensure Content Fits on Mobile Screens */
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 100%; /* Prevent any extra width */
 }
 
 
