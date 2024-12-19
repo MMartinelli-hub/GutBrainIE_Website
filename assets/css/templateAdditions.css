@@ -503,3 +503,27 @@ a.twitter-timeline:focus {
 outline: none;
 border-color: #0089cb;
 }
+
+
+
+/* Settings for organizers carousel */
+/* Organizer Images */
+.organizer-img {
+    width: 100%; /* Make the image responsive */
+    max-width: 280px; /* Set a consistent max width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fits within the container */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Add a maximum height constraint for large screens */
+@media (min-width: 992px) {
+    .organizer-img {
+        max-height: 280px;
+    }
+}
+
+/* Add responsive spacing for text */
+.team4 h5, .team4 h6 {
+    margin: 0.5rem 0;
+}
