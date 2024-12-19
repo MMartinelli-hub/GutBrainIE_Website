@@ -77,7 +77,8 @@
 					<h2>
 						GutBrainIE <i class="fas fa-spinner"></i> CLEF 2025</a>
 					</h2>
-					<h3>A task featured in the <a href="https://www.bioasq.org/workshop2025">BioASQ Lab 2025</a></h3>
+					<h3>Task #6 of the <a href="https://www.bioasq.org/workshop2025">BioASQ Lab 2025</a></h3>
+					<h4 class="nomargin">(An <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a> challenge)</h4>
 					<ul class="actions">
 						<li><a href="#one" class="button scrolly">Read</a></li>
 					</ul>
@@ -93,25 +94,31 @@
 							<header class="major">
 								<h2 id="tasks">Tasks</h2>
 							</header>
-							<p>GutBrainIE <i class="fas fa-spinner"></i> CLEF 2025 is the TASK 6 of the <a href="http://participants-area.bioasq.org/general_information/GutBrainIE/">BioASQ CLEF Lab 2025</a>, proposing a Biomedical Natural Language Processing (NLP) challenge. Specifically, it is focused on extracting structured information from biomedical abstracts related to the gut microbiota and its effects on mental health, 
-							aiming to foster the development of Information Extraction (IE) systems that can support experts in understanding the connections between neurological and gut disorders that may play a critical role in mental health-related disorders or diseases lke Multiple Sclerosis, Parkinson's, and Alzheimer's.</p> 
+							<p>GutBrainIE <i class="fas fa-spinner"></i> CLEF 2025 is the <b>TASK #6 of the <a href="http://participants-area.bioasq.org/general_information/GutBrainIE/">BioASQ CLEF Lab 2025</a></b>, proposing a Biomedical Natural Language Processing (NLP) challenge. Specifically, it is focused on extracting structured information from biomedical abstracts related to the gut microbiota and its effects on mental health, 
+							aiming to foster the development of Information Extraction (IE) systems that can support experts in understanding the connections between neurological and gut disorders that may play a critical role in mental health-related disorders or diseases like Multiple Sclerosis, Parkinson's, and Alzheimer's.</p> 
 
-							<p>The GutBrainIE task is divided into two main subtasks. In the first task participants are asked to identify and classify specific text spans into predefined categories, while in the second one three they have to determine if a particular relationship defined between two categories holds or not.</p>
+							<p>The GutBrainIE task is divided into two main subtasks. In the first task, participants are asked to identify and classify specific text spans into predefined categories, while in the second one they have to determine if a particular relationship defined between two categories holds or not.</p>
 
-							<p>The training data for all the subtasks are available upon registration for the challenge and the test data will be available one week before the run submission deadline. Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</p>
+							<p>The training data for all the subtasks are available upon registration for the challenge and the test data will be available one week before the run submission deadline. 
+								The training set is divided into three parts: 
+								<ul>
+									<li>An <b>highly curated part</b> manually annotated by a team of 7 expert annotators from the University of Padua, Italy, within the context of the EU-funded project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>;</li>
+									<li>A <b>weakly curated part</b> manually annotated by a team of 40 linguistic students trained and supervised by the experts;</li>
+									<li>A <b>distantly supervised part</b>.</li>
+								</ul>
+								The test set comprises highly curated documents annotated by the expert team and validated by the <a href="https://www.radboudumc.nl/en/patient-care">Radboud University Medical Centre (RUMC)</a>. 
+								<b>Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</b></p>
 
-							<p>All the datasets are highly curated, being produced by a team of 7 expert annotators from the University of Padua, Italy, within the context of the EU-funded project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>.</p>
-
-							<h3 id="task1">Task 1 - Named Entity Recognition</h3>
+							<h3 id="task1">Subtask 6.1 - Named Entity Recognition</h3>
 							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to classify specific text spans (entity mentions) into one of the 15 predefined categories, such as <i>bacteria</i>, <i>chemical</i>, <i>microbiota</i>.</p>
 
-							<h3 id="task2a">Task 2a - Binary Relation Extraction </h3>
+							<h3 id="task2a">Subtask 6.2.1 - Binary Relation Extraction </h3>
 							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to identify which entity labels are in relation within a document. No relation type needs to be predicted within this subtask, therefore relations will be expressed as pairs (<i>entityLabel1 ; entityLabel2</i>).</p>
 							
-							<h3 id="task2b">Task 2b - Ternary Tag-Based Relation Extraction</h3>
+							<h3 id="task2b">Subtask 6.2.2 - Ternary Tag-Based Relation Extraction</h3>
 							<p>In this subtask participants are asked to identify which entity labels are in relation within a document and predict the type of relation between them. Within this subtask, relations will be expressed as triples (<i>entityLabel1 ; relationLabel ; entityLabel2</i>).</p>
 				
-							<h3 id="task2c">Task 2c - Ternary Mention-Based Relation Extraction</h3>
+							<h3 id="task2c">Subtask 6.2.3 - Ternary Mention-Based Relation Extraction</h3>
 							<p>In this subtask participants are required to identify the actual entity mentions involved in a relation and predict the type of relation. Therefore, within this subtask relations will be expressed as (<i>entityMention1 ; relationLabel ; entityMention2</i>).</p>
 					
 							<h3>Participating</h3>
@@ -136,14 +143,14 @@
 					</header>
 
 					<ul>
-						<li>Registration closes: <strong>April 22, 2024</strong></li>
-						<li>Test data release: <strong>April 29, 2024</strong></li>
-						<li>Runs submission deadline: <strong>May 6, 2024</strong></li>
-						<li>Evaluation results out: <strong>May 17, 2024</strong></li>
-						<li>Participant and position paper submission deadline: <strong>May 31, 2024</strong></li>
-						<li>Notification of acceptance for participant and position papers: <strong>June 24, 2024</strong></li>
-						<li>Camera-ready participant papers submission: <strong>July 8, 2024</strong></li>
-						<li>iDPP <i class="fas fa-spinner"></i> CLEF Workshop: <strong>September 9-12, 2024</strong> during the CLEF Conference in Grenoble, France</li>
+						<li>Registration closes: <strong>April 25, 2025</strong></li>
+						<li>Test data release: <strong>April 28, 2025</strong></li>
+						<li>Runs submission deadline: <strong>May 10, 2025</strong></li>
+						<li>Evaluation results out: <strong>May 19, 2025</strong></li>
+						<li>Participant and position paper submission deadline: <strong>May 30, 2025</strong></li>
+						<li>Notification of acceptance for participant and position papers: <strong>June 27, 2025</strong></li>
+						<li>Camera-ready participant papers submission: <strong>July 7, 2025</strong></li>
+						<li>GutBrainIE <i class="fas fa-spinner"></i> CLEF Workshop: <strong>September 9-12, 2025</strong> during the CLEF Conference in Madrid, Spain</li>
 					</ul>
 				</div>
 			</section>
@@ -160,17 +167,17 @@
 					<h3><strong>Data Description</strong></h3>
 					<p>The data for this task is a set of abstracts of biomedical articles retrieved from PubMed, focusing on the gut-brain interplay and its implications in neurological and mental health.</p>
 
-					Annotated by a team of seven experts, the datasets include:
-					<ul>
-						<li><b>Entity Mentions</b>: Text spans classified into predefined categories.</li>
-						<li><b>Relations</b>: Associations between entities, specifying that a particular relationship holds between two entities.</li>
-					</ul>
-
 					The datasets are organized into:
 					<ul>
 						<li><b>Gold-Standard Annotations</b>: Expert curated, high-quality annotations.</li>
 						<li><b>Silver-Standard Annotations</b>: Annotated by trained students under expert supervision.</li>
 						<li><b>Distant Annotations</b>: Automatically generated annotations for NER using fine-tuned GLiNER.</li>
+					</ul>
+
+					To foster the development of effective IE systems for the subtasks proposed within GutBrainIE, the provided datasets include:
+					<ul>
+						<li><b>Entity Mentions</b>: Text spans classified into predefined categories.</li>
+						<li><b>Relations</b>: Associations between entities, specifying that a particular relationship holds between two entities.</li>
 					</ul>
 					
 					<h3><strong>Collections</strong></h3>
@@ -181,7 +188,7 @@
 							<a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="TODO"><span style="font-size: 1.375rem; text-decoration: underline !important;">HERE</span>
 						  	</a>.</li>
 						-->
-						<li><b>Test Data</b>: The test set will be available one week before the run submission deadline. This data will be used for final system evaluation.</li>
+						<li><b>Test Data</b>: The test set will be available from April 28, 2025. This data will be used for final system evaluation.</li>
 					</ul>
 
 					<h3><strong>Dataset Format</strong></h3>
@@ -211,7 +218,8 @@
 						</ul>
 					</ul>
 
-					<h3><strong>Entity and Relation Labels</strong></h3>
+					<h3 style="margin: 0;"><strong>Entity and Relation Labels</strong></h3>
+					<h5>(To be revised after the training set is completed)</h5>
 					<!--
 					The datasets are built on top of the conceptual system represented below, defining the valid entities and their possible relationships.
 					<img class="u-image u-image-contain u-image-default u-image-1" src="images/conceptual_system.png.png" alt="" data-image-width="647" data-image-height="423">
@@ -472,12 +480,14 @@
 							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location </td>
 							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in</td>
 							</tr>
+							<!--
 							<tr style="height: 47px;">
 							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">* (any)</td>
 							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">* (any)</td>
 							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Associated with<br>
 							  </td>
 							</tr>
+							-->
 						  </tbody>
 						</table>
 					</div>
@@ -499,7 +509,32 @@
 					</ul>
 
 					<h3><strong>Submission Guidelines</strong></h3>
-					<p>Coming soon...</p>
+					<p>Participants are invited to submit results for any or all of the four subtasks (NER, Binary RE, Tag-based Ternary RE, Mention-based Ternary RE) independently.</p>
+
+					<p>Submissions will be handled via the BioASQ submission system. More detailed information coming soon...</p>
+
+					<p>Submissions should follow the JSON format specified below. A script that participants might use to validate their submissions will be available soon...</p>
+
+					<p>In the following, a "run" refers to the predictions made by a single system on the test set. Each run must be submitted as a single zipped file named "<b>teamName_systemName_runNumber.zip</b>", containing:
+					<ul>
+						<li><b>teamName_systemName_runNumber.json</b>: A JSON file with predictions on the test set.</li>
+						<li><b>teamName_systemName_runNumber.json</b>: A metadata briefly describing the approach, including:</li>
+						<ul style="padding-left: 2em;">
+							<li style="list-style-type: none;"><span>&#9702;</span> Type of training applied.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Pre-processing methods.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Training data used.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Relevant details of the run.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> A link to a GitHub repository enabling easy reproducibility of the run.</li>
+						</ul>
+					</ul>
+					</p>
+
+					<p>Each zipped file should carefully follow this filenames structure. 
+						The team name must remain consistent across all submissions, and the system name shold reflect the approach used by the submitted run. 
+						The run number serves as a progressive identifier for multiple submissions of the same system. An example of a valid run submission wil be available soon...</p>
+
+					<p>Submissions not adhering to these guidelines might be rejected. 
+						Please ensure accuracy and completeness of all submitted files to streamline evaluation. </p>
 
 					<h3><strong>Evaluation Metrics</strong></h3>
 					<p>Coming soon...</p>
@@ -616,9 +651,9 @@
 					</header>
 
 					<h3><strong>Leaderboards</strong></h3>
-					<p>Available after the system submission deadline...</p>
+					<p>Available after the systems submission deadline...</p>
 					<h3><strong>Details</strong></h3>
-					<p>Available after the system submission deadline...</p>
+					<p>Available after the systems submission deadline...</p>
 
 					<!--
 					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted sub-scores with respect to the actual sub-scores.</p>
@@ -642,7 +677,7 @@
 					</header>
 
 					<p><i>Find answers to common questions about the GutBrainIE challenge, dataset, and submissions.</i></p>
-					<p><i>If you need any additional information, please get in contact with us writing to Marco Martinelli, <a href="mailto:martinell2@dei.unipd.it"><strong>martinell2 @ dei.unipd.it</strong></i></a></p>
+					<p><i>If you need any additional information, please get in contact with us writing to Marco Martinelli: &nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:martinell2@dei.unipd.it"><strong>martinell2 @ dei.unipd.it</strong></i></a></p>
 					
 					<p>Coming soon...</p>
 
