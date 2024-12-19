@@ -3429,3 +3429,34 @@
 			}
 
 	}
+
+
+/* Important Dates Section */
+#important-dates {
+    text-align: left; /* Ensure text stays aligned to the left */
+    line-height: 1.8; /* Improve readability */
+}
+
+.important-dates-list {
+    padding-left: 20px; /* Add space for the bullet points */
+    list-style-type: disc; /* Ensure proper bullet styling */
+    max-width: 800px; /* Limit the width to avoid text being too spread out */
+    margin: 0 auto; /* Center the list within the container */
+}
+
+.important-dates-list li {
+    font-size: 1rem;
+    color: #000; /* Black text for better visibility */
+    margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+    .important-dates-list {
+        max-width: 100%; /* Allow the list to take the full width on smaller screens */
+        padding-left: 15px; /* Slightly reduce padding on small screens */
+    }
+
+    #important-dates h2 {
+        text-align: center; /* Center the title on smaller screens */
+    }
+}
