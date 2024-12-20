@@ -21,7 +21,13 @@
 .team4 .subtitle {
     color: #8d97ad;
     line-height: 24px;
-		font-size: 13px;
+		font-size: 16px;
+}
+
+.team4 .subsubtitle {
+  color: #5d626d;
+  line-height: 24px;
+  font-size: 13px;
 }
 
 .team4 ul li a {

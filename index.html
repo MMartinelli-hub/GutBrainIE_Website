@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<meta name="author" content="Marco Martinelli Laura Menotti">
+		<meta name="author" content="Marco Martinelli; Laura Menotti">
 		<meta name="description" content="Gut Brain Information Extraction - GutBrainIE @ CLEF 2025">
 		<meta name="description" content="GutBrainIE @ CLEF 2025 - An activity of the HEREDITARY project">
 
@@ -94,21 +94,26 @@
 							<header class="major">
 								<h2 id="tasks">Tasks</h2>
 							</header>
-							<p>GutBrainIE <i class="fas fa-spinner"></i> CLEF 2025 is the <b>TASK #6 of the <a href="http://participants-area.bioasq.org/general_information/GutBrainIE/">BioASQ CLEF Lab 2025</a></b>, proposing a Biomedical Natural Language Processing (NLP) challenge. </p>
+							<p>GutBrainIE <i class="fas fa-spinner"></i> CLEF 2025 is the <b>TASK #6 of the <a href="http://participants-area.bioasq.org/general_information/GutBrainIE/">BioASQ CLEF Lab 2025</a></b>, proposing a Natural Language Processing (NLP) challenge on biomedical texts within the context of the EU-supported project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>. </p>
 							
-							<p>Specifically, it is focused on extracting structured information from biomedical abstracts related to the gut microbiota and its effects on mental health, 
-							aiming to foster the development of Information Extraction (IE) systems that can support experts in understanding the connections between neurological and gut disorders that may play a critical role in mental health-related disorders or diseases like Multiple Sclerosis, Parkinson's, and Alzheimer's.</p> 
+							<p>Specifically, it is focused on extracting structured information from biomedical abstracts related to the gut microbiota and its connections with Parkinson's disease and mental health, 
+							aiming to foster the development of Information Extraction (IE) systems that can support experts in understanding the gut-brain interplay.</p> 
 
 							<p>The GutBrainIE task is divided into two main subtasks. In the first task, participants are asked to identify and classify specific text spans into predefined categories, while in the second one they have to determine if a particular relationship defined between two categories holds or not.</p>
 
-							<p>The training data for all the subtasks are available upon registration for the challenge and the test data will be available one week before the run submission deadline. 
+							<p>The training data for all the subtasks are available upon registration for the challenge and the test data will be available around two weeks before the run submission deadline. 
 								The training set is divided into three parts: 
 								<ul>
-									<li>An <b>highly curated part</b> manually annotated by a team of 7 expert annotators from the University of Padua, Italy, within the context of the EU-funded project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>;</li>
-									<li>A <b>weakly curated part</b> manually annotated by a team of 40 linguistic students trained and supervised by the experts;</li>
-									<li>A <b>distantly supervised part</b>.</li>
+									<!--
+									<li>Gold-Standard Annotations: An <b>highly curated part</b> manually annotated by a team of 7 expert annotators from the University of Padua, Italy, within the context of the EU-funded project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>;</li>
+									<li>Silver-Standard Annotations: A <b>weakly curated part</b> manually annotated by a team of about 40 students of linguistics and terminology trained and supervised by the experts; </li>
+									<li>Distant Annotations: A <b>distantly supervised part</b> comprising automatically generated annotations. </li>
+									-->
+									<li><b>Gold-Standard Annotations</b>: An highly curated part manually annotated by a team of 7 expert annotators from the University of Padua, Italy; </li>
+									<li><b>Silver-Standard Annotations</b>: A weakly curated part manually annotated by a team of about 40 students of linguistics and terminology trained and supervised by the experts; </li>
+									<li><b>Distant Annotations</b>: A distantly supervised part comprising automatically generated annotations. </li>
 								</ul>
-								The test set comprises highly curated documents annotated by the expert team and validated by the <a href="https://www.radboudumc.nl/en/patient-care">Radboud University Medical Centre (RUMC)</a>. </p>
+								The test set comprises highly curated documents annotated by the expert team and validated by biomedical experts at the <a href="https://www.radboudumc.nl/en/patient-care">Radboud University Medical Centre (RUMC)</a>. </p>
 
 								<p><b>Please see the <a href="#datasets">Datasets</a> and <a href="#important-dates">Important Dates</a> sections for more information.</b></p>
 
@@ -153,7 +158,7 @@
 						<li>Participant and position paper submission deadline: <strong>May 30, 2025</strong></li>
 						<li>Notification of acceptance for participant and position papers: <strong>June 27, 2025</strong></li>
 						<li>Camera-ready participant papers submission: <strong>July 7, 2025</strong></li>
-						<li>GutBrainIE <i class="fas fa-spinner"></i> CLEF Workshop: <strong>September 9-12, 2025</strong> during the CLEF Conference in Madrid, Spain</li>
+						<li>GutBrainIE <i class="fas fa-spinner"></i> CLEF Workshop: <strong>September 9-12, 2025</strong> during the <a href="https://clef2025.clef-initiative.eu/" target="_blank">CLEF Conference in Madrid</a>, Spain</li>
 					</ul>
 				</div>
 			</section>
@@ -179,8 +184,8 @@
 
 					To foster the development of effective IE systems for the subtasks proposed within GutBrainIE, the provided datasets include:
 					<ul>
-						<li><b>Entity Mentions</b>: Text spans classified into predefined categories.</li>
-						<li><b>Relations</b>: Associations between entities, specifying that a particular relationship holds between two entities.</li>
+						<li><b><a href="#table_entity_labels">Entity Mentions</a></b>: Text spans classified into predefined categories.</li>
+						<li><b><a href="#table_relation_labels">Relations</a></b>: Associations between entities, specifying that a particular relationship holds between two entities.</li>
 					</ul>
 					
 					<h3><strong>Collections</strong></h3>
@@ -200,7 +205,7 @@
 						<li><code>Metadata</code>: Articles-related information, including <i>title</i>, <i>author</i>, <i>year</i>, and <i>abstract</i>.</li>
 						<li><code>Entities</code>: An array of objects where each object represents an annotated entity mention in the article, with the following attributes:</li>
 						<ul style="padding-left: 2em;">
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>annotator</i>: The identifier of the annotator.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>annotator</i>: The identifier of the annotator, which participants may use to assign different weights to annotations depending on who performed them. </li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>start</i> and <i>end</i>: Character offsets marking the span of the entity mention.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_location</i>: Indicates if the entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_text</i>: The actual text span of the entity mention.</li>
@@ -230,7 +235,7 @@
 
 					<p>The <b>set of entities</b> considered for annotations includes:</p>
 
-					<div class="custom-expanded u-table u-table-responsive u-table-1">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_labels">
 						<table class="u-table-entity u-table-entity-1">
 						  <colgroup>
 							<col width="21.74%">
@@ -350,7 +355,7 @@
 					</div>
 
 					<p>while the defined <b>set of relations</b> includes:</p>
-					<div class="custom-expanded u-table u-table-responsive u-table-1">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_labels">
 						<table class="u-table-entity u-table-entity-1">
 						  <colgroup>
 							<col width="33.33%">
@@ -493,6 +498,7 @@
 							-->
 						  </tbody>
 						</table>
+						<p>For more details on entity and relation labels, refer to the <i>Annotation Guidelines</i> available for download <a href="files/GutBrainIE - Annotation Guidelines - Public Version.pdf" target="_blank">HERE</a>.</p>
 					</div>
 
 				</div>
@@ -521,7 +527,7 @@
 					<p>In the following, a "run" refers to the predictions made by a single system on the test set. Each run must be submitted as a single zipped file named "<b>teamName_systemName_runNumber.zip</b>", containing:
 					<ul>
 						<li><b>teamName_systemName_runNumber.json</b>: A JSON file with predictions on the test set.</li>
-						<li><b>teamName_systemName_runNumber.json</b>: A metadata briefly describing the approach, including:</li>
+						<li><b>teamName_systemName_runNumber.meta</b>: A metadata briefly describing the approach, including:</li>
 						<ul style="padding-left: 2em;">
 							<li style="list-style-type: none;"><span>&#9702;</span> Type of training applied.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> Pre-processing methods.</li>
@@ -682,8 +688,8 @@
 					<p><i>Find answers to common questions about the GutBrainIE challenge, dataset, and submissions.</i></p>
 					<p><i>If you need any additional information, please get in contact with us writing to: 
 						<ul>
-							<li> Gianmaria Silvello: &nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:gianmaria.silvello@unipd.it"><strong>gianmaria.silvello @ unipd.it</strong></i></a></li>
 							<li> Nicola Ferro: &nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:nicola.ferro@unipd.it"><strong>nicola.ferro @ unipd.it</strong></i></a></li>
+							<li> Gianmaria Silvello: &nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:gianmaria.silvello@unipd.it"><strong>gianmaria.silvello @ unipd.it</strong></i></a></li>
 						</ul>
 						
 					<p>Coming soon...</p>
@@ -694,7 +700,8 @@
 			<section id="seven" class="main style1">
 				<div class="container">
 					<header class="major">
-						<h2 id="organizers">Organizers</h2>
+						<h2 id="organizers" style="margin: 0;">Organizers</h2>
+						<h5>(For further details about the organizers, visit the official website of the <a href="https://iiia.dei.unipd.it/team" target="_blank">IIIA Hub Research Group</a>.)</h5>
 					</header>
 	
 					<div class="py-5 team4">
@@ -704,7 +711,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/bonato.jpeg" alt="Vanessa Bonato" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Vanessa Bonato</h5>
-									<h6 class="subtitle mb-3">PhD Student</h6>
+									<h6 class="subtitle mb-2">PhD Student</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.disll.unipd.it/en/" target="_blank">Department of Linguistic And Literary Studies</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:vanessa.bonato@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/vanessa-bonato-866301316/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -714,7 +723,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/dinunzio.png" alt="Giorgio Maria Di Nunzio" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Giorgio Maria Di Nunzio</h5>
-									<h6 class="subtitle mb-3">Associate Professor</h6>
+									<h6 class="subtitle mb-2">Associate Professor</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:giorgiomaria.dinunzio@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/giorgio-maria-di-nunzio/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -724,7 +735,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/ferro.png" alt="Nicola Ferro" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Nicola Ferro</h5>
-									<h6 class="subtitle mb-3">Full Professor</h6>
+									<h6 class="subtitle mb-2">Full Professor</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:nicola.ferro@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/nicolaferro/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -738,7 +751,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/irrera.jpg" alt="Ornella Irrera" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Ornella Irrera</h5>
-									<h6 class="subtitle mb-3">Post-Doc</h6>
+									<h6 class="subtitle mb-2">Post-Doc</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:ornella.irrera@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/ornella-irrera/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -748,7 +763,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/marchesin.png" alt="Stefano Marchesin" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Stefano Marchesin</h5>
-									<h6 class="subtitle mb-3">Assistant Professor</h6>
+									<h6 class="subtitle mb-2">Assistant Professor</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:stefano.marchesin@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/stefano-marchesin-666608ab/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -758,7 +775,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/martinelli.jpg" alt="Marco Martinelli" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Marco Martinelli</h5>
-									<h6 class="subtitle mb-3">PhD Student</h6>
+									<h6 class="subtitle mb-2">PhD Student</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:martinell2@dei.unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/martinelli-marco/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -772,7 +791,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/menotti.jpg" alt="Laura Menotti" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Laura Menotti</h5>
-									<h6 class="subtitle mb-3">PhD Student</h6>
+									<h6 class="subtitle mb-2">PhD Student</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:laura.menotti@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/laura-menotti-b012a8207/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -782,7 +803,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/silvello.jpg" alt="Gianmaria Silvello" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Gianmaria Silvello</h5>
-									<h6 class="subtitle mb-3">Full Professor</h6>
+									<h6 class="subtitle mb-2">Full Professor</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:gianmaria.silvello@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/gianmariasilvello/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -792,7 +815,9 @@
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
 									<img src="images/organizers/vezzani.jpg" alt="Federica Vezzani" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Federica Vezzani</h5>
-									<h6 class="subtitle mb-3">Assistant Professor</h6>
+									<h6 class="subtitle mb-2">Assistant Professor</h6>
+									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.disll.unipd.it/en/" target="_blank">Department of Linguistic And Literary Studies</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:federica.vezzani@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/federica-vezzani-49633213b/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
@@ -1138,7 +1163,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<li><a href="mailto:ferro@dei.unipd.it?subject=%5BiDPP%40CLEF 2023%5D" class="icon alt far fa-envelope"><span class="label">Email</span></a></li> --->
 			</ul>
 			<ul class="copyright">
-				<li><i class="far fa-copyright"></i> <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a></li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+				<li><i class="far fa-copyright"></i> <a href="https://iiia.dei.unipd.it" target="_blank">&nbsp;IIIA Hub&nbsp;</a></li>
+				<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 			</ul>
 			<ul class="EUGA">
 			<!--!<div class="inner">-->
