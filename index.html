@@ -109,25 +109,33 @@
 									<li>Silver-Standard Annotations: A <b>weakly curated part</b> manually annotated by a team of about 40 students of linguistics and terminology trained and supervised by the experts; </li>
 									<li>Distant Annotations: A <b>distantly supervised part</b> comprising automatically generated annotations. </li>
 									-->
-									<li><b>Gold-Standard Annotations</b>: An highly curated part manually annotated by a team of 7 expert annotators from the University of Padua, Italy; </li>
-									<li><b>Silver-Standard Annotations</b>: A weakly curated part manually annotated by a team of about 40 students of linguistics and terminology trained and supervised by the experts; </li>
-									<li><b>Distant Annotations</b>: A distantly supervised part comprising automatically generated annotations. </li>
+									<li><b>Gold-Standard Annotations</b>: An highly curated dataset manually annotated by a team of 7 expert annotators from the University of Padua, Italy; </li>
+									<li><b>Silver-Standard Annotations</b>: A weakly curated dataset manually annotated by a team of about 40 students of Linguistics and Terminology trained and supervised by the experts; </li>
+									<li><b>Distant Annotations</b>: A distantly supervised dataset comprising automatically generated annotations. </li>
 								</ul>
-								The test set comprises highly curated documents annotated by the expert team and validated by biomedical experts at the <a href="https://www.radboudumc.nl/en/patient-care">Radboud University Medical Centre (RUMC)</a>. </p>
+								The test set consists of gold-standard annotations, further validated by biomedical experts at the <a href="https://www.radboudumc.nl/en/patient-care">Radboud University Medical Centre (RUMC)</a>. </p>
 
 								<p><b>Please see the <a href="#datasets">Datasets</a> and <a href="#important-dates">Important Dates</a> sections for more information.</b></p>
 
 							<h3 id="task1">Subtask 6.1 - Named Entity Recognition</h3>
 							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to classify specific text spans (entity mentions) into one of the 15 predefined categories, such as <i>bacteria</i>, <i>chemical</i>, <i>microbiota</i>.</p>
 
+							<p>Entity mentions are expressed as triplets <i>(entityLabel ; startOffset ; endOffset)</i>.</p>
+
 							<h3 id="task2a">Subtask 6.2.1 - Binary Relation Extraction </h3>
-							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to identify which entity labels are in relation within a document. No relation type needs to be predicted within this subtask, therefore relations will be expressed as pairs (<i>entityLabel1 ; entityLabel2</i>).</p>
+							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to identify which entities are in relation within a document. No relation type needs to be predicted within this subtask.</p>
+
+							<p>Relations are expressed as pairs (<i>entityLabel1 ; entityLabel2</i>).</p>
 							
 							<h3 id="task2b">Subtask 6.2.2 - Ternary Tag-Based Relation Extraction</h3>
-							<p>In this subtask participants are asked to identify which entity labels are in relation within a document and predict the type of relation between them. Within this subtask, relations will be expressed as triples (<i>entityLabel1 ; relationLabel ; entityLabel2</i>).</p>
+							<p>Participants are asked to identify which entities are in relation within a document and predict the type of relation between them.</p>
+
+							<p>Relations are expressed as triples (<i>entityLabel1 ; relationLabel ; entityLabel2</i>).</p>
 				
 							<h3 id="task2c">Subtask 6.2.3 - Ternary Mention-Based Relation Extraction</h3>
-							<p>In this subtask participants are required to identify the actual entity mentions involved in a relation and predict the type of relation. Therefore, within this subtask relations will be expressed as (<i>entityMention1 ; relationLabel ; entityMention2</i>).</p>
+							<p>Participants are required to identify the actual entities involved in a relation and predict the type of relation. </p>
+							
+							<p>Relations are expressed as triples (<i>entityMention1 ; relationLabel ; entityMention2</i>).</p>
 					
 							<h3>Participating</h3>
 							<p>
@@ -209,7 +217,7 @@
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>start</i> and <i>end</i>: Character offsets marking the span of the entity mention.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_location</i>: Indicates if the entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_text</i>: The actual text span of the entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_label</i>: The label assigned to the entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>entity_label</i>: The label assigned to the entity mention (e.g., bacteria, microbiome).</li>
 						</ul>
 						<li><code>Relations</code>: An array of objects where each object represents an annotated relationship between two entity mentions in the article, with the following attributes:</li>
 						<ul style="padding-left: 2em;">
@@ -217,12 +225,12 @@
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_start</i> and <i>subject_end</i>: Character offsets marking the span of the subject entity mention.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_mention_location</i>: Indicates if the subject entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_mention_text</i>: The actual text span of the subject entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_mention_label</i>: The label assigned to the subject entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_entity_label</i>: The label assigned to the subject entity mention (e.g., bacteria, microbiome).</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>predicate</i>: The label assigned to the relationship.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_start</i> and <i>object_end</i>: Character offsets marking the span of the object entity mention.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_mention_location</i>: Indicates if the object entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_mention_text</i>: The actual text span of the object entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_mention_label</i>: The label assigned to the object entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_entity_label</i>: The label assigned to the object entity mention (e.g., bacteria, microbiome).</li>
 						</ul>
 					</ul>
 
@@ -514,7 +522,7 @@
 					<p>Participating teams should satisfy the following guidelines:</p>
 					<ul>
 						<li>The runs should be submitted in the format described below;</li>
-						<li>Each group can submit a maximum of <strong>10 runs</strong> for each subtask.</li>
+						<li>Each group can submit a maximum of <strong>25 runs</strong> for each subtask.</li>
 					</ul>
 
 					<h3><strong>Submission Guidelines</strong></h3>
@@ -522,13 +530,21 @@
 
 					<p>Submissions will be handled via the BioASQ submission system. More detailed information coming soon...</p>
 
-					<p>Submissions should follow the JSON format specified below. A script that participants might use to validate their submissions will be available soon...</p>
-
-					<p>In the following, a "run" refers to the predictions made by a single system on the test set. Each run must be submitted as a single zipped file named "<b>teamName_systemName_runNumber.zip</b>", containing:
+					<p>In the following, a "run" refers to the predictions made by a single system on the test set. Each run must be submitted as a single zipped file named "<b>teamID_taskID_runID_systemDesc.zip</b>" without spaces or any special character, where:
+						<ul>
+							<li><b>teamID</b> is the identifier of your team choosen when you registered to CLEF 2025;</li>
+							<li><b>taskID</b> is the identifier of your task choosen, i.e., one of these tokens: <b>T61</b> for task 6.1, <b>T621</b> for task 6.2.1, <b>T622</b> for task 6.2.2, and <b>T623</b> for task 6.2.3 ;</li>
+							<li><b>runID</b> is the identifier of the run choosen by the participants, containing only letters and numbers (a-z, A-Z, 0-9)</li>
+							<li><b>systemDesc</b> is an optional (short) string that further describes your submission.</li>
+						</ul>
+						The content of the zipped file consists of two files:
 					<ul>
-						<li><b>teamName_systemName_runNumber.json</b>: A JSON file with predictions on the test set.</li>
-						<li><b>teamName_systemName_runNumber.meta</b>: A metadata briefly describing the approach, including:</li>
+						<li><b>teamID_taskID_runID_systemDesc.json</b>: A JSON file with predictions on the test set.</li>
+						<li><b>teamID_taskID_runID_systemDesc.meta</b>: A metadata briefly describing the approach, including:</li>
 						<ul style="padding-left: 2em;">
+							<li style="list-style-type: none;"><span>&#9702;</span> Team ID.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Task ID.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Run ID.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> Type of training applied.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> Pre-processing methods.</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> Training data used.</li>
@@ -544,6 +560,12 @@
 
 					<p>Submissions not adhering to these guidelines might be rejected. 
 						Please ensure accuracy and completeness of all submitted files to streamline evaluation. </p>
+
+					<h3><strong>Example of Submission Format</strong></h3>
+					<p>Submissions should follow the JSON format specified below. A script that participants might use to validate their submissions will be available soon...</p>
+
+					<p>Coming soon...</p>
+					<!-- One complete example x subtask-->	
 
 					<h3><strong>Evaluation Metrics</strong></h3>
 					<p>Coming soon...</p>
