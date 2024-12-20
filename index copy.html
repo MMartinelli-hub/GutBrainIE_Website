@@ -1,0 +1,848 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>iDPP @ CLEF 2024 Guidelines - Intelligent Disease Progression Prediction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta name="author" content="Nicola Ferro">
+		<meta name="description" content="Intelligent Disease Progression Prediction - iDPP @ CLEF 2024">
+		<meta name="description" content="iDPP @ CLEF 2024 - An activity of the BRAINTEASER project">
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/templateAdditions.css" />
+		<link rel="icon" href="images/logo.svg" type="image/svg" />
+
+		<!-- Fontawesome -->
+		<script src="https://kit.fontawesome.com/9ea2daa5f1.js" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="custom-navbar" class="d-flex flex-wrap justify-content-center py-3 mb-0">
+				<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+					<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+					<!-- <span class="fs-4">Simple header</span> -->
+				</a>
+			
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+				</ul>
+			</header>
+			
+			<section id="headerTask2">
+				<div class="inner">
+
+					<a href="https://brainteaser.health/" target="_blank"><img class="btlogo" src="images/logo-w.svg" alt="" /></a>
+
+					<!--<i class="fas fa-clipboard-list fa-8x fa-clipboard-list"></i>-->
+					<h1><strong>Participation Guidelines</strong><br /> </h1>
+					<h2>
+						<a href="https://brainteaser.health/open-evaluation-challenges/idpp-2024/" target="_blank">iDPP <i class="fas fa-spinner"></i> CLEF 2024</a>
+					</h2>
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Read</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="12u 12u$(medium)">
+							<header class="major">
+								<h2 id="tasks">Tasks</h2>
+							</header>
+							<p>iDPP <i class="fas fa-spinner"></i>CLEF 2024 offers two evaluation tasks focused on predicting the progression of Amyotrophic Lateral Sclerosis (ALS) from prospective data and one task on impact of exposure to pollutants on predicting the progression of Multiple Sclerosis (MS) from retrospective data.</p>
+
+							<p>For Tasks 1 and 2 on ALS participants are given prospective patient data collected over an average of nine months via a dedicated app developed by the BRAINTEASER project and sensor data collected from the sensors of  a fitness smartwatch in the context of clinical trials in Turin, Pavia, Lisbon, and Madrid, fully anonymized.</p>
+
+							<p>For Task 3 on MS, participants are given a retrospective dataset containing roughly 1.5 years of visits and environmental data. This dataset comes from two clinical institutions, one in Pavia, Italy, and the other in Turin, Italy, and it contains data about real patients, fully anonymized.</p>
+
+							<p>All the datasets are highly curated and they are produced from the <a href="https://w3id.org/brainteaser/ontology" target="_blank">BRAINTEASER Ontology (BTO)</a>, developed by the BRAINTEASER project, which ensures the consistency of the data represented. Moreover, several checks have been performed to ensure that all the instances are clean, contain proper values in the expected ranges, and do not have contradictions.
+
+							<h3 id="task1">Task 1 - Predicting ALSFRS-R Score from Sensor Data (ALS)</h3>
+							<p>It focuses on predicting the twelve scores of the ALSFRS-R (ALS Functional Rating Scale - Revised), assigned by medical doctors roughly every three months, from the sensor data collected via the app.  The ALSFRS-R is a somehow “subjective” evaluation usually performed by a medical doctor and this task will help in answering a currently open question in the research community, i.e. whether it could be derived from objective factors.</p>
+
+							<p>Participants will be given the ALSFRS-R questionnaire at the first visit with the scores for each question together with the time (number of days from diagnosis) at which the questionnaire was taken.</p> 
+
+							<p>Participants will have to predict the values of the ALSFRS-R sub-scores at the second visit.</p>
+
+							<p>Participants will be given the time of the second visit (number of days from diagnosis) together with all the sensor data up to the time of the second visit.</p>
+
+							<p>The training data are available upon registration for the challenge and the test data will be available one week before the run submission deadline. Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</p>
+							
+							<h3 id="task2">Task 2 - Predicting Patient Self-assessment Score from Sensor Data </h3>
+
+							<p>It focuses on predicting the self-assessment score assigned by patients from the sensor data collected via the app. Self-assessment scores correspond to each of the ALSFRS-R scores but, while the latter ones are assigned by medical doctors during visits, the former ones are assigned via auto-evaluation by  patients themselves using the provided app.</p>
+
+							<p>If the self-assessment performed by patients, more frequently than the assessment performed by medical doctors every three months or so, can be reliably predicted by sensor and app data, we can imagine a proactive application which, monitoring the sensor data, alerts the patient if an assessment is needed.</p>
+
+							<p>Participants will be given the first set of self-assessed scores together with the time (number of days from diagnosis) at which the questionnaire was taken.</p>
+
+							<p>Participants will have to predict the values of the self-assessed scores at the second auto-evaluation, happening one or two months after the first one.</p>
+
+							<p>Participants will be given the time of the second auto-evaluation (number of days from diagnosis) together with all the sensor data up to the time of the second auto-evaluation.</p>
+
+							<p>The training data are available upon registration for the challenge and the test data will be available one week before the run submission deadline. Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</p>
+
+							
+
+							<h3 id="task3">Task 3 - Predicting Relapses from EDDS Sub-scores and Environmental Data (MS)</h3>
+
+							<p>It focuses on predicting a relapse using environmental data and EDSS (Expanded Disability Status Scale) sub-scores. This task allows us to assess if exposure to different pollutants is a useful variable in predicting a relapse.</p>
+
+							<p>Participants will be asked to predict the week of the first relapse after the baseline considering environmental data based on a weekly granularity, given the status of the patient at the baseline, which is the first visit available in the considered time span. For each patient, the date of the baseline will be week 0 and all the other weeks will be relative to it.</p>
+
+							<p>Participants will be given all the observations and environmental data about a patient, i.e. also observations which may happen after the relapse to be predicted. All the patients are guaranteed to experience, at least, one relapse after the baseline.</p>
+
+							<p>The training data are available upon registration for the challenge and the test data will be available one week before the run submission deadline. Please see the <a href="#datasets">Datasets</a> and <a herf="#important-dates">Important Dates</a> sections for more information.</p>
+
+
+					
+							<h3>Participating</h3>
+							<p>
+								To participate in iDPP <i class="fas fa-spinner"></i> CLEF 2024, groups need to register
+								at the following link:
+							</p>
+							<p class="textcenter">
+								<span><a href="https://clef2024-labs-registration.dei.unipd.it/" target="_blank" class="button"><i class="fa-solid fa-pen-to-square fa-2xl"></i> Register <i class="fa-solid fa-pen-to-square fa-2xl"></i></a></span>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<header class="major">
+						<h2 id="important-dates">Important Dates</h2>
+					</header>
+
+					<ul>
+						<li>Registration closes: <strong>April 22, 2024</strong></li>
+						<li>Test data release: <strong>April 29, 2024</strong></li>
+						<li>Runs submission deadline: <strong>May 6, 2024</strong></li>
+						<li>Evaluation results out: <strong>May 17, 2024</strong></li>
+						<li>Participant and position paper submission deadline: <strong>May 31, 2024</strong></li>
+						<li>Notification of acceptance for participant and position papers: <strong>June 24, 2024</strong></li>
+						<li>Camera-ready participant papers submission: <strong>July 8, 2024</strong></li>
+						<li>iDPP <i class="fas fa-spinner"></i> CLEF Workshop: <strong>September 9-12, 2024</strong> during the CLEF Conference in Grenoble, France</li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style1">
+				<div class="container">
+				
+
+					<header class="major">
+						<h2 id="datasets">Datasets</h2>
+					</header>
+					
+					<h3><strong>Tasks 1 & 2 Datasets (ALS)</strong></h3>
+					Tasks 1 and 2 share the same training dataset, comprising the following data:
+					<ul>
+						<li>Static patient data, including demographic and clinical information;</li>
+						<li>All the ALSFRS-R evaluations (twelve scores for each) from the medical doctor assessment or self-assessed through the app, each with the time of collection;</li>
+						<li>All available sensor data, summarized by day, each with the time of collection.</li>
+					</ul>
+
+					<p>All times are expressed in days between the diagnosis and the collection. Note that sensor data is not available for every day and may contain gaps due to lack of adherence from the patient and/or technical problems in the data collection. However, finding ways to work around these limitations is part of the challenge.
+					</p>
+
+					<p>For a reference on the ALSFRS-R scores, please refer to <a href="https://pubmed.ncbi.nlm.nih.gov/10540002/">LINK</a>.</p>
+
+					<p>The test data will contain the same static and sensor data for other patients not in the training set. Only the first ALSFRS-R evaluation will be available, together with the time of the target ALSFRS-R evaluation whose scores are to be predicted.</p>
+
+					<p>Training Dataset</p>
+					<p>52 patients, 189 clinical ALSFRS-R, 301 self-assessed ALSFRS-R, 13946 days of sensor data.</p>
+
+					<p>Training datasets can be downloaded here:</p>
+					<ul>
+						<li> <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK1/train.zip">Task 1</a></li>
+						<li> <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK2/train.zip">Task 2</a></li>
+					</ul>
+
+					<p>Check out the <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/assets/other/als/als-variables-description.txt">legend</a> for a description of the data.</p>
+
+
+					<p>Test Dataset</p>
+					<ul>
+						<li> <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK1/test.zip">Task 1 (clinical ALSFRS-R)</a> and <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK1/test/test-target.csv">Ground Truth</a></li>
+						<li><a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK2/test.zip">Task 2 (app ALSFRS-R)</a> and <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK2/test/test-target.csv">Ground Truth</a></li>
+					</ul>
+
+					
+					<h4>Details on the Datasets</h4>
+
+					<p class="nomargin">Each of the training datasets consists of the following files:</p>
+					<ul>
+						<li><code>train-static.csv</code>: contains the static variables about each patient.<br/>
+						<!--In the following document, you can find a description of each column in the CSV file.</li> -->
+						<li><code>train-sensors.csv</code>: contains the daily summaries of the sensor data measured by the smartwatch.<br/>
+						<!--In the following document, you can find a description of each column found in the CSV file.</li> -->
+						<li><code>train-alsfrs.csv</code>: contains the twelve ALSFRS-R scores, together with the (relative) time of assessment and whether it was evaluated by a clinician or self assessed.<br/>
+						<!--In the following document, you can find a description of each column found in the CSV file.</li> -->
+					</ul>
+
+
+					<p class="nomargin">Each of the test datasets consists of the following files:</p>
+					<ul>
+						<li><code>test-static.csv</code>: contains the static variables about each patient.<br/>
+						<!--In the following document, you can find a description of each column in the CSV file.</li> -->
+						<li><code>test-sensors.csv</code>: contains the daily summaries of the sensor data measured by the smartwatch.<br/>
+						<!--In the following document, you can find a description of each column found in the CSV file.</li> -->
+						<li><code>test-alsfrs.csv</code>: contains the twelve ALSFRS-R scores, together with the time of assessment relative to the diagnosis (<code>first_alsfrs_days_from_diagnosis</code>) and the relative time of the second assessment (<code>target_alsfrs_days_from_diagnosis</code>) whose corresponding ALSFRS-R values need to be predicted.<br/>
+						<!--In the following document, you can find a description of each column found in the CSV file.</li> -->
+					</ul>
+
+
+					<h3><strong>Tasks 3 Dataset (MS)</strong></h3>
+
+					<p>Task 3 encompasses the following data:</p>
+					<ul>
+						<li>Static patients data, comprising demographic and clinical information;</li>
+						<li>EDSS scores assessed by clinicians, alongside their corresponding sub-scores, each annotated with the week of the EDSS visit;</li>
+						<li>Environmental exposure measurements aggregated weekly;</li>
+						<li>The week of the first relapse occurrence after the baseline for each patient (all patients are guaranteed to experience at least one relapse after the baseline).</li>
+					</ul>
+					<p>All time intervals are expressed in weeks from the baseline. EDSS visits occur between the baseline and the occurrence of the first relapse, while environmental measurements span from January 1st, 2013, to 2023. It's important to note that environmental measurements may not be available for every week and contain missing data.</p>
+					<p>For more information on the EDSS score, please refer to this <a href="https://www.neurology.org/doi/10.1212/WNL.33.11.1444">link</a>.</p>
+					<p>Training and test datasets are divided in a 70-30% proportion. The test data will include the same static, EDSS, and environmental data for patients not included in the training set.</p>
+					<p>Specifically:</p>
+					<ul>
+						<li>Training Dataset: 199 patients, 834 EDSS scores, 113,923 environmental measurements. Training dataset can be downloaded here: <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK3/train.zip">Training Dataset</a></li>
+						<li>Test Dataset: 81 patients, 290 EDSS scores, 46,354 environmental measurements. Test dataset can be downloaded here: <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK3/test.zip">Test Dataset</a></li>
+						<li>Ground Truth: <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/datasets/TASK3/test/test_outcome.csv">Ground Truth</a></li>
+					</ul>
+
+					<h4>Details on the Dataset</h4>
+
+					<p>The training dataset consists of the following files:</p>
+					<ul>
+						<li><code>train_static.csv</code>: contains the static variables about a patient.</li>
+						<li><code>train_edss.csv</code>: contains the (relative) week when EDSS scores were measured, together with the EDSS scores evaluated by clinicians.</li> 
+						<li><code>train_environmental_meas.csv</code>: contains the environmental measurements aggregated with a weekly granularity.</li> 
+						<li><code>train_outcome.csv</code>: contains the week of the first relapse occurrence after the baseline for each patient.
+						</li>
+
+					</ul>
+
+					<p>The test dataset consists of the following files:</p>
+					<ul>
+						<li><code>test_static.csv</code>: contains the static variables about a patient.</li>
+						<li><code>test_edss.csv</code>: contains the (relative) week when EDSS scores were measured, together with the EDSS scores evaluated by clinicians.</li> 
+						<li><code>test_environmental_meas.csv</code>: contains the environmental measurements aggregated with a weekly granularity.</li> 
+					</ul>
+
+					<p> The test dataset does not contain the <code>test_outcome.csv</code> file as it is the target that needs to be predicted by the challenge participants. </p>
+
+					<p>Check out the <a href="https://brainteaser.dei.unipd.it/challenges/idpp2024/assets/other/ms/ms-variables-description.txt">legend</a> for a description of the data</p>
+
+					<p>More in detail, the train_outcome.csv file adopts the following format:</p>
+
+					<pre><code>
+67396654612589370083623092407810766693,190
+267505643482073532971907590162817517438,96
+292211325266845962706770530341466085902,30
+272084949450943266236977822325902693890,216
+291361686090369065397020169907588173057,13
+...
+					</code></pre>
+					  	  	  	  	  	
+					<p>where:</p>
+					<ul>
+						<li>Columns are separated by a comma;</li>
+						<li>The first column is the patient ID, a hashed version of the original patient ID (should be considered just as a string);</li>
+						<li>The second column is the week of the first relapse occurrence after the baseline for each patient.</li>
+					</ul>
+		
+
+					<header class="major">
+					<h2>Participant Repository</h2>
+					</header>
+
+
+					<p>
+						Participants are provided with a single <em>repository</em> for all the tasks they take part in.
+						The repository contains the runs, resources, and possibly the code produced by each participant in order to promote reproducibility and open science.
+					</p>
+
+					<p class="nomargin">The repository is organised as follows:</p>
+					<ul>
+						<li> <code>submission</code>: this folder contains the runs submitted for the different tasks.</li>
+						<li> <code>score</code>: this folder contains the performance scores of the submitted runs.</li>
+						<li> <code>code</code>: this folder contains the source code of the developed system.</li>
+						<li> <code>resource</code>: this folder contains any additional resources created during the participation.</li>
+						<li> <code>report</code>: this folder contains the participant report.</li>
+					</ul>
+
+					<p class="nomargin">
+						The <code>submission</code> and <code>score</code> folders are organized into sub-folders for each task  as follows:
+					</p>
+
+					<ul>
+						<li> <code>submission/task1</code>: for the runs submitted to the first task. Similar structure for the other tasks.</li>
+						<li> <code>score/task1</code>: for the performance scores of the runs submitted to the first task. Similar structure for the other tasks.</li>
+					</ul>
+
+					<p>Participants which do not take part in a given task can simply delete the corresponding sub-folders.</p>
+
+					<p><a href="https://bitbucket.org/brainteaser-health/sample-participant-repository" target="_blank">Here</a>,
+						you can find a sample participant repository to get a better idea of its layout.</p>
+
+					<p>The goal of iDPP <i class="fas fa-spinner"></i> CLEF 2024 is to speed up the creation of systems and resources for MS and ALS progression prediction as well as openly share these systems and resources as much as possible. 
+						Therefore, participants are more than encouraged to share their code and any additional resources they have used or created.</p>
+
+					<p>All the contents of these repositories are released under the <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style2">
+				<div class="container">
+					<header class="major">
+						<h2>Run Submission Guidelines</h2>
+					</header>
+
+					<p>Participating teams should satisfy the following guidelines:</p>
+					<ul>
+						<li>The runs should be submitted in the textual format described below;</li>
+						<li>Each group can submit a maximum of <strong>30 runs</strong> for each of Task 1 and Task 2 and Task 3.</li>
+					</ul>
+
+					<h3>Task 1 Run Format</h3>
+
+					<p>Runs should be submitted as a text file (.txt) with the following format:</p>
+					<pre><code>
+100619256189067386770484450960632124211 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
+101600333961427115125266345521826407539 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
+102874795308599532461878597137083911508 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
+123988288044597922158182615705447150224 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
+100381996772220382021070974955176218231 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
+...
+					</code></pre>					
+					
+					<p>where:</p>
+					<ul>
+						<li>Columns are separated by a <b>white space</b>;</li>
+						<li>The first column is the patient ID, an hashed version of the original patient ID (should be considered just as a string);</li>
+						<li>Columns from 2 to 13 represent the predicted ALSFRS-R sub-score. Each column corresponds to an ALSFRS-R question, e.g. column 2 to Q1, column 3 to Q2, and so on). Each values is expected to be integer in the range [0, 4];</li>
+						<li>The last column is the run identifier, according to the format described below. It must uniquely identify the participating team and the submitted run.</li>
+					</ul>
+					
+					<p>It is important to include all the columns and have a white space delimiter between the columns. No specific ordering is expected among patients (rows) in the submission file.</p>
+					
+
+					<h3>Task 2 Run Format</h3>
+
+					<p>Runs should be submitted as a text file (.txt) with the following format:</p>
+					<pre><code>
+100619256189067386770484450960632124211 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
+101600333961427115125266345521826407539 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
+102874795308599532461878597137083911508 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
+123988288044597922158182615705447150224 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
+100381996772220382021070974955176218231 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
+...
+					</code></pre>
+
+					<p>where:</p>
+					<ul>					
+						<li>Columns are separated by a <b>white space</b>;</li>
+						<li>The first column is the patient ID, an hashed version of the original patient ID (should be considered just as a string);</li>
+						<li>Columns from 2 to 13 represent the predicted self-assessd sub-score. Each column corresponds to an ALSFRS-R question, e.g. column 2 to Q1, column 3 to Q2, and so on). Each values is expected to be integer in the range [0, 4];</li>
+						<li>The last column is the run identifier, according to the format described below. It must uniquely identify the participating team and the submitted run.</li>
+					</ul>
+					
+					<p>It is important to include all the columns and have a white space delimiter between the columns. No specific ordering is expected among patients (rows) in the submission file.</p>
+
+
+
+					<h3>Task 3 Run Format</h3>
+
+					<p>Runs should be submitted as a text file (.txt) with the following format:</p>
+					<pre><code>
+100619256189067386770484450960632124211 10 upd_T3_myDesc
+101600333961427115125266345521826407539 47 upd_T3_myDesc
+102874795308599532461878597137083911508 13 upd_T3_myDesc
+123988288044597922158182615705447150224 1 upd_T3_myDesc
+100381996772220382021070974955176218231 9 upd_T3_myDesc
+...
+					</code></pre>
+
+					<p>where:</p>
+					<ul>
+						<li>Columns are separated by a <b>white space</b>;</li>
+						<li>The first column is the patient ID, an hashed version of the original patient ID (should be considered just as a string);</li>
+						<li>The second column is the predicted week at which the first relapse after the baseline happens. The value is expected to be integer starting from 1;</li>
+						<li>The third column is the run identifier, according to the format described below. It must uniquely identify the participating team and the submitted run.</li>
+					</ul>
+
+					<p>It is important to include all the columns and have a white space delimiter between the columns. No specific ordering is expected among patients (rows) in the submission file.<p>
+
+
+					<h3>Submission Upload</h3>
+
+					<p>Runs should be uploaded in the repository provided by the organizers. Following the repository structure discussed above, for example, a run submitted for the first task should be included in <code>submission/task1</code>.</p>
+					<p>Runs should be uploaded using the following name convention for their identifiers:
+					<code>&lt;teamname&gt;_T&lt;1|2|3&gt;_&lt;freefield&gt;</code></p>
+					<p>where:<p>
+					<ul>
+						<li>teamname is the name of the participating team;</li>
+						<li><code>T&lt;1|2|3&gt;</code> is the identifier of the task the run is submitted to, e.g. <code>T1</code> for Task 1;</li> 
+						<li>freefield is a free field that participants can use as they prefer to further distinguish among their runs. Please, keep it short and informative.</li>
+					</ul>
+					<p>For example, a complete run identifier may look like <code>upd_T1_myDesc</code>
+					<p>where</p>
+					<ul>
+						<li><code>upd</code> is the University of Padua team;</li>
+						<li><code>T1</code> means that the run is submitted for Task 1;</li>
+						<li><code>myDesc</code> suggests an appropriate description for the run.</li>
+					</ul>
+					<p>The name of the text file containing the run must be the identifier of the run followed by the txt extension. In the above example
+					<code>upd_T1_myDesc.txt</code></p>
+
+					<h3>Run Scores</h3>
+
+					<p>Performance scores for the submitted runs will be returned by the organizers in the score folder, which follows the same structure as the submission folder.
+					For each submitted run, participants will find a file named 
+					<code>&lt;teamname&gt;_T&lt;1|2|3&gt;_&lt;freefield&gt;.score.txt</code>
+					where <code>&lt;teamname&gt;_T&lt;1|2|3&gt;_&lt;freefield&gt;</code> matches the corresponding run. The file will contain performance scores for each of the evaluation measures described below. In the above example
+					<code>upd_T1_myDesc.score.txt</code></p>
+
+
+
+				</div>
+			</section>
+		<!-- Five -->
+			<section id="five" class="main style1 ">
+				<div class="container">
+					
+
+					<header class="major">
+						<h2>Evaluation Measures</h2>
+					</header>
+
+					<h3>Task 1 - Predicting ALSFRS-R Score from Sensor Data (ALS)</h3>
+					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted sub-scores with respect to the actual sub-scores.</p>
+
+					<h3>Task 2 - Predicting patient self-assessment score from sensor (ALS)</h3>
+					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted self-assed sub-scores with respect to the actual sub-scores.</p>
+
+					<h3>Task 3 - Predicting relapses from EDDS sub-scores and environmental data (MS)</h3>
+					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted week of relapse with respect to the actual one.</p>
+
+					<!--<h3>Computing the Evaluation Measures</h3>
+					<p>Scripts for computing the above evaluation measures are available in the following <a href="https://bitbucket.org/brainteaser-health/idpp2023-performance-computation/" target="_blank">repository.</a>-->
+
+					<header class="major">
+						<h2>Participant Papers</h2>
+					</header>
+
+					<p>Participants are expected to write a report describing their participation in iDPP <i class="fas fa-spinner"></i> CLEF 2024,
+						their proposed solution, what features have been used for prediction,
+						the analysis of the experimental results and insights derived from them.</p>
+
+					<p>Participant reports will be peer-reviewed and accepted reports will be published in the CLEF 2023 Working Notes at <a href="http://ceur-ws.org/" target="_blank">CEUR-WS</a>, indexed in DBLP and Scopus.</p>
+
+					<p>A template for the report is contained in the <code><a href="https://bitbucket.org/brainteaser-health/sample-participant-repository/src/master/report/" target="_blank">report</a></code> folder of each participant repository.
+						The template does not only define the layout of the report but it also provides a suggested structure for it and illustrates the kind of expected contents. <br/>
+
+						Participants are strongly encouraged to use LaTeX, whose template provides all the details about the report. However, it is possible to also use Word and a basic template is provided as well.</p>
+
+					<p>Participant papers are expected to be <strong>10-20 pages</strong> in length, excluding references.</p>
+
+					<p>The schedule for submission, revision, and camera ready of the participant report is detailed above in the <a href="#two">Important Dates</a> section.</p>
+
+					<p>
+						Participant papers can be submitted via Easychair at the following link <a href="https://easychair.org/conferences/?conf=clef2024" target="_blank">https://easychair.org/conferences/?conf=clef2024</a>
+						by choosing the <code>Intelligent Disease Progression Prediction (iDPP)</code> track.
+					</p>
+					
+					<header class="major">
+						<h2>Get in Contact</h2>
+					</header>
+					
+					<p>If you need any additional information, please get in contact with us writing to Nicola Ferro, <code>ferro<i class="fas fa-at"></i>dei.unipd.it</code>.
+
+				</div>
+			</section>
+
+		<!-- Six -->
+		<!--
+			<section id="six" class="main style1">
+				<div class="container">
+					<header class="major special">
+						<h2>Elements</h2>
+					</header>
+
+					<section>
+						<h4>Text</h4>
+						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+						<hr />
+						<header>
+							<h4>Heading with a Subtitle</h4>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<header>
+							<h5>Heading with a Subtitle</h5>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<hr />
+						<h2>Heading Level 2</h2>
+						<h3>Heading Level 3</h3>
+						<h4>Heading Level 4</h4>
+						<h5>Heading Level 5</h5>
+						<h6>Heading Level 6</h6>
+						<hr />
+						<h5>Blockquote</h5>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+						<h5>Preformatted</h5>
+						<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+					</section>
+
+					<section>
+						<h4>Lists</h4>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<h5>Unordered</h5>
+								<ul>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+								<h5>Alternate</h5>
+								<ul class="alt">
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<h5>Ordered</h5>
+								<ol>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis viverra.</li>
+									<li>Felis enim feugiat.</li>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis lorem.</li>
+									<li>Felis enim et feugiat.</li>
+								</ol>
+								<h5>Icons</h5>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<h5>Actions</h5>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<ul class="actions">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+								<ul class="actions vertical">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions vertical small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+							</div>
+							<div class="6u 12u$(medium)">
+								<ul class="actions vertical">
+									<li><a href="#" class="button special fit">Default</a></li>
+									<li><a href="#" class="button fit">Default</a></li>
+								</ul>
+								<ul class="actions vertical small">
+									<li><a href="#" class="button special small fit">Small</a></li>
+									<li><a href="#" class="button small fit">Small</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4>Table</h4>
+						<h5>Default</h5>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<h5>Alternate</h5>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h4>Buttons</h4>
+						<ul class="actions">
+							<li><a href="#" class="button special">Special</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button big">Big</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button small">Small</a></li>
+						</ul>
+						<ul class="actions fit">
+							<li><a href="#" class="button fit">Fit</a></li>
+							<li><a href="#" class="button special fit">Fit</a></li>
+							<li><a href="#" class="button fit">Fit</a></li>
+						</ul>
+						<ul class="actions fit small">
+							<li><a href="#" class="button special fit small">Fit + Small</a></li>
+							<li><a href="#" class="button fit small">Fit + Small</a></li>
+							<li><a href="#" class="button special fit small">Fit + Small</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button special icon fa-download">Icon</a></li>
+							<li><a href="#" class="button icon fa-download">Icon</a></li>
+						</ul>
+						<ul class="actions">
+							<li><span class="button special disabled">Disabled</span></li>
+							<li><span class="button disabled">Disabled</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Form</h4>
+						<form method="post" action="#">
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+								</div>
+								<div class="12u$">
+									<div class="select-wrapper">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low</label>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="demo-priority-normal" name="demo-priority">
+									<label for="demo-priority-normal">Normal</label>
+								</div>
+								<div class="4u$ 12u$(small)">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High</label>
+								</div>
+								<div class="6u 12u$(small)">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Email me a copy</label>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">Not a robot</label>
+								</div>
+								<div class="12u$">
+									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section>
+						<h4>Image</h4>
+						<h5>Fit</h5>
+						<div class="box alt">
+							<div class="row uniform 50%">
+								<div class="12u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+							</div>
+						</div>
+						<h5>Left &amp; Right</h5>
+						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+					</section>
+
+				</div>
+			</section>
+		-->
+		<!-- Footer -->
+			<section id="footerTask2">
+				<ul class="icons">
+					<li><a href="https://twitter.com/brainteaser2020" target="_blank" class="icon alt fab fa-twitter-square"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/company/brainteaser-project" target="_blank" class="icon alt fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://bitbucket.org/brainteaser-health/" target="_blank" class="icon alt fab fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+					<li><a href="mailto:ferro@dei.unipd.it?subject=%5BiDPP%40CLEF 2023%5D" class="icon alt far fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li><i class="far fa-copyright"></i> <a href="https://brainteaser.health/" target="_blank">BRAINTEASER</a></li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+				</ul>
+
+			</section>
+
+			<section id="disclaimer" class="style1">
+				<div class="container">
+					<div class="row euDisclaimer">
+						<div class="1u"><span class="image fit"><img src="images/eu-logo.png" alt="" /></span></div>
+						<div class="11u">This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the grant agreement No GA101017598. The European Commission’s support for this project and the production of this website does not constitute an endorsement of the contents, which reflect the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained therein</div>
+					</div>
+				</div>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+					integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/jquery.scrolly@0.0.1/jquery.scrolly.min.js"></script>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/templateAdditions.js"></script>
+
+			
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		</body>
+</html>
