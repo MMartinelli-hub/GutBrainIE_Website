@@ -52,7 +52,7 @@
 					<ul class="navbar-nav">
 						<li class="nav-item"><a href="#one" class="nav-link active" aria-current="page">Tasks</a></li>
 						<li class="nav-item"><a href="#two" class="nav-link">Important Dates</a></li>
-						<li class="nav-item"><a href="#three" class="nav-link">Datasets</a></li>
+						<li class="nav-item"><a href="#three" class="nav-link">Datasets</a></li> 
 						<li class="nav-item"><a href="#four" class="nav-link">Submitting</a></li>
 						<li class="nav-item"><a href="#five" class="nav-link">Results</a></li>
 						<li class="nav-item"><a href="#six" class="nav-link">FAQs</a></li>
@@ -70,22 +70,22 @@
 				<div class="inner">
 
 					<!-- <a href="https://hereditary-project.eu//" target="_blank"><img class="hereditarylogo" src="images/Hereditary_Icon_white.svg" alt="" /></a> -->
-					<img class="hereditarylogo" src="images/gutbrainie_logo_white.png" alt="" /> 
+					<a href="https://hereditary-project.eu/" target="_blank"><img class="hereditarylogo" src="images/gutbrainie_logo_white.png" alt="" /></a> 
 
 					<!--<i class="fas fa-clipboard-list fa-8x fa-clipboard-list"></i>-->
 					<h1><strong>Participation Guidelines</strong><br /> </h1>
 					<h2>
-						GutBrainIE <i class="fa-regular fa-at"></i> <a href="https://clef2025.clef-initiative.eu/">CLEF 2025</a>
+						GutBrainIE <i class="fa-regular fa-at"></i> <a href="https://clef2025.clef-initiative.eu/" target="_blank">CLEF 2025</a>
 					</h2>
-					<h3>Task #6 of the <a href="https://www.bioasq.org/workshop2025">BioASQ Lab 2025</a></h3>
-					<h4 class="nomargin">(An <a href="https://hereditary-project.eu/">HEREDITARY</a> challenge)</h4>
+					<h3>Task #6 of the <a href="https://www.bioasq.org/workshop2025" target="_blank">BioASQ Lab 2025</a></h3>
+					<h4 class="nomargin">(An <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a> challenge)</h4>
 					<ul class="actions">
 						<li><a href="#one" class="button scrolly">Read</a></li>
 					</ul>
 				</div>
 			</section>
 
-		<div data-bs-spy="scroll" data-bs-target="#custom-navbar" data-bs-offset="50" class="scrollspy-example" tabindex="0">
+		<div data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" class="scrollspy-example" tabindex="0">
 		<!-- One -->
 			<section id="one" class="main style1">
 				<div class="container">
@@ -94,7 +94,7 @@
 							<header class="major">
 								<h2 id="tasks">Tasks</h2>
 							</header>
-							<p>GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025 is the <b>TASK #6 of the <a href="http://participants-area.bioasq.org/general_information/GutBrainIE/">BioASQ CLEF Lab 2025</a></b>, proposing a Natural Language Processing (NLP) challenge on biomedical texts within the context of the EU-supported project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>. </p>
+							<p>GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025 is the <b>TASK #6 of the <a href="http://participants-area.bioasq.org/general_information/GutBrainIE/" target="_blank">BioASQ CLEF Lab 2025</a></b>, proposing a Natural Language Processing (NLP) challenge on biomedical texts within the context of the EU-supported project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>. </p>
 							
 							<p>Specifically, it is focused on extracting structured information from biomedical abstracts related to the gut microbiota and its connections with Parkinson's disease and mental health, 
 							aiming to foster the development of Information Extraction (IE) systems that can support experts in understanding the gut-brain interplay.</p> 
@@ -102,25 +102,21 @@
 							<p>The GutBrainIE task is divided into two main subtasks. In the first task, participants are asked to identify and classify specific text spans into predefined categories, while in the second one they have to determine if a particular relationship defined between two categories holds or not.</p>
 
 							<p>The training data for all the subtasks are available upon registration for the challenge and the test data will be available around two weeks before the run submission deadline. 
-								The training set is divided into three parts: 
+								The training set is divided into four parts: 
 								<ul>
-									<!--
-									<li>Gold-Standard Annotations: An <b>highly curated part</b> manually annotated by a team of 7 expert annotators from the University of Padua, Italy, within the context of the EU-funded project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>;</li>
-									<li>Silver-Standard Annotations: A <b>weakly curated part</b> manually annotated by a team of about 40 students of linguistics and terminology trained and supervised by the experts; </li>
-									<li>Distant Annotations: A <b>distantly supervised part</b> comprising automatically generated annotations. </li>
-									-->
-									<li><b>Gold-Standard Annotations</b>: An highly curated dataset manually annotated by a team of 7 expert annotators from the University of Padua, Italy; </li>
-									<li><b>Silver-Standard Annotations</b>: A weakly curated dataset manually annotated by a team of about 40 students of Linguistics and Terminology trained and supervised by the experts; </li>
-									<li><b>Distant Annotations</b>: A distantly supervised dataset comprising automatically generated annotations. </li>
+									<li><b>Gold Collection</b>: An highly curated dataset manually annotated by a team of 7 expert annotators from the University of Padua, Italy; </li>
+									<li><b>Platinum Collection</b>: A subset of the gold annotations further validated by biomedical experts from the <a href="https://www.radboudumc.nl/en/research" target="_blank">Radboud University Medical Center</a>, Netherlands;</li>
+									<li><b>Silver Collection</b>: A weakly curated dataset manually annotated by a team of about 40 students of Linguistics and Terminology trained and supervised by the experts; </li>
+									<li><b>Bronze Collection</b>: A distantly supervised dataset comprising automatically generated annotations. </li>
 								</ul>
-								The test set consists of gold-standard annotations, further validated by biomedical experts at the <a href="https://www.radboudumc.nl/en/research" target="_blank">Radboud University Medical Centre (RUMC)</a>. </p>
+								The test set consists of gold and platinum annotations, composed to ensure representativeness and full coverage of all entity and relation types.
 
 								<p><b>Please see the <a href="#datasets">Datasets</a> and <a href="#important-dates">Important Dates</a> sections for more information.</b></p>
 
 							<h3 id="task1">Subtask 6.1 - Named Entity Recognition</h3>
 							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to classify specific text spans (entity mentions) into one of the 15 predefined categories, such as <i>bacteria</i>, <i>chemical</i>, <i>microbiota</i>.</p>
 
-							<p>Entity mentions are expressed as triplets <i>(entityLabel ; startOffset ; endOffset)</i>.</p>
+							<p>Entity mentions are expressed as tuples <i>(entityLabel ; entityLocation (title/abstract) ; startOffset ; endOffset)</i>.</p>
 
 							<h3 id="task2a">Subtask 6.2.1 - Binary Relation Extraction </h3>
 							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to identify which entities are in relation within a document. No relation type needs to be predicted within this subtask.</p>
@@ -174,20 +170,24 @@
 		<!-- Three -->
 			<section id="three" class="main style1">
 				<div class="container">
-				
-
 					<header class="major">
 						<h2 id="datasets">Datasets</h2>
 					</header>
 					
 					<h3><strong>Data Description</strong></h3>
-					<p>The data for this task is a set of abstracts of biomedical articles retrieved from PubMed, focusing on the gut-brain interplay and its implications in neurological and mental health.</p>
+					<p>The data for this task is a set of titles and abstracts of biomedical articles retrieved from PubMed, focusing on the gut-brain interplay and its implications in neurological and mental health.</p>
 
 					The datasets are organized into:
 					<ul>
-						<li><b>Gold-Standard Annotations</b>: Expert curated, high-quality annotations.</li>
-						<li><b>Silver-Standard Annotations</b>: Annotated by trained students under expert supervision.</li>
-						<li><b>Distant Annotations</b>: Automatically generated annotations for NER using fine-tuned GLiNER.</li>
+						<li><b>Platinum-Standard Annotations</b>: Highest-quality annotations, expert-curated and reviewed by external biomedical specialists.</li>
+						<li><b>Gold-Standard Annotations</b>: High-quality annotations, expert-curated.</li>
+						<li><b>Silver-Standard Annotations</b>: Mid-quality annotations, created by trained students under expert supervision. The students are organized into two clusters: 
+							<ul style="list-style-type: '&#x25E6; ';">
+								<li><i>StudentA</i>, including those with more consistent annotation performance,</li>
+								<li><i>StudentB</i>, including those with less consistent annotation performance.</li>
+							</ul>
+						</li>
+						<li><b>Bronze-Standard Annotations</b>: Automatically generated annotations, using fine-tuned <a href="https://doi.org/10.18653/v1/2024.naacl-long.300" target="_blank">GLiNER</a> for Named Entity Recognition (NER) and fine-tuned <a href="https://doi.org/10.1609/aaai.v35i16.17717" target="_blank">ATLOP</a> for Relation Extraction (RE).</li>
 					</ul>
 
 					To foster the development of effective IE systems for the subtasks proposed within GutBrainIE, the provided datasets include:
@@ -198,8 +198,9 @@
 					
 					<h3><strong>Collections</strong></h3>
 					<ul>
-						<li><b>Training and Development Data</b>: Available soon...</li>
+						<li><b>Training and Development Data</b>: Available upon registration. After registering, participants will receive an email with a download link.</li>
 						<!--
+						<li><b>Training and Development Data</b>: Available soon...</li>
 						<li><b>Training and Development Data</b>: Participants can download the training and development data 
 							<a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="TODO"><span style="font-size: 1.375rem; text-decoration: underline !important;">HERE</span>
 						  	</a>.</li>
@@ -210,307 +211,758 @@
 					<h3><strong>Dataset Format</strong></h3>
 					Annotations are provided in JSON format, for ease of use with NLP systems. Each entry in the dataset corresponds to a PubMed article, identified by its PubMed ID (<i>PMID</i>), and includes the following fields:
 					<ul>
-						<li><code>Metadata</code>: Articles-related information, including <i>title</i>, <i>author</i>, <i>year</i>, and <i>abstract</i>.</li>
+						<li><code>Metadata</code>: Article-related information, including <i>title</i>, <i>author</i>, <i>journal</i>, <i>year</i>, and <i>abstract</i>. 
+						<!--It also includes the identifier of the annotator, which participants may use to assign different weights to annotations depending on who performed them. </li>-->
+						It also includes the identifier of the annotator: expert annotators are labeled as <i>expert_1</i> to <i>expert_7</i>, student annotators are grouped into two clusters, identified as <i>student_A</i> and <i>student_B</i>, and automatically generated annotations are labeled as <i>distant</i>. 
+						Participants may use this information to assign different weights to annotations based on who performed them.</li>
 						<li><code>Entities</code>: An array of objects where each object represents an annotated entity mention in the article, with the following attributes:</li>
 						<ul style="padding-left: 2em;">
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>annotator</i>: The identifier of the annotator, which participants may use to assign different weights to annotations depending on who performed them. </li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>start</i> and <i>end</i>: Character offsets marking the span of the entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_location</i>: Indicates if the entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>mention_text</i>: The actual text span of the entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>entity_label</i>: The label assigned to the entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>start</i> and <i>end</i> indices: Character offsets marking the span of the entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>location</i>: Indicates if the entity mention is located in the <i>title</i> or in the <i>abstract</i>.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>text_span</i>: The actual text span of the entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>label</i>: The label assigned to the entity mention (e.g., bacteria, microbiome).</li>
 						</ul>
 						<li><code>Relations</code>: An array of objects where each object represents an annotated relationship between two entity mentions in the article, with the following attributes:</li>
 						<ul style="padding-left: 2em;">
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>annotator</i>: The identifier of the annotator.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_start</i> and <i>subject_end</i>: Character offsets marking the span of the subject entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_mention_location</i>: Indicates if the subject entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_mention_text</i>: The actual text span of the subject entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_entity_label</i>: The label assigned to the subject entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_start</i> and <i>subject_end</i> indices: Character offsets marking the span of the subject entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_location</i>: Indicates if the subject entity mention is located in the <i>title</i> or in the <i>abstract</i>.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_text_span</i>: The actual text span of the subject entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_label</i>: The label assigned to the subject entity mention (e.g., bacteria, microbiome).</li>
 							<li style="list-style-type: none;"><span>&#9702;</span> <i>predicate</i>: The label assigned to the relationship.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_start</i> and <i>object_end</i>: Character offsets marking the span of the object entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_mention_location</i>: Indicates if the object entity mention is located in the title (<i>title_value</i>) or in the abstract (<i>abstract_value</i>).</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_mention_text</i>: The actual text span of the object entity mention.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_entity_label</i>: The label assigned to the object entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_start</i> and <i>object_end</i> indices: Character offsets marking the span of the object entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_location</i>: Indicates if the object entity mention is located in the <i>title</i> or in the <i>abstract</i>.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_text_span</i>: The actual text span of the object entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_label</i>: The label assigned to the object entity mention (e.g., bacteria, microbiome).</li>
 						</ul>
+						<li><code>Binary Tag-based Relations</code>: Relations extracted from the <i>Relations</i> array, formatted as tag-based pairs of <i>subject_label</i> and <i>object_label</i>. </li>
+						<li><code>Ternary Tag-based Relations</code>: Relations extracted from the <i>Relations</i> array, formatted as tag-based triples of <i>subject_label</i>, <i>predicate</i>, and <i>object_label</i>. </li>
+						<li><code>Ternary Mention-based Relations</code>: Relations extracted from the <i>Relations</i> array, formatted as mention-based tuples of <i>subject_text_span</i>, <i>subject_label</i>, <i>predicate</i>, <i>object_text_span</i>, and <i>object_label</i>. </li>
 					</ul>
-
+                    <h4>Alternative Formats</h4>
+                    For those more familiar with <b>CSV or tabular formats</b>, the dataset is also provided in these formats. In this case, each of the fields mentioned above is stored in a separate file:
+                    <ul>
+                        <li><code>Metadata file</code>
+                        <li><code>Entities file</code>
+                        <li><code>Relations file</code>
+                        <li><code>Binary Tag-based file</code>
+                        <li><code>Ternary Tag-based file</code>
+                        <li><code>Ternary Mention-based file</code>
+                    </ul>
+                    The <b>CSV files use the pipe symbol (|) as a separator</b>, while <b>tabular files use the tab character (\t)</b> for separation.
+					
+					<p></p>
 					<h3 style="margin: 0;"><strong>Entity and Relation Labels</strong></h3>
-					<h5>(To be revised after the training set is completed)</h5>
 					<!--
 					The datasets are built on top of the conceptual system represented below, defining the valid entities and their possible relationships.
 					<img class="u-image u-image-contain u-image-default u-image-1" src="images/conceptual_system.png.png" alt="" data-image-width="647" data-image-height="423">
 					-->
 
 					<p>The <b>set of entities</b> considered for annotations includes:</p>
-
-					<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_labels">
-						<table class="u-table-entity u-table-entity-1">
-						  <colgroup>
-							<col width="21.74%">
-							<col width="17.39%">
-							<col width="60.87%">
-						  </colgroup>
-						  <thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
-							<tr style="height: 48px;">
-							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
-							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">URI </th>
-							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Definition</th>
-							</tr>
-						  </thead>
-						  <tbody class="u-align-left u-table-body">
-							<tr style="height: 48px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="http://purl.obolibrary.org/obo/NCIT_C13717" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">NCIT_C13717</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Named locations of or within the body.&nbsp;<br>
-							  </td>
-							</tr>
-							<tr style="height: 98px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Animal</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="http://purl.obolibrary.org/obo/NCIT_C14182" id="docs-internal-guid-ef4ac612-7fff-1523-b25f-da73c33df1c7" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">NCIT_C14182</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral.</td>
-							</tr>
-							<tr style="height: 73px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Biomedical Technique</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="http://purl.obolibrary.org/obo/NCIT_C15188" id="docs-internal-guid-11bb2172-7fff-5c42-210d-d7a131e88489" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">NCIT_C15188</a>
-								<br>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Research concerned with the application of biological and physiological principles to clinical medicine.</td>
-							</tr>
-							<tr style="height: 137px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Bacteria</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="http://purl.obolibrary.org/obo/NCBITaxon_2" id="docs-internal-guid-f5a9455f-7fff-c5ae-3d8c-98696cb9ec0f" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">NCBITaxon_2</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</td>
-							</tr>
-							<tr style="height: 73px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A59999" id="docs-internal-guid-504314a0-7fff-3b15-8f7c-90858aa66bad" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">CHEBI_59999</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types.</td>
-							</tr>
-							<tr style="height: 137px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Dietary Supplement</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="https://www.ncbi.nlm.nih.gov/mesh/68019587" id="docs-internal-guid-97ed4d5b-7fff-e906-75f4-920ccc432b9e" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6">MESH_68019587</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Products in capsule, tablet or liquid form that provide dietary ingredients, and that are intended to be taken by mouth to increase the intake of nutrients. Dietary supplements can include macronutrients, such as proteins, carbohydrates, and fats; and/or MICRONUTRIENTS, such as VITAMINS; MINERALS; and PHYTOCHEMICALS.</td>
-							</tr>
-							<tr style="height: 98px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding (DDF) </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="http://purl.obolibrary.org/obo/NCIT_C7057" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7">NCIT_C7057</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A condition that is relevant to human neoplasms and non-neoplastic disorders. This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions.</td>
-							</tr>
-							<tr style="height: 98px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A23888" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-8">CHEBI_23888</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Food</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="http://purl.obolibrary.org/obo/NCIT_C1949" id="docs-internal-guid-9af2484a-7fff-b25d-5175-6cb220fed2fb" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-9">NCIT_C1949</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> &nbsp;A substance consumed by humans and animals for nutritional purpose</td>
-							</tr>
-							<tr style="height: 98px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Gene</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="http://purl.bioontology.org/ontology/SNOMEDCT/67271001" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-10">SNOMEDCT_67261001</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function.</td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=info&amp;id=9606" id="docs-internal-guid-b61b5d24-7fff-ec7d-2d4e-02ca0abe5d76" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-11">NCBITaxon_9606</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Members of the species Homo sapiens. </td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Metabolite</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A25212" id="docs-internal-guid-ea8795e3-7fff-4512-a8c0-bc2b58403ff9" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-12">CHEBI_25212</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">In biochemistry, a metabolite is an intermediate or end product of metabolism.</td>
-							</tr>
-							<tr style="height: 98px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="http://purl.obolibrary.org/obo/OHMI_0000003" id="docs-internal-guid-d73565d3-7fff-fd73-5f84-5b400d03aaa2" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-13">OHMI_0000003</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> This term refers to the entire habitat, including the microorganisms (bacteria, archaea, lower and higher eukaryotes, and viruses), their genomes (i.e., genes), and the surrounding environmental conditions.</td>
-							</tr>
-							<tr style="height: 73px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Neurotransmitter</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
-								<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A25512" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-14">CHEBI_25512</a>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> An endogenous compound that is used to transmit information across the synapse between a neuron and another cell.</td>
-							</tr>
-						  </tbody>
-						</table>
+					
+					<div class="new-table-scrollable">
+						<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_labels">
+							<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="21.74%">
+								<col width="17.39%">
+								<col width="60.87%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">URI </th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Definition</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr style="height: 48px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C13717" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">NCIT_C13717</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Named locations of or within the body.&nbsp;<br>
+								</td>
+								</tr>
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Animal</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C14182" id="docs-internal-guid-ef4ac612-7fff-1523-b25f-da73c33df1c7" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" target="_blank">NCIT_C14182</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral.</td>
+								</tr>
+								<tr style="height: 73px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Biomedical Technique</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C15188" id="docs-internal-guid-11bb2172-7fff-5c42-210d-d7a131e88489" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" target="_blank">NCIT_C15188</a>
+									<br>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Research concerned with the application of biological and physiological principles to clinical medicine.</td>
+								</tr>
+								<tr style="height: 137px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Bacteria</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCBITaxon_2" id="docs-internal-guid-f5a9455f-7fff-c5ae-3d8c-98696cb9ec0f" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" target="_blank">NCBITaxon_2</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</td>
+								</tr>
+								<tr style="height: 73px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A59999" id="docs-internal-guid-504314a0-7fff-3b15-8f7c-90858aa66bad" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5" target="_blank">CHEBI_59999</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types. This category also includes metabolites, which in biochemistry are the intermediate or end product of metabolism, and neurotransmitters, which are endogenous compounds used to transmit information across the synapses.</td>
+								</tr>
+								<tr style="height: 137px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Dietary Supplement</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ncbi.nlm.nih.gov/mesh/68019587" id="docs-internal-guid-97ed4d5b-7fff-e906-75f4-920ccc432b9e" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6" target="_blank">MESH_68019587</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Products in capsule, tablet or liquid form that provide dietary ingredients, and that are intended to be taken by mouth to increase the intake of nutrients. Dietary supplements can include macronutrients, such as proteins, carbohydrates, and fats; and/or micronutrients, such as vitamins; minerals; and phytochemicals.</td>
+								</tr>
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding (DDF) </td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C7057" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7" target="_blank">NCIT_C7057</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A condition that is relevant to human neoplasms and non-neoplastic disorders. This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions.</td>
+								</tr>
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A23888" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-8" target="_blank">CHEBI_23888</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</td>
+								</tr>
+								<tr style="height: 47px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Food</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C1949" id="docs-internal-guid-9af2484a-7fff-b25d-5175-6cb220fed2fb" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-9" target="_blank">NCIT_C1949</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> &nbsp;A substance consumed by humans and animals for nutritional purpose</td>
+								</tr>
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Gene</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.bioontology.org/ontology/SNOMEDCT/67271001" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-10" target="_blank">SNOMEDCT_67261001</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function.</td>
+								</tr>
+								<tr style="height: 47px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=info&amp;id=9606" id="docs-internal-guid-b61b5d24-7fff-ec7d-2d4e-02ca0abe5d76" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-11" target="_blank">NCBITaxon_9606</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Members of the species Homo sapiens. </td>
+								</tr>
+								<!--
+								<tr style="height: 47px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Metabolite</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A25212" id="docs-internal-guid-ea8795e3-7fff-4512-a8c0-bc2b58403ff9" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-12" target="_blank">CHEBI_25212</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">In biochemistry, a metabolite is an intermediate or end product of metabolism.</td>
+								</tr>
+								-->
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/OHMI_0000003" id="docs-internal-guid-d73565d3-7fff-fd73-5f84-5b400d03aaa2" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-13" target="_blank">OHMI_0000003</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> This term refers to the entire habitat, including the microorganisms (bacteria, archaea, lower and higher eukaryotes, and viruses), their genomes (i.e., genes), and the surrounding environmental conditions.</td>
+								</tr>
+								<!--
+								<tr style="height: 73px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Neurotransmitter</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A25512" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-14" target="_blank">CHEBI_25512</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> An endogenous compound that is used to transmit information across the synapse between a neuron and another cell.</td>
+								</tr>
+								-->
+								<tr style="height: 73px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Statistical Technique</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C19044" id="docs-internal-guid-11bb2172-7fff-5c42-210d-d7a131e88489" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" target="_blank">NCIT_C19044</a>
+									<br>
+									</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A method of calculating, analyzing, or representing statistical data.</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
 					</div>
 
+					<p></p>
 					<p>while the defined <b>set of relations</b> includes:</p>
-					<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_labels">
-						<table class="u-table-entity u-table-entity-1">
-						  <colgroup>
-							<col width="33.33%">
-							<col width="33.33%">
-							<col width="33.33%">
-						  </colgroup>
-						  <thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+					
+					<div class="new-table-scrollable">
+						<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_labels">
+							<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="33.33%">
+								<col width="33.33%">
+								<col width="33.33%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Head Entity</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Tail Entity</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Predicate </th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr style="height: 48px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+								</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria / Chemical / Drug</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Interact<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Influence<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Part of<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location / Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Interact / Part of<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Impact / Produced by<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Dietary Supplement / Drug / Food</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria / Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Impact<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Dietary Supplement / Drug / Food</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Influence<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Dietary Supplement / Drug / Food</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Dietary Supplement / Drug / Food</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Administered<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Strike<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria / Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change abundance<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Affect / Is a<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Target<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Drug</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Interact<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change effect<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location / Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Biomedical Technique</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Used by<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Is linked to<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Compared to<br>
+									</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+						
+					</div>							  
+				<p>For more details on entity and relation labels, refer to the <i>Annotation Guidelines</i> available for download <a href="files/GutBrainIE - Annotation Guidelines - Public Version.pdf" target="_blank">HERE</a>.</p>
+			
+				<br>
+				<header class="major">
+					<h2 id="datasets">Datasets Statistics</h2>
+				</header>
+				
+				<p>The table below provides an overview of the key statistics for each dataset collection:</p>
+				
+				<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_dataset_statistics">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="20%">
+							<col width="16%">
+							<col width="16%">
+							<col width="16%">
+							<col width="16%">
+							<col width="16%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
 							<tr style="height: 48px;">
-							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Head Entity</th>
-							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Tail Entity</th>
-							  <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Predicate </th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Collection</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Num of Documents</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Total Entities</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Entities per Doc</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Total Relations</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Rels per Doc</th>
 							</tr>
-						  </thead>
-						  <tbody class="u-align-left u-table-body">
+						</thead>
+						<tbody class="u-align-left u-table-body">
 							<tr style="height: 48px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
-							  </td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Train Platinum</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">111</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">3'638</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">32.77</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1'455</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">13.11</td>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome<br>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Part of </td>
+							<tr style="height: 48px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Train Gold</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">208</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">5'192</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">24.96</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1'994</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">9.59</td>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding<br>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Influence</td>
+							<tr style="height: 48px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Train Silver</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">499</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">15'275</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">30.61</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">10'616</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">21.27</td>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Bacteria</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene<br>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression </td>
+							<tr style="height: 48px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Development Set</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">40</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1'117</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">27.93</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">623</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">15.58</td>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria<br>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change abundance</td>
+						</tbody>
+					</table>
+				</div>
+				</div>
+
+				<h4><strong>Train Platinum Collection Statistics</strong></h4>
+				<p>The tables below provide detailed statistics for entities and relations in the Train Platinum collection.</p>
+				<p>The <i>Ratio</i> column represents the proportion of each entity or relation label relative to the total number of entities or relations in the collection.</p>
+
+				<!-- Entity Statistics Table -->
+				<p><strong>Entity Statistics</strong></p>
+				<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_stats_platinum">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Disease, Disorder, or Finding</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Affect </td>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr><td>DDF</td><td>1'232</td><td>0.339</td><td>11.10</td></tr>
+							<tr><td>Chemical</td><td>421</td><td>0.116</td><td>3.79</td></tr>
+							<tr><td>Bacteria</td><td>416</td><td>0.114</td><td>3.75</td></tr>
+							<tr><td>Human</td><td>401</td><td>0.110</td><td>3.61</td></tr>
+							<tr><td>Microbiome</td><td>379</td><td>0.104</td><td>3.41</td></tr>
+							<tr><td>Dietary Supplement</td><td>210</td><td>0.058</td><td>1.89</td></tr>
+							<tr><td>Biomedical Technique</td><td>150</td><td>0.041</td><td>1.35</td></tr>
+							<tr><td>Anatomical Location</td><td>149</td><td>0.041</td><td>1.34</td></tr>
+							<tr><td>Animal</td><td>101</td><td>0.028</td><td>0.91</td></tr>
+							<tr><td>Gene</td><td>64</td><td>0.018</td><td>0.58</td></tr>
+							<tr><td>Drug</td><td>50</td><td>0.014</td><td>0.45</td></tr>
+							<tr><td>Statistical Technique</td><td>45</td><td>0.012</td><td>0.41</td></tr>
+							<tr><td>Food</td><td>20</td><td>0.006</td><td>0.18</td></tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+
+				<!-- Relation Statistics Table -->
+				<p><strong>Relation Statistics</strong></p>
+				<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_stats_platinum">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Relation Label</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change abundance</td>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr><td>Target</td><td>736</td><td>0.152</td><td>6.63</td></tr>
+							<tr><td>Influence</td><td>708</td><td>0.146</td><td>6.38</td></tr>
+							<tr><td>Located In</td><td>666</td><td>0.137</td><td>6.00</td></tr>
+							<tr><td>Is Linked To</td><td>662</td><td>0.137</td><td>5.96</td></tr>
+							<tr><td>Affect</td><td>587</td><td>0.121</td><td>5.29</td></tr>
+							<tr><td>Impact</td><td>284</td><td>0.059</td><td>2.56</td></tr>
+							<tr><td>Used By</td><td>254</td><td>0.052</td><td>2.29</td></tr>
+							<tr><td>Interact</td><td>188</td><td>0.039</td><td>1.69</td></tr>
+							<tr><td>Change Abundance</td><td>170</td><td>0.035</td><td>1.53</td></tr>
+							<tr><td>Part Of</td><td>140</td><td>0.029</td><td>1.26</td></tr>
+							<tr><td>Is A</td><td>119</td><td>0.025</td><td>1.07</td></tr>
+							<tr><td>Change Effect</td><td>117</td><td>0.024</td><td>1.05</td></tr>
+							<tr><td>Administered</td><td>68</td><td>0.014</td><td>0.61</td></tr>
+							<tr><td>Change Expression</td><td>60</td><td>0.012</td><td>0.54</td></tr>
+							<tr><td>Strike</td><td>54</td><td>0.011</td><td>0.49</td></tr>
+							<tr><td>Produced By</td><td>23</td><td>0.005</td><td>0.21</td></tr>
+							<tr><td>Compared To</td><td>13</td><td>0.003</td><td>0.12</td></tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+
+				<h4><strong>Train Gold Collection Statistics</strong></h4>
+				<p>The tables below provide detailed statistics for entities and relations in the Train Gold collection.</p>
+				
+				<!-- Entity Statistics Table -->
+				<p><strong>Entity Statistics</strong></p>
+				<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_stats_gold">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug / Chemical / Dietary Supplement</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Disease, Disorder, or Finding</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change effect</td>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr><td>DDF</td><td>2'027</td><td>0.390</td><td>9.75</td></tr>
+							<tr><td>Chemical</td><td>621</td><td>0.120</td><td>2.99</td></tr>
+							<tr><td>Microbiome</td><td>574</td><td>0.111</td><td>2.76</td></tr>
+							<tr><td>Human</td><td>474</td><td>0.091</td><td>2.28</td></tr>
+							<tr><td>Bacteria</td><td>281</td><td>0.054</td><td>1.35</td></tr>
+							<tr><td>Anatomical Location</td><td>262</td><td>0.050</td><td>1.26</td></tr>
+							<tr><td>Animal</td><td>226</td><td>0.044</td><td>1.09</td></tr>
+							<tr><td>Dietary Supplement</td><td>185</td><td>0.036</td><td>0.89</td></tr>
+							<tr><td>Biomedical Technique</td><td>183</td><td>0.035</td><td>0.88</td></tr>
+							<tr><td>Statistical Technique</td><td>119</td><td>0.023</td><td>0.57</td></tr>
+							<tr><td>Drug</td><td>118</td><td>0.023</td><td>0.57</td></tr>
+							<tr><td>Gene</td><td>64</td><td>0.012</td><td>0.31</td></tr>
+							<tr><td>Food</td><td>58</td><td>0.011</td><td>0.28</td></tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+
+				<!-- Relation Statistics Table -->
+				<p><strong>Relation Statistics</strong></p>
+				<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_stats_gold">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Relation Label</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Drug / Chemical / Dietary Supplement</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Impact</td>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr><td>Target</td><td>736</td><td>0.152</td><td>3.54</td></tr>
+							<tr><td>Influence</td><td>708</td><td>0.146</td><td>3.40</td></tr>
+							<tr><td>Located In</td><td>666</td><td>0.137</td><td>3.20</td></tr>
+							<tr><td>Is Linked To</td><td>662</td><td>0.137</td><td>3.18</td></tr>
+							<tr><td>Affect</td><td>587</td><td>0.121</td><td>2.82</td></tr>
+							<tr><td>Impact</td><td>284</td><td>0.059</td><td>1.37</td></tr>
+							<tr><td>Used By</td><td>254</td><td>0.052</td><td>1.22</td></tr>
+							<tr><td>Interact</td><td>188</td><td>0.039</td><td>0.90</td></tr>
+							<tr><td>Change Abundance</td><td>170</td><td>0.035</td><td>0.82</td></tr>
+							<tr><td>Part Of</td><td>140</td><td>0.029</td><td>0.67</td></tr>
+							<tr><td>Is A</td><td>119</td><td>0.025</td><td>0.57</td></tr>
+							<tr><td>Change Effect</td><td>117</td><td>0.024</td><td>0.56</td></tr>
+							<tr><td>Administered</td><td>68</td><td>0.014</td><td>0.33</td></tr>
+							<tr><td>Change Expression</td><td>60</td><td>0.012</td><td>0.29</td></tr>
+							<tr><td>Strike</td><td>54</td><td>0.011</td><td>0.26</td></tr>
+							<tr><td>Produced By</td><td>23</td><td>0.005</td><td>0.11</td></tr>
+							<tr><td>Compared To</td><td>13</td><td>0.003</td><td>0.06</td></tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+
+				<h4><strong>Train Silver Collection Statistics</strong></h4>
+				<p>The tables below provide detailed statistics for entities and relations in the Train Silver collection.</p>
+				
+				<!-- Entity Statistics Table -->
+				<p><strong>Entity Statistics</strong></p>
+				<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_stats_gold">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
 							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Drug / Chemical / Dietary Supplement</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Impact </td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Drug / Chemical / Dietary Supplement</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression</td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Human / Animal</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Biomedical Technique </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Used by<br>
-							  </td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Metabolite</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome<br>
-							  </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Produced by</td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Metabolite</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in </td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in </td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Biomedical Technique</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Used by</td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in</td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression</td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Is linked to </td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Compared to<br>
-							  </td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Neurotransmitter</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Related to</td>
-							</tr>
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Neurotransmitter</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location </td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in</td>
-							</tr>
-							<!--
-							<tr style="height: 47px;">
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">* (any)</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">* (any)</td>
-							  <td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Associated with<br>
-							  </td>
-							</tr>
-							-->
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr><td>DDF</td><td>5'584</td><td>0.366</td><td>11.190</td></tr>
+							<tr><td>Chemical</td><td>1'871</td><td>0.122</td><td>3.750</td></tr>
+							<tr><td>Microbiome</td><td>1'599</td><td>0.105</td><td>3.204</td></tr>
+							<tr><td>Human</td><td>1'199</td><td>0.078</td><td>2.403</td></tr>
+							<tr><td>Bacteria</td><td>1'129</td><td>0.074</td><td>2.263</td></tr>
+							<tr><td>Anatomical Location</td><td>856</td><td>0.056</td><td>1.715</td></tr>
+							<tr><td>Dietary Supplement</td><td>660</td><td>0.043</td><td>1.323</td></tr>
+							<tr><td>Biomedical Technique</td><td>655</td><td>0.043</td><td>1.313</td></tr>
+							<tr><td>Drug</td><td>500</td><td>0.033</td><td>1.002</td></tr>
+							<tr><td>Animal</td><td>483</td><td>0.032</td><td>0.968</td></tr>
+							<tr><td>Gene</td><td>319</td><td>0.021</td><td>0.639</td></tr>
+							<tr><td>Statistical Technique</td><td>258</td><td>0.017</td><td>0.517</td></tr>
+							<tr><td>Food</td><td>162</td><td>0.011</td><td>0.325</td></tr>
 						  </tbody>
 						</table>
-						<p>For more details on entity and relation labels, refer to the <i>Annotation Guidelines</i> available for download <a href="files/GutBrainIE - Annotation Guidelines - Public Version.pdf" target="_blank">HERE</a>.</p>
+					  </div>
 					</div>
 
-				</div>
-			</section>
+				<!-- Relation Statistics Table -->
+				<p><strong>Relation Statistics</strong></p>
+				<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_stats_gold">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Relation Label</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
+							</tr>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr><td>Target</td><td>736</td><td>0.152</td><td>1.845</td></tr>
+							<tr><td>Influence</td><td>708</td><td>0.146</td><td>1.774</td></tr>
+							<tr><td>Located In</td><td>666</td><td>0.137</td><td>1.669</td></tr>
+							<tr><td>Is Linked To</td><td>662</td><td>0.137</td><td>1.659</td></tr>
+							<tr><td>Affect</td><td>587</td><td>0.121</td><td>1.471</td></tr>
+							<tr><td>Impact</td><td>284</td><td>0.059</td><td>0.712</td></tr>
+							<tr><td>Used By</td><td>254</td><td>0.052</td><td>0.637</td></tr>
+							<tr><td>Interact</td><td>188</td><td>0.039</td><td>0.471</td></tr>
+							<tr><td>Change Abundance</td><td>170</td><td>0.035</td><td>0.426</td></tr>
+							<tr><td>Part Of</td><td>140</td><td>0.029</td><td>0.351</td></tr>
+							<tr><td>Is A</td><td>119</td><td>0.025</td><td>0.298</td></tr>
+							<tr><td>Change Effect</td><td>117</td><td>0.024</td><td>0.293</td></tr>
+							<tr><td>Administered</td><td>68</td><td>0.014</td><td>0.170</td></tr>
+							<tr><td>Change Expression</td><td>60</td><td>0.012</td><td>0.150</td></tr>
+							<tr><td>Strike</td><td>54</td><td>0.011</td><td>0.135</td></tr>
+							<tr><td>Produced By</td><td>23</td><td>0.005</td><td>0.058</td></tr>
+							<tr><td>Compared To</td><td>13</td><td>0.003</td><td>0.033</td></tr>
+						  </tbody>
+						</table>
+					  </div>
+					</div>
+
+					<h4><strong>Dev Collection Statistics</strong></h4>
+					<p>The tables below provide detailed statistics for entities and relations in the Dev collection.</p>
+					
+					<!-- Entity Statistics Table -->
+					<p><strong>Entity Statistics</strong></p>
+					<div class="table-scrollable">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_stats_gold">
+						<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+							<tr><td>DDF</td><td>379</td><td>0.339</td><td>9.475</td></tr>
+							<tr><td>Chemical</td><td>131</td><td>0.117</td><td>3.275</td></tr>
+							<tr><td>Microbiome</td><td>127</td><td>0.114</td><td>3.175</td></tr>
+							<tr><td>Human</td><td>86</td><td>0.077</td><td>2.150</td></tr>
+							<tr><td>Anatomical Location</td><td>76</td><td>0.068</td><td>1.900</td></tr>
+							<tr><td>Animal</td><td>73</td><td>0.065</td><td>1.825</td></tr>
+							<tr><td>Drug</td><td>60</td><td>0.054</td><td>1.500</td></tr>
+							<tr><td>Bacteria</td><td>54</td><td>0.048</td><td>1.350</td></tr>
+							<tr><td>Gene</td><td>39</td><td>0.035</td><td>0.975</td></tr>
+							<tr><td>Biomedical Technique</td><td>36</td><td>0.032</td><td>0.900</td></tr>
+							<tr><td>Dietary Supplement</td><td>27</td><td>0.024</td><td>0.675</td></tr>
+							<tr><td>Food</td><td>26</td><td>0.023</td><td>0.650</td></tr>
+							<tr><td>Statistical Technique</td><td>3</td><td>0.003</td><td>0.075</td></tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+
+					<!-- Relation Statistics Table -->
+					<p><strong>Relation Statistics</strong></p>
+					<div class="table-scrollable">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_stats_gold">
+						<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Relation Label</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr><td>Located In</td><td>99</td><td>0.159</td><td>2.475</td></tr>
+								<tr><td>Affect</td><td>89</td><td>0.143</td><td>2.225</td></tr>
+								<tr><td>Target</td><td>85</td><td>0.136</td><td>2.125</td></tr>
+								<tr><td>Is Linked To</td><td>74</td><td>0.119</td><td>1.850</td></tr>
+								<tr><td>Influence</td><td>68</td><td>0.109</td><td>1.700</td></tr>
+								<tr><td>Impact</td><td>54</td><td>0.087</td><td>1.350</td></tr>
+								<tr><td>Change Effect</td><td>32</td><td>0.051</td><td>0.800</td></tr>
+								<tr><td>Is A</td><td>31</td><td>0.050</td><td>0.775</td></tr>
+								<tr><td>Used By</td><td>17</td><td>0.027</td><td>0.425</td></tr>
+								<tr><td>Administered</td><td>16</td><td>0.026</td><td>0.400</td></tr>
+								<tr><td>Part Of</td><td>13</td><td>0.021</td><td>0.325</td></tr>
+								<tr><td>Change Abundance</td><td>11</td><td>0.018</td><td>0.275</td></tr>
+								<tr><td>Strike</td><td>11</td><td>0.018</td><td>0.275</td></tr>
+								<tr><td>Interact</td><td>9</td><td>0.014</td><td>0.225</td></tr>
+								<tr><td>Produced By</td><td>6</td><td>0.010</td><td>0.150</td></tr>
+								<tr><td>Compared To</td><td>4</td><td>0.006</td><td>0.100</td></tr>
+								<tr><td>Change Expression</td><td>4</td><td>0.006</td><td>0.100</td></tr>
+							  </tbody>
+							</table>
+						  </div>
+					</div>		
+			
+			</div>
+		</section>
 
 		<!-- Four -->
 			<section id="four" class="main style2">
@@ -562,16 +1014,119 @@
 						Please ensure accuracy and completeness of all submitted files to streamline evaluation. </p>
 
 					<h3><strong>Example of Submission Format</strong></h3>
-					<p>Submissions should follow the JSON format specified below. A script that participants might use to validate their submissions will be available soon...</p>
+					<p>Submissions should follow the same JSON format used in the provided datasets and must include only the field associated with the specific subtask for which the submission is made:</p>
+					<ul>
+						<li><b>Subtask 6.1 (NER)</b>: Include the <code>entities</code> field.</li>
+						<li><b>Subtask 6.2 (Binary Tag-Based RE)</b>: Include the <code>binary_tag_based_relations</code> field.</li>
+						<li><b>Subtask 6.3 (Ternary Tag-Based RE)</b>: Include the <code>ternary_tag_based_relations</code> field.</li>
+						<li><b>Subtask 6.4 (Ternary Mention-Based RE)</b>: Include the <code>ternary_mention_based_relations</code> field.</li>
+					</ul>
 
-					<p>Coming soon...</p>
-					<!-- One complete example x subtask-->	
+					<p>Each entry must correspond to the PubMed ID of the article from the test set being considered.</p>
+					
+					<p>Find below samples of valid entries for each submission type:</p>
+					
+					<h4>Subtask 6.1 (NER) Submission Sample</h4>
+					<pre>
+					<code>
+{
+	"34870091": {
+		"entities": [
+			{
+				"start_idx": 75,
+				"end_idx": 82,
+				"location": "title",
+				"text_span": "patients",
+				"label": "human"
+			},
+			{
+				"start_idx": 250,
+				"end_idx": 270,
+				"location": "abstract",
+				"text_span": "intestinal microbiome",
+				"label": "microbiome"
+			}
+		]
+	}
+}
+				</code>
+				</pre>
+				
+				<h4>Subtask 6.2 (Binary Tag-Based RE) Submission Sample</h4>
+				<pre>
+				<code>
+{
+	"34870091": {
+		"binary_tag_based_relations": [
+			{
+				"subject_label": "microbiome",
+				"object_label": "human"
+			}
+		]
+	}
+}
+				</code>
+				</pre>
+
+				<h4>Subtask 6.3 (Ternary Tag-Based RE) Submission Sample</h4>
+				<pre>
+				<code>
+{
+	"34870091": {
+		"ternary_tag_based_relations": [
+			{
+				"subject_label": "microbiome",
+				"predicate": "located in",
+				"object_label": "human"
+			}
+		]
+	}
+}
+				</code>
+				</pre>
+
+				<h4>Subtask 6.4 (Ternary Mention-Based RE) Submission Sample</h4>
+				<pre>
+				<code>
+{
+	"34870091": {
+		"ternary_mention_based_relations": [
+			{
+				"subject_text_span": "intestinal microbiome",
+				"subject_label": "microbiome",
+				"predicate": "located in",
+				"object_text_span": "patients",
+				"object_label": "human"
+			}
+		]
+	}
+}
+				</code>
+				</pre>
+
+				<h4>Validation Script</h4>
+				<p>A validation script that can be used to verify the correctness of the submission format can be downloaded from 
+					<a href="files/validation_script.py" download target="_blank">HERE</a>.</p>
 
 					<h3><strong>Evaluation Metrics</strong></h3>
 					<p>Coming soon...</p>
-					
+
+					<h3><strong>Participant Papers</strong></h3>
+					<p>Participants are expected to write a report describing their participation in GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025, their proposed solution, what features have been used for prediction, the analysis of the experimental results and insights derived from them.</p>
+
+					<p>Participant reports will be peer-reviewed and accepted reports will be published in the CLEF 2025 Working Notes at CEUR-WS, indexed in DBLP and Scopus.</p>
+
+					<p>Participants are strongly encouraged to use LaTeX. However, it is possible to also use Word.</p>
+
+					<p>Participant papers are expected to be 10-20 pages in length, excluding references.</p>
+
+					<p>The schedule for submission, revision, and camera ready of the participant report is detailed above in the <a href="#two">Important Dates</a> section.</p>
+
+					<p>Participant papers can be submitted via Easychair <a href="https://easychair.org/my/conference?conf=clef2025" target="_blank">HERE</a>.</p> 
+					<!--
 					<h3><strong>Practice [Pre-Evaluation]</strong></h3>
 					<p>Coming soon...</p>
+					-->
 
 					<!--
 					<p>Runs should be submitted as a text file (.txt) with the following format:</p>
@@ -738,8 +1293,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.disll.unipd.it/en/" target="_blank">Department of Linguistic And Literary Studies</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:vanessa.bonato@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/vanessa-bonato-866301316/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://orcid.org/0009-0002-9918-282X" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/vanessa-bonato-866301316/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://orcid.org/0009-0002-9918-282X" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
@@ -750,8 +1305,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:giorgiomaria.dinunzio@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/giorgio-maria-di-nunzio/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=Awl_HDoAAAAJ&hl=it&oi=sra" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/giorgio-maria-di-nunzio/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=Awl_HDoAAAAJ&hl=it&oi=sra" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
@@ -762,8 +1317,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:nicola.ferro@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/nicolaferro/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=MP_m6wgAAAAJ" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/nicolaferro/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px" target="_blank"></i></a></li>
+										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=MP_m6wgAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -778,8 +1333,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:ornella.irrera@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/ornella-irrera/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=Oa4bJMwAAAAJ" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/ornella-irrera/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=Oa4bJMwAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
@@ -790,8 +1345,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:stefano.marchesin@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/stefano-marchesin-666608ab/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=AVZdcS8AAAAJ" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/stefano-marchesin-666608ab/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=AVZdcS8AAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
@@ -802,8 +1357,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:martinell2@dei.unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/martinelli-marco/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://orcid.org/0009-0001-1596-8642" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/martinelli-marco/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://orcid.org/0009-0001-1596-8642" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -818,8 +1373,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:laura.menotti@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/laura-menotti-b012a8207/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=xyewbnsAAAAJ" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/laura-menotti-b012a8207/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=xyewbnsAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
@@ -830,8 +1385,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:gianmaria.silvello@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/gianmariasilvello/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=pY24h-YAAAAJ" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/gianmariasilvello/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=pY24h-YAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
@@ -842,8 +1397,8 @@
 									<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.disll.unipd.it/en/" target="_blank">Department of Linguistic And Literary Studies</a></h6>
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:federica.vezzani@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/in/federica-vezzani-49633213b/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=0BdkEeoAAAAJ" class="text-decoration-none d-block px-1"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/federica-vezzani-49633213b/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=0BdkEeoAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 							</div>
