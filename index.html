@@ -85,7 +85,7 @@
 				</div>
 			</section>
 
-		<div data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" class="scrollspy-example" tabindex="0">
+		<div data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" class="scrollspy-example" tabindex="0" style="position:relative !important;">
 		<!-- One -->
 			<section id="one" class="main style1">
 				<div class="container">
@@ -1106,7 +1106,7 @@
 
 				<h4>Validation Script</h4>
 				<p>A validation script that can be used to verify the correctness of the submission format can be downloaded from 
-					<a href="files/validation_script.py" download target="_blank">HERE</a>.</p>
+					<a href="files/validation_script.py" target="_blank" download="validation_script.py">HERE</a>.</p>
 
 					<h3><strong>Evaluation Metrics</strong></h3>
 					<p>Coming soon...</p>
@@ -1778,6 +1778,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+			<script>
+				$(document).ready(function() {
+					$(window).on('scroll', function() {
+						// Check if the user is not over the section with id="headerTask2"
+						if (!$('#headerTask2').is(':hover')) {
+							// Check if any nav-link has the 'active' class
+							if ($('.nav-link.active').length === 0) {
+								// Remove 'active' from all nav-links just in case
+								$('.nav-link').removeClass('active');
+				
+								// Add 'active' class to the link with href="#three"
+								$('.nav-link[href="#three"]').addClass('active');
+							}
+						}
+					});
+				});
+			</script>
 	</body>
 </html>
