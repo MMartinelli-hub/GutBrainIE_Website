@@ -259,7 +259,6 @@
 
 					<p>The <b>set of entities</b> considered for annotations includes:</p>
 					
-					<div class="new-table-scrollable">
 						<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_labels">
 							<table class="u-table-entity u-table-entity-1">
 							<colgroup>
@@ -390,12 +389,11 @@
 							</tbody>
 							</table>
 						</div>
-					</div>
+					
 
 					<p></p>
 					<p>while the defined <b>set of relations</b> includes:</p>
 					
-					<div class="new-table-scrollable">
 						<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_labels">
 							<table class="u-table-entity u-table-entity-1">
 							<colgroup>
@@ -614,6 +612,14 @@
 								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">30.61</td>
 								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">10'616</td>
 								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">21.27</td>
+							</tr>
+							<tr style="height: 48px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Train Bronze</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">749</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">21'420</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">28.60</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">8'533</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">11.39</td>
 							</tr>
 							<tr style="height: 48px;">
 								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Development Set</td>
@@ -877,6 +883,90 @@
 						</table>
 					  </div>
 					</div>
+
+					<h4><strong>Train Bronze Collection Statistics</strong></h4>
+				<p>The tables below provide detailed statistics for entities and relations in the Train Bronze collection.</p>
+				
+				<!-- Entity Statistics Table -->
+				<p><strong>Entity Statistics</strong></p>
+				<div class="table-scrollable">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_stats_platinum">
+						<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr><td>DDF</td><td>8'424</td><td>0.39328</td><td>11.247</td></tr>
+								<tr><td>Chemical</td><td>2'726</td><td>0.12726</td><td>3.63952</td></tr>
+								<tr><td>Microbiome</td><td>2'301</td><td>0.10742</td><td>3.0721</td></tr>
+								<tr><td>Human</td><td>1'683</td><td>0.07857</td><td>2.247</td></tr>
+								<tr><td>Bacteria</td><td>1'349</td><td>0.06298</td><td>1.80107</td></tr>
+								<tr><td>Anatomical Location</td><td>1'142</td><td>0.05331</td><td>1.5247</td></tr>
+								<tr><td>Animal</td><td>864</td><td>0.04034</td><td>1.15354</td></tr>
+								<tr><td>Dietary Supplement</td><td>789</td><td>0.03683</td><td>1.0534</td></tr>
+								<tr><td>Biomedical Technique</td><td>784</td><td>0.0366</td><td>1.04673</td></tr>
+								<tr><td>Drug</td><td>583</td><td>0.02722</td><td>0.77837</td></tr>
+								<tr><td>Statistical Technique</td><td>336</td><td>0.01569</td><td>0.4486</td></tr>
+								<tr><td>Gene</td><td>245</td><td>0.01144</td><td>0.3271</td></tr>
+								<tr><td>Food</td><td>194</td><td>0.00906</td><td>0.25901</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+
+				<!-- Relation Statistics Table -->
+				<p><strong>Relation Statistics</strong></p>
+				<div class="table-scrollable">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_stats_platinum">
+						<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+								<col width="25%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Relation Label</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Count</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Ratio</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Avg Per Doc</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr><td>Influence</td><td>1'819</td><td>0.21317</td><td>2.42857</td></tr>
+								<tr><td>Is Linked To</td><td>1'435</td><td>0.16817</td><td>1.91589</td></tr>
+								<tr><td>Target</td><td>1'400</td><td>0.16407</td><td>1.86916</td></tr>
+								<tr><td>Affect</td><td>1'225</td><td>0.14356</td><td>1.63551</td></tr>
+								<tr><td>Located In</td><td>659</td><td>0.07723</td><td>0.87984</td></tr>
+								<tr><td>Is A</td><td>582</td><td>0.06821</td><td>0.77704</td></tr>
+								<tr><td>Used By</td><td>413</td><td>0.0484</td><td>0.5514</td></tr>
+								<tr><td>Impact</td><td>360</td><td>0.04219</td><td>0.48064</td></tr>
+								<tr><td>Change Abundance</td><td>237</td><td>0.02777</td><td>0.31642</td></tr>
+								<tr><td>Administered</td><td>137</td><td>0.01606</td><td>0.18291</td></tr>
+								<tr><td>Strike</td><td>109</td><td>0.01277</td><td>0.14553</td></tr>
+								<tr><td>Change Effect</td><td>94</td><td>0.01102</td><td>0.1255</td></tr>
+								<tr><td>Interact</td><td>25</td><td>0.00293</td><td>0.03338</td></tr>
+								<tr><td>Produced By</td><td>20</td><td>0.00234</td><td>0.0267</td></tr>
+								<tr><td>Part Of</td><td>17</td><td>0.00199</td><td>0.0227</td></tr>
+								<tr><td>Compared To</td><td>1</td><td>0.00012</td><td>0.00134</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
 
 					<h4><strong>Dev Collection Statistics</strong></h4>
 					<p>The tables below provide detailed statistics for entities and relations in the Dev collection.</p>
