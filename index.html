@@ -54,9 +54,10 @@
 						<li class="nav-item"><a href="#two" class="nav-link">Important Dates</a></li>
 						<li class="nav-item"><a href="#three" class="nav-link">Datasets</a></li> 
 						<li class="nav-item"><a href="#four" class="nav-link">Submitting</a></li>
-						<li class="nav-item"><a href="#five" class="nav-link">Results</a></li>
-						<li class="nav-item"><a href="#six" class="nav-link">FAQs</a></li>
-						<li class="nav-item"><a href="#seven" class="nav-link">Organizers</a></li>
+						<li class="nav-item"><a href="#five" class="nav-link">Baselines & Evaluation</a></li>
+						<li class="nav-item"><a href="#six" class="nav-link">Results</a></li>
+						<li class="nav-item"><a href="#seven" class="nav-link">FAQs</a></li>
+						<li class="nav-item"><a href="#eight" class="nav-link">Organizers</a></li>
 					</ul>
 				</div>
 			</div>
@@ -1116,9 +1117,9 @@
 					<p>Submissions should follow the same JSON format used in the provided datasets and must include only the field associated with the specific subtask for which the submission is made:</p>
 					<ul>
 						<li><b>Subtask 6.1 (NER)</b>: Include the <code>entities</code> field.</li>
-						<li><b>Subtask 6.2 (Binary Tag-Based RE)</b>: Include the <code>binary_tag_based_relations</code> field.</li>
-						<li><b>Subtask 6.3 (Ternary Tag-Based RE)</b>: Include the <code>ternary_tag_based_relations</code> field.</li>
-						<li><b>Subtask 6.4 (Ternary Mention-Based RE)</b>: Include the <code>ternary_mention_based_relations</code> field.</li>
+						<li><b>Subtask 6.2.1 (Binary Tag-Based RE)</b>: Include the <code>binary_tag_based_relations</code> field.</li>
+						<li><b>Subtask 6.2.2 (Ternary Tag-Based RE)</b>: Include the <code>ternary_tag_based_relations</code> field.</li>
+						<li><b>Subtask 6.2.3 (Ternary Mention-Based RE)</b>: Include the <code>ternary_mention_based_relations</code> field.</li>
 					</ul>
 
 					<p>Each entry must correspond to the PubMed ID of the article from the test set being considered.</p>
@@ -1151,7 +1152,7 @@
 				</code>
 				</pre>
 				
-				<h4>Subtask 6.2 (Binary Tag-Based RE) Submission Sample</h4>
+				<h4>Subtask 6.2.1 (Binary Tag-Based RE) Submission Sample</h4>
 				<pre>
 				<code>
 {
@@ -1167,7 +1168,7 @@
 				</code>
 				</pre>
 
-				<h4>Subtask 6.3 (Ternary Tag-Based RE) Submission Sample</h4>
+				<h4>Subtask 6.2.2 (Ternary Tag-Based RE) Submission Sample</h4>
 				<pre>
 				<code>
 {
@@ -1184,7 +1185,7 @@
 				</code>
 				</pre>
 
-				<h4>Subtask 6.4 (Ternary Mention-Based RE) Submission Sample</h4>
+				<h4>Subtask 6.2.3 (Ternary Mention-Based RE) Submission Sample</h4>
 				<pre>
 				<code>
 {
@@ -1208,7 +1209,29 @@
 					<a href="files/validation_script.py" target="_blank" download="validation_script.py">HERE</a>.</p>
 
 					<h3><strong>Evaluation Metrics</strong></h3>
-					<p>Coming soon...</p>
+					<p>Submitted runs will be evaluated using standard Information Extraction metrics to assess both per-label and overall system performance. The employed metrics are the same for NER and RE (a detailed explanation of these can be found <a href="https://sklearn-evaluation.ploomber.io/en/latest/classification/micro_macro.html" target="_blank">HERE</a>):</p>
+
+					<p>In the equations below:</p>
+					<ul>
+						<li><b>\(TP\) (True Positives)</b> refers to the number of correctly predicted entities or relations.</li>
+						<li><b>\(FP\) (False Positives)</b> refers to the number of wrongly predicted entities or relations.</li>
+						<li><b>\(FN\) (False Negatives)</b> refers to the number of entities or relations in the ground truth that were not predicted.</li>
+						<li><b>\(label\)</b> refers to:</li>
+						<ul>
+							<li style="list-style-type: none;"><span>&#9702;</span> For subtask 6.1: <i>entity labels</i>.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> For subtask 6.2.1: pairs of <i>(subject label, object label)</i>.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> For subtasks 6.2.2 and 6.2.3: triples of <i>(subject label, predicate, object label)</i>.</li>
+						</ul>
+					</ul>
+
+					<ul style="line-height:300%">
+						<li><b>Macro-average Precision</b>: \( P_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \, \frac{TP_l}{TP_l \,+\, FP_l}}{\sum_{l \in \text{label}} \, 1 } \)</li>
+						<li><b>Macro-average Recall</b>: \( R_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \, \frac{TP_l}{TP_l \,+\, FN_l}}{\sum_{l \in \text{label}} \, 1 }  \)</li>
+						<li><b>Macro-average F1-score</b>: \( F1_{\text{macro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{macro}_{\text{avg}}} \; \times \; R_{\text{macro}_{\text{avg}}}}{P_{\text{macro}_{\text{avg}}} \; + \; R_{\text{macro}_{\text{avg}}}} \) </li>
+						<li><b>Micro-average Precision</b>: \( P_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FP_l} \)</li>
+						<li><b>Micro-average Recall</b>: \( R_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FN_l} \)</li>
+						<li><b>Micro-average F1-score</b>: \( F1_{\text{micro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{micro}_{\text{avg}}} \; \times \; R_{\text{micro}_{\text{avg}}}}{P_{\text{micro}_{\text{avg}}} \; + \; R_{\text{micro}_{\text{avg}}}} \) </li>
+					</ul>
 
 					<h3><strong>Participant Papers</strong></h3>
 					<p>Participants are expected to write a report describing their participation in GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025, their proposed solution, what features have been used for prediction, the analysis of the experimental results and insights derived from them.</p>
@@ -1329,14 +1352,159 @@
 			</section>
 
 		<!-- Five -->
-			<section id="five" class="main style1 ">
+		<section id="five" class="main style1 ">
+			<div class="container">
+				<header class="major">
+					<h2>Baselines & Evaluation</h2>
+				</header>
+		
+			<p>The official baselines for the GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025 challenge can be found and reproduced by accesing this <a href="https://github.com/MMartinelli-hub/GutBrainIE_2025_Baseline" target="_blank"><strong>GitHub repository</strong></a>.</p>
+	
+			<p>The repository provides a complete implementation of the baseline pipeline, allowing participants to reproduce the results from scratch, test the pre-trained models, or evaluate the provided predictions (i.e., runs) of the baselines for both NER and RE. These runs can also be used by participants for reference.</p>
+
+			<p>It also contains the <u><strong>official evaluation script</strong></u>, which will be used to assess all submitted runs after the system submission deadline. It is crucial that participants ensure their submitted runs are compatible with this script, as <u><strong>submissions that cannot be evaluated with it will be considered invalid</strong></u>.
+			The evaluation script can also be used before submission to obtain preliminary performance results on the development set.</p>
+
+			<p>The detailed results of the baselines on the development set can be found in the <a href="#six">Results</a> section.</p>
+			</div>
+		</section>
+
+		<!-- Six -->
+			<section id="six" class="main style2 ">
 				<div class="container">
 					<header class="major">
 						<h2>Results</h2>
 					</header>
 
-					<h3><strong>Leaderboards</strong></h3>
+				<h3><strong>Leaderboards on the Development Set</strong></h3>
+					
+					<p><strong>Subtask 6.1 (NER)</strong></p>
+					<div class="table-scrollable">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_leaderboard">
+						<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="22%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr><td>GBIE_Baseline</td><td>0.6623</td><td>0.7473</td><td>0.6917</td><td>0.7561</td><td>0.8272</td><td>0.7901</td></tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+
+					<p><strong>Subtask 6.2.1 (Binary Tag-Based RE)</strong></p>
+					<div class="table-scrollable">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask62_leaderboard">
+						<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="22%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr><td>GBIE_Baseline</td><td>0.5181</td><td>0.4330</td><td>0.4404</td><td>0.6585</td><td>0.4909</td><td>0.5625</td></tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+
+					<p><strong>Subtask 6.2.2 (Ternary Tag-Based RE)</strong></p>
+					<div class="table-scrollable">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask63_leaderboard">
+						<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="22%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr><td>GBIE_Baseline</td><td>0.4875</td><td>0.4231</td><td>0.4270</td><td>0.6585</td><td>0.4696</td><td>0.5482</td></tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+
+					<p><strong>Subtask 6.2.3 (Ternary Mention-Based RE)</strong></p>
+					<div class="table-scrollable">
+					<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask63_leaderboard">
+						<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="22%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr><td>GBIE_Baseline</td><td>0.2746</td><td>0.1906</td><td>0.2111</td><td>0.4574</td><td>0.2875</td><td>0.3531</td></tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+
+					<h3><strong>Leaderboards on the Test Set</strong></h3>
 					<p>Available after the systems submission deadline...</p>
+
 					<h3><strong>Details</strong></h3>
 					<p>Available after the systems submission deadline...</p>
 
@@ -1354,26 +1522,27 @@
 				</div>
 			</section>
 
-			<!-- Six -->
-			<section id="six" class="main style2">
+			<!-- Seven -->
+			<section id="seven" class="main style1">
 				<div class="container">
 					<header class="major">
 						<h2 id="faq">FAQs</h2>
 					</header>
 
 					<p><i>Find answers to common questions about the GutBrainIE challenge, dataset, and submissions.</i></p>
-					<p><i>If you need any additional information, please get in contact with us writing to: 
+					<p>Coming soon...</p>
+					
+					<p><i>If you need any additional information, please get in contact with us writing to:</i></p>
 						<ul>
 							<li> Nicola Ferro: &nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:nicola.ferro@unipd.it"><strong>nicola.ferro @ unipd.it</strong></i></a></li>
 							<li> Gianmaria Silvello: &nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:gianmaria.silvello@unipd.it"><strong>gianmaria.silvello @ unipd.it</strong></i></a></li>
 						</ul>
-						
-					<p>Coming soon...</p>
 
 				</div>
 			</section>
 
-			<section id="seven" class="main style1">
+			<!-- Eight -->
+			<section id="eight" class="main style2">
 				<div class="container">
 					<header class="major">
 						<h2 id="organizers" style="margin: 0;">Organizers</h2>
@@ -1457,7 +1626,7 @@
 									<ul class="list-inline">
 										<li class="list-inline-item"><a href="mailto:martinell2@dei.unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
 										<li class="list-inline-item"><a href="https://www.linkedin.com/in/martinelli-marco/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
-										<li class="list-inline-item"><a href="https://orcid.org/0009-0001-1596-8642" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=pqCn-4sAAAAJ&hl=en&oi=ao" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -1874,6 +2043,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/templateAdditions.js"></script>
+
+			
+
+			<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
