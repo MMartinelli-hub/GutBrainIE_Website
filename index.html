@@ -1208,31 +1208,6 @@
 				<p>A validation script that can be used to verify the correctness of the submission format can be downloaded from 
 					<a href="files/validation_script.py" target="_blank" download="validation_script.py">HERE</a>.</p>
 
-					<h3><strong>Evaluation Metrics</strong></h3>
-					<p>Submitted runs will be evaluated using standard Information Extraction metrics to assess both per-label and overall system performance. The employed metrics are the same for NER and RE (a detailed explanation of these can be found <a href="https://sklearn-evaluation.ploomber.io/en/latest/classification/micro_macro.html" target="_blank">HERE</a>):</p>
-
-					<p>In the equations below:</p>
-					<ul>
-						<li><b>\(TP\) (True Positives)</b> refers to the number of correctly predicted entities or relations.</li>
-						<li><b>\(FP\) (False Positives)</b> refers to the number of wrongly predicted entities or relations.</li>
-						<li><b>\(FN\) (False Negatives)</b> refers to the number of entities or relations in the ground truth that were not predicted.</li>
-						<li><b>\(label\)</b> refers to:</li>
-						<ul>
-							<li style="list-style-type: none;"><span>&#9702;</span> For subtask 6.1: <i>entity labels</i>.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> For subtask 6.2.1: pairs of <i>(subject label, object label)</i>.</li>
-							<li style="list-style-type: none;"><span>&#9702;</span> For subtasks 6.2.2 and 6.2.3: triples of <i>(subject label, predicate, object label)</i>.</li>
-						</ul>
-					</ul>
-
-					<ul style="line-height:300%">
-						<li><b>Macro-average Precision</b>: \( P_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \, \frac{TP_l}{TP_l \,+\, FP_l}}{\sum_{l \in \text{label}} \, 1 } \)</li>
-						<li><b>Macro-average Recall</b>: \( R_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \, \frac{TP_l}{TP_l \,+\, FN_l}}{\sum_{l \in \text{label}} \, 1 }  \)</li>
-						<li><b>Macro-average F1-score</b>: \( F1_{\text{macro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{macro}_{\text{avg}}} \; \times \; R_{\text{macro}_{\text{avg}}}}{P_{\text{macro}_{\text{avg}}} \; + \; R_{\text{macro}_{\text{avg}}}} \) </li>
-						<li><b>Micro-average Precision</b>: \( P_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FP_l} \)</li>
-						<li><b>Micro-average Recall</b>: \( R_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FN_l} \)</li>
-						<li><b>Micro-average F1-score</b>: \( F1_{\text{micro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{micro}_{\text{avg}}} \; \times \; R_{\text{micro}_{\text{avg}}}}{P_{\text{micro}_{\text{avg}}} \; + \; R_{\text{micro}_{\text{avg}}}} \) </li>
-					</ul>
-
 					<h3><strong>Participant Papers</strong></h3>
 					<p>Participants are expected to write a report describing their participation in GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025, their proposed solution, what features have been used for prediction, the analysis of the experimental results and insights derived from them.</p>
 
@@ -1245,128 +1220,50 @@
 					<p>The schedule for submission, revision, and camera ready of the participant report is detailed above in the <a href="#two">Important Dates</a> section.</p>
 
 					<p>Participant papers can be submitted via Easychair <a href="https://easychair.org/my/conference?conf=clef2025" target="_blank">HERE</a>.</p> 
-					<!--
-					<h3><strong>Practice [Pre-Evaluation]</strong></h3>
-					<p>Coming soon...</p>
-					-->
-
-					<!--
-					<p>Runs should be submitted as a text file (.txt) with the following format:</p>
-					<pre><code>
-100619256189067386770484450960632124211 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
-101600333961427115125266345521826407539 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
-102874795308599532461878597137083911508 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
-123988288044597922158182615705447150224 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
-100381996772220382021070974955176218231 1 2 3 4 1 2 3 4 1 2 3 4 upd_T1_myDesc
-...
-					</code></pre>					
-					
-					<p>where:</p>
-					<ul>
-						<li>Columns are separated by a <b>white space</b>;</li>
-						<li>The first column is the patient ID, an hashed version of the original patient ID (should be considered just as a string);</li>
-						<li>Columns from 2 to 13 represent the predicted ALSFRS-R sub-score. Each column corresponds to an ALSFRS-R question, e.g. column 2 to Q1, column 3 to Q2, and so on). Each values is expected to be integer in the range [0, 4];</li>
-						<li>The last column is the run identifier, according to the format described below. It must uniquely identify the participating team and the submitted run.</li>
-					</ul>
-					
-					<p>It is important to include all the columns and have a white space delimiter between the columns. No specific ordering is expected among patients (rows) in the submission file.</p>
-					
-
-					<h3>Task 2 Run Format</h3>
-
-					<p>Runs should be submitted as a text file (.txt) with the following format:</p>
-					<pre><code>
-100619256189067386770484450960632124211 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
-101600333961427115125266345521826407539 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
-102874795308599532461878597137083911508 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
-123988288044597922158182615705447150224 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
-100381996772220382021070974955176218231 1 2 3 4 1 2 3 4 1 2 3 4 upd_T2_myDesc
-...
-					</code></pre>
-
-					<p>where:</p>
-					<ul>					
-						<li>Columns are separated by a <b>white space</b>;</li>
-						<li>The first column is the patient ID, an hashed version of the original patient ID (should be considered just as a string);</li>
-						<li>Columns from 2 to 13 represent the predicted self-assessd sub-score. Each column corresponds to an ALSFRS-R question, e.g. column 2 to Q1, column 3 to Q2, and so on). Each values is expected to be integer in the range [0, 4];</li>
-						<li>The last column is the run identifier, according to the format described below. It must uniquely identify the participating team and the submitted run.</li>
-					</ul>
-					
-					<p>It is important to include all the columns and have a white space delimiter between the columns. No specific ordering is expected among patients (rows) in the submission file.</p>
-
-
-
-					<h3>Task 3 Run Format</h3>
-
-					<p>Runs should be submitted as a text file (.txt) with the following format:</p>
-					<pre><code>
-100619256189067386770484450960632124211 10 upd_T3_myDesc
-101600333961427115125266345521826407539 47 upd_T3_myDesc
-102874795308599532461878597137083911508 13 upd_T3_myDesc
-123988288044597922158182615705447150224 1 upd_T3_myDesc
-100381996772220382021070974955176218231 9 upd_T3_myDesc
-...
-					</code></pre>
-
-					<p>where:</p>
-					<ul>
-						<li>Columns are separated by a <b>white space</b>;</li>
-						<li>The first column is the patient ID, an hashed version of the original patient ID (should be considered just as a string);</li>
-						<li>The second column is the predicted week at which the first relapse after the baseline happens. The value is expected to be integer starting from 1;</li>
-						<li>The third column is the run identifier, according to the format described below. It must uniquely identify the participating team and the submitted run.</li>
-					</ul>
-
-					<p>It is important to include all the columns and have a white space delimiter between the columns. No specific ordering is expected among patients (rows) in the submission file.<p>
-
-
-					<h3>Submission Upload</h3>
-
-					<p>Runs should be uploaded in the repository provided by the organizers. Following the repository structure discussed above, for example, a run submitted for the first task should be included in <code>submission/task1</code>.</p>
-					<p>Runs should be uploaded using the following name convention for their identifiers:
-					<code>&lt;teamname&gt;_T&lt;1|2|3&gt;_&lt;freefield&gt;</code></p>
-					<p>where:<p>
-					<ul>
-						<li>teamname is the name of the participating team;</li>
-						<li><code>T&lt;1|2|3&gt;</code> is the identifier of the task the run is submitted to, e.g. <code>T1</code> for Task 1;</li> 
-						<li>freefield is a free field that participants can use as they prefer to further distinguish among their runs. Please, keep it short and informative.</li>
-					</ul>
-					<p>For example, a complete run identifier may look like <code>upd_T1_myDesc</code>
-					<p>where</p>
-					<ul>
-						<li><code>upd</code> is the University of Padua team;</li>
-						<li><code>T1</code> means that the run is submitted for Task 1;</li>
-						<li><code>myDesc</code> suggests an appropriate description for the run.</li>
-					</ul>
-					<p>The name of the text file containing the run must be the identifier of the run followed by the txt extension. In the above example
-					<code>upd_T1_myDesc.txt</code></p>
-
-					<h3>Run Scores</h3>
-
-					<p>Performance scores for the submitted runs will be returned by the organizers in the score folder, which follows the same structure as the submission folder.
-					For each submitted run, participants will find a file named 
-					<code>&lt;teamname&gt;_T&lt;1|2|3&gt;_&lt;freefield&gt;.score.txt</code>
-					where <code>&lt;teamname&gt;_T&lt;1|2|3&gt;_&lt;freefield&gt;</code> matches the corresponding run. The file will contain performance scores for each of the evaluation measures described below. In the above example
-					<code>upd_T1_myDesc.score.txt</code></p>
-					-->
 				</div>
 			</section>
 
 		<!-- Five -->
-		<section id="five" class="main style1 ">
+		<section id="five" class="main style1">
 			<div class="container">
 				<header class="major">
 					<h2>Baselines & Evaluation</h2>
 				</header>
 		
-			<p>The official baselines for the GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025 challenge can be found and reproduced by accesing this <a href="https://github.com/MMartinelli-hub/GutBrainIE_2025_Baseline" target="_blank"><strong>GitHub repository</strong></a>.</p>
+			<p>The official baselines for the GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025 challenge can be found and reproduced by accesing this <a href="https://github.com/MMartinelli-hub/GutBrainIE_2025_Baseline" target="_blank"><strong><i class="fa-brands fa-github"></i>GitHub repository</strong></a>.</p>
 	
-			<p>The repository provides a complete implementation of the baseline pipeline, allowing participants to reproduce the results from scratch, test the pre-trained models, or evaluate the provided predictions (i.e., runs) of the baselines for both NER and RE. These runs can also be used by participants for reference.</p>
+			<p>The repository provides a complete implementation of the baseline pipeline, allowing participants to reproduce the results from scratch, test the pre-trained models, or evaluate the provided predictions (i.e., runs) of the baselines for both NER and RE. These runs can also be used by participants as references of valid submission formats.</p>
 
-			<p>It also contains the <u><strong>official evaluation script</strong></u>, which will be used to assess all submitted runs after the system submission deadline. It is crucial that participants ensure their submitted runs are compatible with this script, as <u><strong>submissions that cannot be evaluated with it will be considered invalid</strong></u>.
-			The evaluation script can also be used before submission to obtain preliminary performance results on the development set.</p>
+			<p>The repository also contains the <u><strong>official evaluation script</strong></u>, which will be used to assess submitted runs after the system submission deadline. It is crucial that participants ensure their submitted runs are compatible with this script, as <u><strong>submissions that cannot be evaluated with it will be considered invalid</strong></u>.
+			The evaluation script can also be used to obtain preliminary performance results on the development set.</p>
 
 			<p>The detailed results of the baselines on the development set can be found in the <a href="#six">Results</a> section.</p>
-			</div>
+			
+			<h3><strong>Evaluation Metrics</strong></h3>
+			<p>Submitted runs will be evaluated using standard Information Extraction metrics to assess both per-label and overall system performance. The employed metrics are the same for all the subtasks (a detailed explanation of these can be found <a href="https://sklearn-evaluation.ploomber.io/en/latest/classification/micro_macro.html" target="_blank">HERE</a>):</p>
+
+			<p>In the equations below:</p>
+			<ul>
+				<li><b>\(TP\) (True Positives)</b> refers to the number of correctly predicted entities or relations.</li>
+				<li><b>\(FP\) (False Positives)</b> refers to the number of wrongly predicted entities or relations.</li>
+				<li><b>\(FN\) (False Negatives)</b> refers to the number of entities or relations in the ground truth that were not predicted.</li>
+				<li><b>\(label\)</b> refers to:</li>
+				<ul>
+					<li style="list-style-type: none;"><span>&#9702;</span> For subtask 6.1: <i>entity labels</i>.</li>
+					<li style="list-style-type: none;"><span>&#9702;</span> For subtask 6.2.1: pairs of <i>(subject label, object label)</i>.</li>
+					<li style="list-style-type: none;"><span>&#9702;</span> For subtasks 6.2.2 and 6.2.3: triples of <i>(subject label, predicate, object label)</i>.</li>
+				</ul>
+			</ul>
+
+			<ul style="line-height:300%">
+				<li><b>Macro-average Precision</b>: \( P_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \, \frac{TP_l}{TP_l \,+\, FP_l}}{\sum_{l \in \text{label}} \, 1 } \)</li>
+				<li><b>Macro-average Recall</b>: \( R_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \, \frac{TP_l}{TP_l \,+\, FN_l}}{\sum_{l \in \text{label}} \, 1 }  \)</li>
+				<li><b>Macro-average F1-score</b>: \( F1_{\text{macro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{macro}_{\text{avg}}} \; \times \; R_{\text{macro}_{\text{avg}}}}{P_{\text{macro}_{\text{avg}}} \; + \; R_{\text{macro}_{\text{avg}}}} \) </li>
+				<li><b>Micro-average Precision</b>: \( P_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FP_l} \)</li>
+				<li><b>Micro-average Recall</b>: \( R_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FN_l} \)</li>
+				<li><b>Micro-average F1-score</b>: \( F1_{\text{micro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{micro}_{\text{avg}}} \; \times \; R_{\text{micro}_{\text{avg}}}}{P_{\text{micro}_{\text{avg}}} \; + \; R_{\text{micro}_{\text{avg}}}} \) </li>
+			</ul>
+		</div>
 		</section>
 
 		<!-- Six -->
@@ -2056,7 +1953,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				$(document).ready(function() {
 					$(window).on('scroll', function() {
 						// Check if the user is not over the section with id="headerTask2"
-						if (!$('#headerTask2').is(':hover')) {
+						if (!$('#headerTask2').is(':hover') ) {
 							// Check if any nav-link has the 'active' class
 							if ($('.nav-link.active').length === 0) {
 								// Remove 'active' from all nav-links just in case
