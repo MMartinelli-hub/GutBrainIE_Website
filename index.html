@@ -108,7 +108,7 @@
 									<li><b>Gold Collection</b>: An highly curated dataset manually annotated by a team of 7 expert annotators from the University of Padua, Italy; </li>
 									<li><b>Platinum Collection</b>: A subset of the gold annotations further validated by biomedical experts from the <a href="https://www.radboudumc.nl/en/research" target="_blank">Radboud University Medical Center</a>, Netherlands;</li>
 									<li><b>Silver Collection</b>: A weakly curated dataset manually annotated by a team of about 40 students of Linguistics and Terminology trained and supervised by the experts; </li>
-									<li><b>Bronze Collection</b>: A distantly supervised dataset comprising automatically generated annotations. </li>
+									<li><b>Bronze Collection</b>: A distantly supervised dataset comprising automatically generated annotations. Note that no manual revision has been performed on this set.</li>
 								</ul>
 								The test set consists of gold and platinum annotations, composed to ensure representativeness and full coverage of all entity and relation types.
 
@@ -142,6 +142,7 @@
 							<p class="textcenter">
 								<span><a href="https://clef2025-labs-registration.dei.unipd.it/" target="_blank" class="button"><i class="fa-solid fa-pen-to-square fa-2xl"></i> Register <i class="fa-solid fa-pen-to-square fa-2xl"></i></a></span>
 							</p>
+							<p><b>Access to the data will be given within 24 hours from the registration.</b></p>
 
 						</div>
 					</div>
@@ -1263,6 +1264,312 @@
 				<li><b>Micro-average Recall</b>: \( R_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FN_l} \)</li>
 				<li><b>Micro-average F1-score</b>: \( F1_{\text{micro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{micro}_{\text{avg}}} \; \times \; R_{\text{micro}_{\text{avg}}}}{P_{\text{micro}_{\text{avg}}} \; + \; R_{\text{micro}_{\text{avg}}}} \) </li>
 			</ul>
+
+			<h3><strong>Baseline Results</strong></h3>
+			<p><strong>Subtask 6.1 (NER)</strong></p>
+			<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_baseline">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="22%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Dataset</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+							</tr>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr>
+								<td>Train Platinum</td>
+								<td>0.7784</td>
+								<td>0.8967</td>
+								<td>0.8228</td>
+								<td>0.8516</td>
+								<td>0.8994</td>
+								<td>0.8749</td>
+							</tr>
+							<tr>
+								<td>Train Gold</td>
+								<td>0.8047</td>
+								<td>0.9226</td>
+								<td>0.8567</td>
+								<td>0.8653</td>
+								<td>0.9368</td>
+								<td>0.8997</td>
+							</tr>
+							<tr>
+								<td>Train Silver</td>
+								<td>0.7891</td>
+								<td>0.8347</td>
+								<td>0.8095</td>
+								<td>0.8402</td>
+								<td>0.8729</td>
+								<td>0.8562</td>
+							</tr>
+							<tr>
+								<td>Train Bronze</td>
+								<td>0.7618</td>
+								<td>0.8586</td>
+								<td>0.8023</td>
+								<td>0.8478</td>
+								<td>0.8954</td>
+								<td>0.871</td>
+							</tr>
+							<tr>
+								<td>Dev</td>
+								<td>0.6627</td>
+								<td>0.7473</td>
+								<td>0.6917</td>
+								<td>0.7561</td>
+								<td>0.8272</td>
+								<td>0.7901</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<br>
+			<p><strong>Subtask 6.2.1 (Binary Tag-Based RE)</strong></p>
+			<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask621_baseline">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="22%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Dataset</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+							</tr>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr>
+								<td>Train Platinum</td>
+								<td>0.8542</td>
+								<td>0.9298</td>
+								<td>0.8672</td>
+								<td>0.858</td>
+								<td>0.943</td>
+								<td>0.8985</td>
+							</tr>
+							<tr>
+								<td>Train Gold</td>
+								<td>0.8195</td>
+								<td>0.9559</td>
+								<td>0.8667</td>
+								<td>0.7806</td>
+								<td>0.968</td>
+								<td>0.8643</td>
+							</tr>
+							<tr>
+								<td>Train Silver</td>
+								<td>0.8509</td>
+								<td>0.8462</td>
+								<td>0.8414</td>
+								<td>0.8619</td>
+								<td>0.9027</td>
+								<td>0.8818</td>
+							</tr>
+							<tr>
+								<td>Train Bronze</td>
+								<td>0.2453</td>
+								<td>0.2454</td>
+								<td>0.2257</td>
+								<td>0.6778</td>
+								<td>0.619</td>
+								<td>0.6471</td>
+							</tr>
+							<tr>
+								<td>Dev</td>
+								<td>0.5181</td>
+								<td>0.4330</td>
+								<td>0.4404</td>
+								<td>0.6585</td>
+								<td>0.4909</td>
+								<td>0.5625</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<br>
+			<p><strong>Subtask 6.2.2 (Ternary Tag-Based RE)</strong></p>
+			<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask622_baseline">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="22%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Dataset</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+							</tr>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr>
+								<td>Train Platinum</td>
+								<td>0.8533</td>
+								<td>0.9299</td>
+								<td>0.8677</td>
+								<td>0.859</td>
+								<td>0.9435</td>
+								<td>0.8993</td>
+							</tr>
+							<tr>
+								<td>Train Gold</td>
+								<td>0.8228</td>
+								<td>0.9566</td>
+								<td>0.8696</td>
+								<td>0.7834</td>
+								<td>0.967</td>
+								<td>0.8656</td>
+							</tr>
+							<tr>
+								<td>Train Silver</td>
+								<td>0.8547</td>
+								<td>0.8459</td>
+								<td>0.8431</td>
+								<td>0.8627</td>
+								<td>0.9022</td>
+								<td>0.882</td>
+							</tr>
+							<tr>
+								<td>Train Bronze</td>
+								<td>0.1126</td>
+								<td>0.1182</td>
+								<td>0.1033</td>
+								<td>0.6618</td>
+								<td>0.5483</td>
+								<td>0.5998</td>
+							</tr>
+							<tr>
+								<td>GBIE_Baseline</td>
+								<td>0.4875</td>
+								<td>0.4231</td>
+								<td>0.4270</td>
+								<td>0.6585</td>
+								<td>0.4696</td>
+								<td>0.5482</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<br>
+			<p><strong>Subtask 6.2.3 (Ternary Mention-Based RE)</strong></p>
+			<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask623_baseline">
+					<table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="22%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+							<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Dataset</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+							</tr>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+							<tr>
+								<td>Train Platinum</td>
+								<td>0.7741</td>
+								<td>0.8352</td>
+								<td>0.7856</td>
+								<td>0.78</td>
+								<td>0.8681</td>
+								<td>0.8217</td>
+							</tr>
+							<tr>
+								<td>Train Gold</td>
+								<td>0.7586</td>
+								<td>0.8574</td>
+								<td>0.7883</td>
+								<td>0.744</td>
+								<td>0.8927</td>
+								<td>0.8116</td>
+							</tr>
+							<tr>
+								<td>Train Silver</td>
+								<td>0.7997</td>
+								<td>0.7778</td>
+								<td>0.7828</td>
+								<td>0.7939</td>
+								<td>0.8071</td>
+								<td>0.8005</td>
+							</tr>
+							<tr>
+								<td>Train Bronze</td>
+								<td>0.08</td>
+								<td>0.0867</td>
+								<td>0.0736</td>
+								<td>0.5084</td>
+								<td>0.413</td>
+								<td>0.4557</td>
+							</tr>
+							<tr>
+								<td>Dev</td>
+								<td>0.2746</td>
+								<td>0.1906</td>
+								<td>0.2111</td>
+								<td>0.4574</td>
+								<td>0.2875</td>
+								<td>0.3531</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			
 		</div>
 		</section>
 
@@ -1273,137 +1580,11 @@
 						<h2>Results</h2>
 					</header>
 
-				<h3><strong>Leaderboards on the Development Set</strong></h3>
-					
-					<p><strong>Subtask 6.1 (NER)</strong></p>
-					<div class="table-scrollable">
-					<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_leaderboard">
-						<table class="u-table-entity u-table-entity-1">
-							<colgroup>
-								<col width="22%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-							</colgroup>
-							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
-								<tr style="height: 48px;">
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
-								</tr>
-							</thead>
-							<tbody class="u-align-left u-table-body">
-								<tr><td>GBIE_Baseline</td><td>0.6627</td><td>0.7473</td><td>0.6917</td><td>0.7561</td><td>0.8272</td><td>0.7901</td></tr>
-							</tbody>
-						</table>
-					</div>
-					</div>
+				<h3><strong>Leaderboards</strong></h3>
+				<p>Available after the systems submission deadline...</p>
 
-					<p><strong>Subtask 6.2.1 (Binary Tag-Based RE)</strong></p>
-					<div class="table-scrollable">
-					<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask62_leaderboard">
-						<table class="u-table-entity u-table-entity-1">
-							<colgroup>
-								<col width="22%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-							</colgroup>
-							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
-								<tr style="height: 48px;">
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
-								</tr>
-							</thead>
-							<tbody class="u-align-left u-table-body">
-								<tr><td>GBIE_Baseline</td><td>0.5181</td><td>0.4330</td><td>0.4404</td><td>0.6585</td><td>0.4909</td><td>0.5625</td></tr>
-							</tbody>
-						</table>
-					</div>
-					</div>
-
-					<p><strong>Subtask 6.2.2 (Ternary Tag-Based RE)</strong></p>
-					<div class="table-scrollable">
-					<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask63_leaderboard">
-						<table class="u-table-entity u-table-entity-1">
-							<colgroup>
-								<col width="22%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-							</colgroup>
-							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
-								<tr style="height: 48px;">
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
-								</tr>
-							</thead>
-							<tbody class="u-align-left u-table-body">
-								<tr><td>GBIE_Baseline</td><td>0.4875</td><td>0.4231</td><td>0.4270</td><td>0.6585</td><td>0.4696</td><td>0.5482</td></tr>
-							</tbody>
-						</table>
-					</div>
-					</div>
-
-					<p><strong>Subtask 6.2.3 (Ternary Mention-Based RE)</strong></p>
-					<div class="table-scrollable">
-					<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask63_leaderboard">
-						<table class="u-table-entity u-table-entity-1">
-							<colgroup>
-								<col width="22%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-								<col width="13%">
-							</colgroup>
-							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
-								<tr style="height: 48px;">
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
-									<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
-								</tr>
-							</thead>
-							<tbody class="u-align-left u-table-body">
-								<tr><td>GBIE_Baseline</td><td>0.2746</td><td>0.1906</td><td>0.2111</td><td>0.4574</td><td>0.2875</td><td>0.3531</td></tr>
-							</tbody>
-						</table>
-					</div>
-					</div>
-
-					<h3><strong>Leaderboards on the Test Set</strong></h3>
-					<p>Available after the systems submission deadline...</p>
-
-					<h3><strong>Details</strong></h3>
-					<p>Available after the systems submission deadline...</p>
+				<h3><strong>Details</strong></h3>
+				<p>Available after the systems submission deadline...</p>
 
 					<!--
 					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted sub-scores with respect to the actual sub-scores.</p>
