@@ -1248,7 +1248,7 @@
 				<li><b>\(TP\) (True Positives)</b> refers to the number of correctly predicted entities or relations.</li>
 				<li><b>\(FP\) (False Positives)</b> refers to the number of wrongly predicted entities or relations.</li>
 				<li><b>\(FN\) (False Negatives)</b> refers to the number of entities or relations in the ground truth that were not predicted.</li>
-				<li><b>\(label\)</b> refers to:</li>
+				<li><b>\(\mathcal{L}\)</b> is the set of labels referring to:</li>
 				<ul>
 					<li style="list-style-type: none;"><span>&#9702;</span> For subtask 6.1: <i>entity labels</i>.</li>
 					<li style="list-style-type: none;"><span>&#9702;</span> For subtask 6.2.1: pairs of <i>(subject label, object label)</i>.</li>
@@ -1257,11 +1257,11 @@
 			</ul>
 
 			<ul style="line-height:300%">
-				<li><b>Macro-average Precision</b>: \( P_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \, \frac{TP_l}{TP_l \,+\, FP_l}}{\sum_{l \in \text{label}} \, 1 } \)</li>
-				<li><b>Macro-average Recall</b>: \( R_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \, \frac{TP_l}{TP_l \,+\, FN_l}}{\sum_{l \in \text{label}} \, 1 }  \)</li>
+				<li><b>Macro-average Precision</b>: \( P_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \mathcal{L}} \, \frac{TP_l}{TP_l \,+\, FP_l}}{|\mathcal{L}|} \)</li>
+				<li><b>Macro-average Recall</b>: \( R_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \mathcal{L}} \, \frac{TP_l}{TP_l \,+\, FN_l}}{|\mathcal{L}|}  \)</li>
 				<li><b>Macro-average F1-score</b>: \( F1_{\text{macro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{macro}_{\text{avg}}} \; \times \; R_{\text{macro}_{\text{avg}}}}{P_{\text{macro}_{\text{avg}}} \; + \; R_{\text{macro}_{\text{avg}}}} \) </li>
-				<li><b>Micro-average Precision</b>: \( P_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FP_l} \)</li>
-				<li><b>Micro-average Recall</b>: \( R_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \text{label}} \; TP_l}{\sum_{l \in \text{label}} \; TP_l \; + \; FN_l} \)</li>
+				<li><b>Micro-average Precision</b>: \( P_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \mathcal{L}} \; TP_l}{\sum_{l \in \mathcal{L}} \; TP_l \; + \; FP_l} \)</li>
+				<li><b>Micro-average Recall</b>: \( R_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \mathcal{L}} \; TP_l}{\sum_{l \in \mathcal{L}} \; TP_l \; + \; FN_l} \)</li>
 				<li><b>Micro-average F1-score</b>: \( F1_{\text{micro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{micro}_{\text{avg}}} \; \times \; R_{\text{micro}_{\text{avg}}}}{P_{\text{micro}_{\text{avg}}} \; + \; R_{\text{micro}_{\text{avg}}}} \) </li>
 			</ul>
 
@@ -2133,19 +2133,20 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script>
 				$(document).ready(function() {
 					$(window).on('scroll', function() {
-						// Check if the user is not over the section with id="headerTask2"
-						if (!$('#headerTask2').is(':hover') ) {
-							// Check if any nav-link has the 'active' class
-							if ($('.nav-link.active').length === 0) {
-								// Remove 'active' from all nav-links just in case
-								$('.nav-link').removeClass('active');
-				
-								// Add 'active' class to the link with href="#three"
-								$('.nav-link[href="#three"]').addClass('active');
-							}
+						var scrollTop = $(this).scrollTop();
+						var headerHeight = $('#headerTask2').outerHeight();
+						
+						if (scrollTop < headerHeight) {
+						// At the top, remove any active class
+						$('.nav-link').removeClass('active');
+						} else if ($('.nav-link.active').length === 0) {
+						// Otherwise, force the "Datasets" link to be active
+						$('.nav-link').removeClass('active');
+						$('.nav-link[href="#three"]').addClass('active');
 						}
 					});
-				});
+					});
+
 			</script>
 	</body>
 </html>
