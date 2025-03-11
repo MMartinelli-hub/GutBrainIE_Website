@@ -80,6 +80,9 @@
 					</h2>
 					<h3>Task #6 of the <a href="https://www.bioasq.org/workshop2025" target="_blank">BioASQ Lab 2025</a></h3>
 					<h4 class="nomargin">(An <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a> challenge)</h4>
+					<p class="textcenter">
+						<span><a href="https://clef2025-labs-registration.dei.unipd.it/" target="_blank" class="button"><i class="fa-solid fa-pen-to-square fa-2xl"></i> Register <i class="fa-solid fa-pen-to-square fa-2xl"></i></a></span>
+					</p>
 					<ul class="actions">
 						<li><a href="#one" class="button scrolly">Read</a></li>
 					</ul>
@@ -110,8 +113,9 @@
 									<li><b>Silver Collection</b>: A weakly curated dataset manually annotated by a team of about 40 students of Linguistics and Terminology trained and supervised by the experts; </li>
 									<li><b>Bronze Collection</b>: A distantly supervised dataset comprising automatically generated annotations. Note that no manual revision has been performed on this set.</li>
 								</ul>
-								The test set consists of gold and platinum annotations, composed to ensure representativeness and full coverage of all entity and relation types.
-
+								
+								<p>The <b>test set</b> is a held-out selection of documents from the gold and platinum collections, consisting exclusively of titles and abstracts for each document, ensuring representativeness and full coverage of all entity and relation types.</p>
+								
 								<p><b>Please see the <a href="#datasets">Datasets</a> and <a href="#important-dates">Important Dates</a> sections for more information.</b></p>
 
 							<h3 id="task1">Subtask 6.1 - Named Entity Recognition</h3>
@@ -134,6 +138,12 @@
 							
 							<p>Relations are expressed as triples (<i>entityMention1 ; relationLabel ; entityMention2</i>).</p>
 					
+							<hr>
+							<p>For each task, the test set consists of a collection of documents, each including only the PubMed ID, title, and abstract. 
+								Given a test document, participants are required to extract tuples that include all the fields for the respective task. 
+								For example, in the <i>NER</i> task, tuples must contain all and only the following fields: <i>(entityLabel ; entityLocation (title/abstract) ; startOffset ; endOffset)</i>.
+								For more details, please refer to the submission format examples provided in the <a href="#submissionformat">Submitting</a> section.</p>
+							
 							<h3>Participating</h3>
 							<p>
 								To participate in GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2025, groups need to register to the BioASQ Laboratory
@@ -1114,7 +1124,7 @@
 					<p>Submissions not adhering to these guidelines might be rejected. 
 						Please ensure accuracy and completeness of all submitted files to streamline evaluation. </p>
 
-					<h3><strong>Example of Submission Format</strong></h3>
+					<h3 id="submissionformat"><strong>Example of Submission Format</strong></h3>
 					<p>Submissions should follow the same JSON format used in the provided datasets and must include only the field associated with the specific subtask for which the submission is made:</p>
 					<ul>
 						<li><b>Subtask 6.1 (NER)</b>: Include the <code>entities</code> field.</li>
@@ -1265,6 +1275,9 @@
 				<li><b>Micro-average F1-score</b>: \( F1_{\text{micro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{micro}_{\text{avg}}} \; \times \; R_{\text{micro}_{\text{avg}}}}{P_{\text{micro}_{\text{avg}}} \; + \; R_{\text{micro}_{\text{avg}}}} \) </li>
 			</ul>
 
+			<p>For each subtask, the <u>reference metric</u> for the final leaderboard will be the <b><u>micro-average F1-score</u></b>, as it better accounts for class imbalances. 
+				However, system rankings will also be provided for each of the metrics detailed above.</p>
+			
 			<h3><strong>Baseline Results</strong></h3>
 			<p><strong>Subtask 6.1 (NER)</strong></p>
 			<div class="table-scrollable">
