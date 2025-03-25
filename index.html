@@ -1224,13 +1224,22 @@
 
 					<p>Participant reports will be peer-reviewed and accepted reports will be published in the CLEF 2025 Working Notes at CEUR-WS, indexed in DBLP and Scopus.</p>
 
-					<p>Participants are strongly encouraged to use LaTeX. However, it is possible to also use Word.</p>
+					<!--<p>Participants are strongly encouraged to use LaTeX. However, it is possible to also use Word.</p>-->
+
+					<p>Participants are strongly encouraged to use LaTeX, for which a template is available for download <a href="files/GutBrainIE_CLEF2025_PaperTemplate.zip" target="_blank">HERE</a>. 
+						The template follows the CEURART single-column style and not only defines the layout of the report but also provides a suggested structure and outlines the expected content for each section.</p> 
+					
+					<p>It is also possible to use ODT (LibreOffice) or DOCX (Microsoft Word) formats. 
+						In these cases, participants should download the official CEURART templates directly from the CEUR website <a href="http://ceur-ws.org/Vol-XXX/CEURART.zip" target="_blank">HERE</a> and ensure that the content and structure match those outlined in the provided LaTeX template.</p>
 
 					<p>Participant papers are expected to be 10-20 pages in length, excluding references.</p>
 
 					<p>The schedule for submission, revision, and camera ready of the participant report is detailed above in the <a href="#two">Important Dates</a> section.</p>
 
 					<p>Participant papers can be submitted via Easychair <a href="https://easychair.org/my/conference?conf=clef2025" target="_blank">HERE</a>.</p> 
+					
+					<p>A template for participant papers can be downloaded HERE. The template follows the CEURART single-column style and not only defines the layout of the report but also provides a suggested structure and outlines the expected content for each section.</p>
+
 				</div>
 			</section>
 
@@ -1279,6 +1288,10 @@
 				However, system rankings will also be provided for each of the metrics detailed above.</p>
 			
 			<h3><strong>Baseline Results</strong></h3>
+			<p>The scores reported on the development set represent the actual evaluation of the inference capabilities of the proposed baseline models.
+				Scores on the training collections are provided to give a sense of how well the models fit the data they were trained on. 
+				Therefore, they should not be interpreted as evaluation results but rather as indicators of performance on the seen data.</p>
+
 			<p><strong>Subtask 6.1 (NER)</strong></p>
 			<div class="table-scrollable">
 				<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_baseline">
@@ -1304,6 +1317,15 @@
 							</tr>
 						</thead>
 						<tbody class="u-align-left u-table-body">
+							<tr>
+								<td>Dev</td>
+								<td>0.6627</td>
+								<td>0.7473</td>
+								<td>0.6917</td>
+								<td>0.7561</td>
+								<td>0.8272</td>
+								<td>0.7901</td>
+							</tr>
 							<tr>
 								<td>Train Platinum</td>
 								<td>0.7784</td>
@@ -1340,15 +1362,6 @@
 								<td>0.8954</td>
 								<td>0.871</td>
 							</tr>
-							<tr>
-								<td>Dev</td>
-								<td>0.6627</td>
-								<td>0.7473</td>
-								<td>0.6917</td>
-								<td>0.7561</td>
-								<td>0.8272</td>
-								<td>0.7901</td>
-							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -1380,6 +1393,15 @@
 							</tr>
 						</thead>
 						<tbody class="u-align-left u-table-body">
+							<tr>
+								<td>Dev</td>
+								<td>0.5181</td>
+								<td>0.4330</td>
+								<td>0.4404</td>
+								<td>0.6585</td>
+								<td>0.4909</td>
+								<td>0.5625</td>
+							</tr>
 							<tr>
 								<td>Train Platinum</td>
 								<td>0.8542</td>
@@ -1416,15 +1438,6 @@
 								<td>0.619</td>
 								<td>0.6471</td>
 							</tr>
-							<tr>
-								<td>Dev</td>
-								<td>0.5181</td>
-								<td>0.4330</td>
-								<td>0.4404</td>
-								<td>0.6585</td>
-								<td>0.4909</td>
-								<td>0.5625</td>
-							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -1456,6 +1469,15 @@
 							</tr>
 						</thead>
 						<tbody class="u-align-left u-table-body">
+							<tr>
+								<td>Dev</td>
+								<td>0.4875</td>
+								<td>0.4231</td>
+								<td>0.4270</td>
+								<td>0.6585</td>
+								<td>0.4696</td>
+								<td>0.5482</td>
+							</tr>
 							<tr>
 								<td>Train Platinum</td>
 								<td>0.8533</td>
@@ -1492,15 +1514,6 @@
 								<td>0.5483</td>
 								<td>0.5998</td>
 							</tr>
-							<tr>
-								<td>GBIE_Baseline</td>
-								<td>0.4875</td>
-								<td>0.4231</td>
-								<td>0.4270</td>
-								<td>0.6585</td>
-								<td>0.4696</td>
-								<td>0.5482</td>
-							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -1532,6 +1545,15 @@
 							</tr>
 						</thead>
 						<tbody class="u-align-left u-table-body">
+							<tr>
+								<td>Dev</td>
+								<td>0.2746</td>
+								<td>0.1906</td>
+								<td>0.2111</td>
+								<td>0.4574</td>
+								<td>0.2875</td>
+								<td>0.3531</td>
+							</tr>
 							<tr>
 								<td>Train Platinum</td>
 								<td>0.7741</td>
@@ -1567,15 +1589,6 @@
 								<td>0.5084</td>
 								<td>0.413</td>
 								<td>0.4557</td>
-							</tr>
-							<tr>
-								<td>Dev</td>
-								<td>0.2746</td>
-								<td>0.1906</td>
-								<td>0.2111</td>
-								<td>0.4574</td>
-								<td>0.2875</td>
-								<td>0.3531</td>
 							</tr>
 						</tbody>
 					</table>
@@ -1697,7 +1710,7 @@
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
-									<img src="images/organizers/marchesin.png" alt="Stefano Marchesin" class="organizer-img rounded-circle">
+									<img src="images/organizers/marchesin.jpg" alt="Stefano Marchesin" class="organizer-img rounded-circle">
 									<h5 class="mt-4 font-weight-medium mb-0">Stefano Marchesin</h5>
 									<h6 class="subtitle mb-2">Assistant Professor</h6>
 									<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
