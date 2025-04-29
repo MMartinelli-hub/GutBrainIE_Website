@@ -1088,20 +1088,25 @@
 						<li>The runs should be submitted in the format described below;</li>
 						<li>Each group can submit a maximum of <strong>25 runs</strong> for each subtask.</li>
 					</ul>
+					<p>Submissions are handled via the BioASQ submission system linked below:</p>
+					<p class="textcenter">
+						<span><a href=" https://participants-area.bioasq.org/Tasks/gutbrainie/" target="_blank" class="button"><i class="fa-solid fa-check-double fa-2xl"></i> Submit your runs <i class="fa-solid fa-check-double fa-2xl"></i></a></span>
+					</p>
 
 					<h3><strong>Submission Guidelines</strong></h3>
 					<p>Participants are invited to submit results for any or all of the four subtasks (NER, Binary RE, Tag-based Ternary RE, Mention-based Ternary RE) independently.</p>
 
-					<p>Submissions will be handled via the BioASQ submission system. More detailed information coming soon...</p>
-
-					<p>In the following, a "run" refers to the predictions made by a single system on the test set. Each run must be submitted as a single zipped file named "<b>teamID_taskID_runID_systemDesc.zip</b>" without spaces or any special character, where:
+					<p>In the following, a "run" refers to the predictions made by a single system on the test set.</p>
+					
+					<p>All runs must be submitted in a single zipped file named "<b>teamID_GutBrainIE_2025</b>". 
+						Within this zip archive, each run should be placed in a separate folder named "<b>teamID_taskID_runID_systemDesc.zip</b>" without spaces or any special character, where:
 						<ul>
 							<li><b>teamID</b> is the identifier of your team choosen when you registered to CLEF 2025;</li>
 							<li><b>taskID</b> is the identifier of your task choosen, i.e., one of these tokens: <b>T61</b> for task 6.1, <b>T621</b> for task 6.2.1, <b>T622</b> for task 6.2.2, and <b>T623</b> for task 6.2.3 ;</li>
 							<li><b>runID</b> is the identifier of the run choosen by the participants, containing only letters and numbers (a-z, A-Z, 0-9)</li>
 							<li><b>systemDesc</b> is an optional (short) string that further describes your submission.</li>
 						</ul>
-						The content of the zipped file consists of two files:
+						The content of each folder consists of two files:
 					<ul>
 						<li><b>teamID_taskID_runID_systemDesc.json</b>: A JSON file with predictions on the test set.</li>
 						<li><b>teamID_taskID_runID_systemDesc.meta</b>: A metadata briefly describing the approach, including:</li>
@@ -1118,7 +1123,7 @@
 					</ul>
 					</p>
 
-					<p>Each zipped file should carefully follow this filenames structure. 
+					<p>Please ensure that the zip archive you submit strictly adheres to this filenames structure.
 						The team name must remain consistent across all submissions, and the system name shold reflect the approach used by the submitted run. 
 						The run number serves as a progressive identifier for multiple submissions of the same system. An example of a valid run submission wil be available soon...</p>
 
