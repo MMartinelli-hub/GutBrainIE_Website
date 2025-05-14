@@ -52,10 +52,10 @@
 					<ul class="navbar-nav">
 						<li class="nav-item"><a href="#one" class="nav-link active" aria-current="page">Tasks</a></li>
 						<li class="nav-item"><a href="#two" class="nav-link">Important Dates</a></li>
+						<li class="nav-item"><a href="#six" class="nav-link">Results</a></li>
 						<li class="nav-item"><a href="#three" class="nav-link">Datasets</a></li> 
 						<li class="nav-item"><a href="#four" class="nav-link">Submitting</a></li>
 						<li class="nav-item"><a href="#five" class="nav-link">Baselines & Evaluation</a></li>
-						<li class="nav-item"><a href="#six" class="nav-link">Results</a></li>
 						<li class="nav-item"><a href="#seven" class="nav-link">FAQs</a></li>
 						<li class="nav-item"><a href="#eight" class="nav-link">Organizers</a></li>
 					</ul>
@@ -184,7 +184,715 @@
 			</section>
 
 		<!-- Three -->
-			<section id="three" class="main style1">
+			<section id="six" class="main style1 ">
+				<div class="container">
+					<header class="major">
+						<h2>Results</h2>
+					</header>
+
+				<h3><strong>Leaderboards</strong></h3>
+				<!--<p>Available after the systems submission deadline...</p>-->
+				<p>Tables below report the leaderboards for each subtask, showing for each team their best-performing run (according to its micro-F1 score). 
+					For each subtask, we highlighted the cells corresponding to the top score for each evaluation metric.</p>
+
+				<p>Participants will receive detailed evaluations of all their submitted runs privately, while aggregated results will be released publicly after the Camera-Ready paper submission deadline.</p>
+
+				<br>
+				<p><strong>Subtask 6.1 (NER)</strong></p>
+				<div class="table-scrollable">
+				<div class="custom-expanded u-table u-table-responsive u-table-1" id="T61_table_run_results">
+					<table class="u-table-entity u-table-entity-1">
+					<colgroup>
+						<col width="20%">
+						<col width="20%">
+						<col width="10%">
+						<col width="10%">
+						<col width="10%">
+						<col width="10%">
+						<col width="10%">
+						<col width="10%">
+					</colgroup>
+					<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+						<tr style="height: 48px;">
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Team ID</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run ID</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+						</tr>
+					</thead>
+					<tbody class="u-align-left u-table-body">
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gut-Instincts</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">5eedev</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7619</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7813</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.7591</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8286</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8480</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.8382</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">NLPatVCU</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ensemble1</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8139</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7161</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7169</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8255</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8488</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8370</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ICUE</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ensemble5</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.8216</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7451</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7546</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.8369</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8294</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8331</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">LYX-DMIIP-FDU</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">run1</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7605</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.7910</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7347</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8020</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.8513</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8259</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ata2425ds</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">trf</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7199</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7546</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7217</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7914</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8432</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8164</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">6</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6877</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7404</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7100</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8021</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8222</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8120</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">greenday</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7368</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7682</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7471</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7956</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8278</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8114</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Graphswise-1</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">13</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7691</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7398</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7185</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8066</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7955</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8010</td>
+						</tr>
+						<tr style="height: 48px; background-color: #c9daf8;">
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">BASELINE</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Organizers</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6883</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7690</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7047</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7639</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8238</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7927</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ataupd2425-gainer</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ma</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5808</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5322</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5281</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8333</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7397</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7837</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DS@GT-bioasq-task6</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6342</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7849</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6872</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7337</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.8197</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7743</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DS@GT-BioNER</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">run2</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6731</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6497</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6469</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7783</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7437</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7606</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ataupd2425-pam</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">3</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6400</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7435</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6763</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6809</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7745</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7247</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Schemalink</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4813</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5038</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4650</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5547</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5659</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5602</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">BIU-ONLP</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">3</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4393</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3585</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3711</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4916</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4721</td>
+						<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4816</td>
+						</tr>
+						<tr>
+						<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">lasigeBioTM</td>
+						<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">R1</td>
+						<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.2206</td>
+						<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.1034</td>
+						<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.0863</td>
+						<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.3471</td>
+						<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.1964</td>
+						<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.2509</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+				</div>
+
+			<br>
+			<br>
+			<p><strong>Subtask 6.2.1 (Binary Tag-Based RE)</strong></p>
+			<div class="table-scrollable">
+			<div class="custom-expanded u-table u-table-responsive u-table-1" id="T621_table_run_results">
+				<table class="u-table-entity u-table-entity-1">
+				<colgroup>
+					<col width="20%">
+					<col width="20%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+				</colgroup>
+				<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+					<tr style="height: 48px;">
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Team ID</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run ID</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+					</tr>
+				</thead>
+				<tbody class="u-align-left u-table-body">
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gut-Instincts</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">6219eedev3re</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.5166</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6315</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.5386</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6304</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7532</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.6864</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ONTUG</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">union</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4185</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4074</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4057</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7121</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6104</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6573</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Graphswise-1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">104</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4043</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3748</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3832</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7418</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5844</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6538</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ataupd2425-pam</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">A7</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4807</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6091</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4993</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5671</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7316</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6389</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">BIU-ONLP</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">4</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4632</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3379</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3713</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7453</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5195</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6122</td>
+					</tr>
+					<tr style="background-color: #c9daf8;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">BASELINE</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Organizers</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4650</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3564</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3864</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.7584</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4892</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5947</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">LYX-DMIIP-FDU</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">run1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3637</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4269</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3688</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.6168</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.5714</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.5933</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">NLPatVCU</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">C18</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.3975</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.8419</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.5082</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.4381</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.8571</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right u-table-cell">0.5798</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">Schemalink</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">1</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.3758</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.6573</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.4421</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.4531</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.7533</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.5659</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">ataupd2425-gainer</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">bp</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.3171</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.3254</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.2969</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.6150</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.4979</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.5504</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">ICUE</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">run17</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.3559</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell" style="font-weight: bold; text-decoration: underline;">0.8790</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.4751</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.3894</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell" style="font-weight: bold; text-decoration: underline;">0.9221</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.5476</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">ToGS</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">hermes8bragreorder</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.2211</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.1304</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.1451</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.5701</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.2641</td>
+					<td class="u-border-2 u-border-custom-color-2	u-border-no-left u-border-no-right	u-table-cell">0.3610</td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+			</div>
+
+			<br>
+			<br>
+			<p><strong>Subtask 6.2.2 (Ternary Tag-Based RE)</strong></p>
+			<div class="table-scrollable">
+			<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_run_results">
+				<table class="u-table-entity u-table-entity-1">
+				<colgroup>
+					<col width="20%">
+					<col width="20%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+				</colgroup>
+				<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+					<tr style="height: 48px;">
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Team ID</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run ID</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+					<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+					</tr>
+				</thead>
+				<tbody class="u-align-left u-table-body">
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gut-Instincts</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">6229eedev3re</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4663</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6445</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.5184</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6280</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7572</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.686567</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ataupd2425-pam</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">B7</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4409</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5704</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4694</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5853</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7202</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6458</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ONTUG</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">union</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4254</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4025</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4058</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7059</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5926</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6443</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Graphswise-1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">105</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4120</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3709</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3840</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7326</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5638</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6372</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ICUE</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">run22</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4011</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7123</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4880</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4974</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7860</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6093</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">BIU-ONLP</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">4</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4725</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3288</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3630</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7362</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4939</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5911</td>
+					</tr>
+					<tr style="height: 48px; background-color: #c9daf8;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">BASELINE</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Organizers</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.4729</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3421</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3745</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.7533</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4650</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5751</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">NLPatVCU</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">C19</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3810</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.8005</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4868</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4362</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.8436</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5750</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">LYX-DMIIP-FDU</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">run1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3625</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4171</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3549</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5973</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5432</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5690</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Schemalink</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3756</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.6592</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4437</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4523</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7613</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5675</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ataupd2425-gainer</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">td</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3167</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2315</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2528</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.7405</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3992</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5187</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ToGS</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">hermes8bragreorder</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2261</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1267</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1414</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5556</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2469</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3419</td>
+					</tr>
+					<tr style="height: 48px;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">lasigeBioTM</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">R1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0797</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0622</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0646</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3929</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0453</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0812</td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+			</div>
+
+			<br>
+			<br>
+			<p><strong>Subtask 6.2.3 (Ternary Mention-Based RE)</strong></p>
+			<div class="table-scrollable">
+			<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_run_results">
+				<table class="u-table-entity u-table-entity-1">
+				<colgroup>
+					<col width="20%">
+					<col width="20%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+					<col width="10%">
+				</colgroup>
+				<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+					<tr>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Team ID</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Run ID</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+						<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+					</tr>
+				</thead>
+				<tbody class="u-align-left u-table-body">
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gut-Instincts</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">6239eedev3re</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3310</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4303</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.3497</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4215</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5147</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.4635</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Graphswise-1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">107</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3323</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2369</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2603</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4686</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3097</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3729</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ICUE</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">run23</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2509</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4239</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2825</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2858</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.5054</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3651</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">LYX-DMIIP-FDU</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">run1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2106</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2418</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1990</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3682</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3257</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3457</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ONTUG</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">union</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2589</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2293</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2266</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3529</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3231</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3373</td>
+					</tr>
+					<tr style="background-color: #c9daf8;">
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">BASELINE</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Organizers</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.3514</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1829</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2123</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.4986</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2453</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3288</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Schemalink</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2265</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4088</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2546</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1948</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4665</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2749</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ataupd2425-pam</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">C7</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1940</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2764</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1982</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2278</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.3432</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2738</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ataupd2425-gainer</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">tms</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2203</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1384</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1538</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.4272</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1810</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2542</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">NLPatVCU</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">C11</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1522</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.5041</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2163</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1423</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell" style="font-weight: bold; text-decoration: underline;">0.6005</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2300</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">BIU-ONLP</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">4</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1171</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0854</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0879</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.2339</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1461</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1799</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">ToGS</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">hermes3bloraragreorder</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0249</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0180</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0203</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.1702</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0536</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0815</td>
+					</tr>
+					<tr>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">lasigeBioTM</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">R1</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0000</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0000</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0000</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0000</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0000</td>
+					<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">0.0000</td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+			</div>
+
+				<!--<br>
+				<br>
+				<h3><strong>Details</strong></h3>
+				<p>Available after the systems submission deadline...</p>-->
+
+					<!--
+					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted sub-scores with respect to the actual sub-scores.</p>
+
+					<h3>Task 2 - Predicting patient self-assessment score from sensor (ALS)</h3>
+					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted self-assed sub-scores with respect to the actual sub-scores.</p>
+
+					<h3>Task 3 - Predicting relapses from EDDS sub-scores and environmental data (MS)</h3>
+					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted week of relapse with respect to the actual one.</p>
+					-->
+					<!--<h3>Computing the Evaluation Measures</h3>
+					<p>Scripts for computing the above evaluation measures are available in the following <a href="https://bitbucket.org/brainteaser-health/idpp2023-performance-computation/" target="_blank">repository.</a>-->
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="three" class="main style2">
 				<div class="container">
 					<header class="major">
 						<h2 id="datasets">Datasets</h2>
@@ -1081,7 +1789,7 @@
 		</section>
 
 		<!-- Four -->
-			<section id="four" class="main style2">
+			<section id="four" class="main style1">
 				<div class="container">
 					<header class="major">
 						<h2>Submitting</h2>
@@ -1257,7 +1965,7 @@
 			</section>
 
 		<!-- Five -->
-		<section id="five" class="main style1">
+		<section id="five" class="main style2">
 			<div class="container">
 				<header class="major">
 					<h2>Baselines & Evaluation</h2>
@@ -1611,33 +2319,6 @@
 			
 		</div>
 		</section>
-
-		<!-- Six -->
-			<section id="six" class="main style2 ">
-				<div class="container">
-					<header class="major">
-						<h2>Results</h2>
-					</header>
-
-				<h3><strong>Leaderboards</strong></h3>
-				<p>Available after the systems submission deadline...</p>
-
-				<h3><strong>Details</strong></h3>
-				<p>Available after the systems submission deadline...</p>
-
-					<!--
-					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted sub-scores with respect to the actual sub-scores.</p>
-
-					<h3>Task 2 - Predicting patient self-assessment score from sensor (ALS)</h3>
-					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted self-assed sub-scores with respect to the actual sub-scores.</p>
-
-					<h3>Task 3 - Predicting relapses from EDDS sub-scores and environmental data (MS)</h3>
-					<p>The effectiveness of the submitted runs will be evaluated using MAE (Mean Absolute Error) and RMSE (Root Mean Square Error) of the predicted week of relapse with respect to the actual one.</p>
-					-->
-					<!--<h3>Computing the Evaluation Measures</h3>
-					<p>Scripts for computing the above evaluation measures are available in the following <a href="https://bitbucket.org/brainteaser-health/idpp2023-performance-computation/" target="_blank">repository.</a>-->
-				</div>
-			</section>
 
 			<!-- Seven -->
 			<section id="seven" class="main style1">
@@ -2178,10 +2859,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						if (scrollTop < headerHeight) {
 						// At the top, remove any active class
 						$('.nav-link').removeClass('active');
-						} else if ($('.nav-link.active').length === 0) {
+						} 
+						else if ($('.nav-link.active').length === 0) {
 						// Otherwise, force the "Datasets" link to be active
-						$('.nav-link').removeClass('active');
-						$('.nav-link[href="#three"]').addClass('active');
+							$('.nav-link').removeClass('active');
+							if (scrollTop < headerHeight + 100) {
+								$('.nav-link[href="#one"]').addClass('active');
+							} else {
+								$('.nav-link[href="#three"]').addClass('active');
+							}
 						}
 					});
 					});
