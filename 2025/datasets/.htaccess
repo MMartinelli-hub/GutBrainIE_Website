@@ -1,0 +1,8 @@
+Options -Indexes
+
+## BASIC PASSWORD PROTECTION
+AuthType Basic
+AuthName "iDPP@CLEF 2024 Datasets"
+AuthUserFile /nas1/promise/websites/brainteaser.dei.unipd.it/challenges/idpp2024/datasets/.htpasswd
+AuthGroupFile /dev/null
+Require valid-user

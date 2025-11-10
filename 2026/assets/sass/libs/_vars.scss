@@ -1,0 +1,103 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		4px,
+		element-height:		2.75em,
+		element-margin:		2em
+	);
+
+// Font.
+	$font: (
+		family:				('Source Sans Pro', Helvetica, sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				300,
+		weight-bold:		400
+	);
+
+// Palette.
+	$palette: (
+		bg:					#fff,
+		fg:					#666,
+		fg-bold:			#555,
+		fg-light: 			#999,
+		border:				rgba(144,144,144,0.5),
+		border-bg:			rgba(144,144,144,0.075),
+		border2:			rgba(144,144,144,0.75),
+		border2-bg:			rgba(144,144,144,0.2),
+		
+		// Original blue-green accents (2025)
+		//accent1:			#c3e895,
+		//accent2:			#8addaa,
+		//accent3:			#6bd4c8,
+		//accent4:			#57aed3,
+		//accent5:			#4a87d3,
+		//accent6:			#6b88e6,
+		//accent1-alt:		desaturate(darken(#c3e895, 15), 20),
+		//accent2-alt:		desaturate(darken(#8addaa, 15), 20),
+		//accent3-alt:		desaturate(darken(#6bd4c8, 15), 20),
+		//accent4-alt:		desaturate(darken(#57aed3, 15), 20),
+		//accent5-alt:		desaturate(darken(#4a87d3, 15), 20),
+		//accent6-alt:		desaturate(darken(#6b88e6, 15), 20),
+
+		// Bright yellow-red accents (2024) - TOO BRIGHT
+		//accent1: #ffeb99,  // light yellow
+		//accent2: #ffcc66,  // golden yellow
+		//accent3: #ff9933,  // orange
+		//accent4: #ff6633,  // red-orange
+		//accent5: #ff3333,  // red
+		//accent6: #cc0033,  // dark red
+		//accent1-alt:		desaturate(darken(#ffeb99, 15), 20),
+		//accent2-alt:		desaturate(darken(#ffcc66, 15), 20),
+		//accent3-alt:		desaturate(darken(#ff9933, 15), 20),
+		//accent4-alt:		desaturate(darken(#ff6633, 15), 20),
+		//accent5-alt:		desaturate(darken(#ff3333, 15), 20),
+		//accent6-alt:		desaturate(darken(#cc0033, 15), 20),
+
+		// Pastel pink-orange-red accents (2024) - Softer & more elegant
+		//accent1: #ffe4d6,  // soft peach
+		//accent2: #ffc4a3,  // pastel coral
+		//accent3: #ff9c7d,  // soft salmon
+		//accent4: #e8827a,  // dusty rose
+		//accent5: #d97878,  // muted rose
+		//accent6: #b85c5c,  // deep rose
+		//accent1-alt:		desaturate(darken(#ffe4d6, 15), 20),
+		//accent2-alt:		desaturate(darken(#ffc4a3, 15), 20),
+		//accent3-alt:		desaturate(darken(#ff9c7d, 15), 20),
+		//accent4-alt:		desaturate(darken(#e8827a, 15), 20),
+		//accent5-alt:		desaturate(darken(#d97878, 15), 20),
+		//accent6-alt:		desaturate(darken(#b85c5c, 15), 20),
+
+		// Light green/water green accents (2024) - Fresh & elegant
+		accent1: #d4f1e8,  // very light mint
+		accent2: #a8e6cf,  // light mint green
+		accent3: #7dd3ae,  // soft seafoam
+		accent4: #5cbf9a,  // water green
+		accent5: #4a9d7f,  // medium teal
+		accent6: #3d7a65,  // deep teal
+		accent1-alt:		desaturate(darken(#d4f1e8, 15), 20),
+		accent2-alt:		desaturate(darken(#a8e6cf, 15), 20),
+		accent3-alt:		desaturate(darken(#7dd3ae, 15), 20),
+		accent4-alt:		desaturate(darken(#5cbf9a, 15), 20),
+		accent5-alt:		desaturate(darken(#4a9d7f, 15), 20),
+		accent6-alt:		desaturate(darken(#3d7a65, 15), 20),
+
+		dark: (
+			bg:				#666666,
+			fg-bold:		#ffffff,
+			fg:				rgba(255,255,255,0.75),
+			fg-light:		rgba(255,255,255,0.5),
+			border:			#ffffff,
+			border-bg:		rgba(255,255,255,0.125),
+			border2:		rgba(255,255,255,0.75),
+			border2-bg:		rgba(255,255,255,0.25)
+		)
+	);
