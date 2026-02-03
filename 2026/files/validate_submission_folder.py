@@ -5,7 +5,7 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Validate GutBrainIE CLEF2025 submission folder structure"
+        description="Validate GutBrainIE CLEF2026 submission folder structure"
     )
     parser.add_argument(
         "base_path",
@@ -23,7 +23,7 @@ def main():
                if os.path.isdir(os.path.join(base_path, d))]
 
     # Regex for TeamID_TaskID_RunID_SystemDesc
-    pattern = re.compile(r'^([^_]+)_(T6(?:21|22|23|1))_([^_]+)(?:_(.+))?$')
+    pattern = re.compile(r'^([^_]+)_(T6(?:11|12|21|22))_([^_]+)(?:_(.+))?$')
 
     parsed = []
     errors = []
