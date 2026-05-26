@@ -2140,11 +2140,11 @@
 			
 			<h3><strong>Baseline Results</strong></h3>
 			<!--<p>Coming soon...</p>-->
-			<p>The scores reported in the table below refer to the development set and represent the actual evaluation of the inference capabilities of the proposed baseline models across the four subtasks.</p>
-
+			<p>The scores reported in the table below refer to the test set and represent the actual evaluation of the inference capabilities of the proposed baseline models across the four subtasks on unseen documents.</p>
+            
 			<div class="table-scrollable">
-				<div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_baseline">
-					<table class="u-table-entity u-table-entity-1">
+                <div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_baseline">
+                    <table class="u-table-entity u-table-entity-1">
 						<colgroup>
 							<col width="22%">
 							<col width="13%">
@@ -2155,8 +2155,8 @@
 							<col width="13%">
 						</colgroup>
 						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
-							<tr style="height: 48px;">
-								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Sub-task</th>
+                            <tr style="height: 48px;">
+                                <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Sub-task</th>
 								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
 								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
 								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
@@ -2166,8 +2166,8 @@
 							</tr>
 						</thead>
 						<tbody class="u-align-left u-table-body">
-							<tr>
-								<td>NER</td>
+                            <tr>
+                                <td>NER</td>
 								<td>0.7114</td>
 								<td>0.7480</td>
 								<td>0.7267</td>
@@ -2176,7 +2176,7 @@
 								<td>0.7996</td>
 							</tr>
 							<tr>
-								<td>NERD</td>
+                                <td>NERD</td>
 								<td>0.3820</td>
 								<td>0.4045</td>
 								<td>0.3916</td>
@@ -2185,7 +2185,7 @@
 								<td>0.4398</td>
 							</tr>
 							<tr>
-								<td>Mention-level RE</td>
+                                <td>Mention-level RE</td>
 								<td>0.3660</td>
 								<td>0.2862</td>
 								<td>0.3003</td>
@@ -2194,7 +2194,7 @@
 								<td>0.3893</td>
 							</tr>
 							<tr>
-								<td>Concept-level RE</td>
+                                <td>Concept-level RE</td>
 								<td>0.1009</td>
 								<td>0.1021</td>
 								<td>0.0966</td>
@@ -2207,6 +2207,72 @@
 				</div>
 			</div>
 			
+            <p>The scores reported in the table below refer to the development set.</p>
+            
+            <div class="table-scrollable">
+                <div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_baseline">
+                    <table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="22%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+                            <tr style="height: 48px;">
+                                <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Sub-task</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+							</tr>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+                            <tr>
+                                <td>NER</td>
+								<td>0.7198</td>
+								<td>0.7765</td>
+								<td>0.7438</td>
+								<td>0.771</td>
+								<td>0.8278</td>
+								<td>0.7984</td>
+							</tr>
+							<tr>
+                                <td>NERD</td>
+								<td>0.5921</td>
+								<td>0.6361</td>
+								<td>0.6102</td>
+								<td>0.5744</td>
+								<td>0.6168</td>
+								<td>0.5949</td>
+							</tr>
+							<tr>
+                                <td>Mention-level RE</td>
+								<td>0.2928</td>
+								<td>0.2912</td>
+								<td>0.2657</td>
+								<td>0.4206</td>
+								<td>0.3652</td>
+								<td>0.391</td>
+							</tr>
+							<tr>
+                                <td>Concept-level RE</td>
+								<td>0.1894</td>
+								<td>0.2154</td>
+								<td>0.1878</td>
+								<td>0.2281</td>
+								<td>0.2227</td>
+								<td>0.2254</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 			<!--
 			<br>
 			<p><strong>Subtask 6.2.1 (Binary Tag-Based RE)</strong></p>
