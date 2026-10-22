@@ -1,0 +1,1627 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GutBrainIE @ CLEF 2027 Guidelines - Gut Brain Information Extraction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta name="author" content="Marco Martinelli; Laura Menotti">
+		<meta name="description" content="Gut Brain Information Extraction - GutBrainIE @ CLEF 2027">
+		<meta name="description" content="GutBrainIE @ CLEF 2027 - An activity of the HEREDITARY project">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/templateAdditions.css" />
+		<link rel="icon" href="images/gutbrainie_logo_gradient.png" type="image/svg" />
+
+		<!-- Organizers Section CSS -->
+		<link rel="stylesheet" href="assets/css/organizers.css" />
+
+		<!-- Fontawesome -->
+		<script src="https://kit.fontawesome.com/9ea2daa5f1.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+
+		<!-- Navbar -->
+		<!-- Bootstrap Responsive Navbar -->
+		<!-- Original blue (2026): style="background-color: #2A3887;" -->
+		<!-- Bright red (2026): style="background-color: #cc0033;" - TOO BRIGHT -->
+		<!-- Dark pastel (2024): style="background-color: #b85c5c;" - TOO DARK for grey text -->
+		<!-- Light pastel (2024): style="background-color: #c97676;" -->
+		<header id="custom-navbar" class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #a66d47;">
+			<div class="container-fluid">
+				<!-- Logo and Title -->
+				<a href="https://hereditary-project.eu/" target="_blank" class="navbar-brand d-flex align-items-center" style="text-decoration: none; border: none; outline: none;">
+					<img src="images/gutbrainie_logo_white.png" alt="Logo" 
+						style="width: 50px; height: 50px; object-fit: contain;" />
+					<span class="ms-2 fs-5 text-white"><a href="#">GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2027</a></span>
+				</a>
+
+				<!-- Hamburger Toggle Button -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Collapsible Navbar Links -->
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a href="#one" class="nav-link active" aria-current="page">Tasks</a></li>
+						<li class="nav-item"><a href="#two" class="nav-link">Important Dates</a></li>
+						<li class="nav-item"><a href="#six" class="nav-link">Results</a></li>
+						<li class="nav-item"><a href="#three" class="nav-link">Datasets</a></li> 
+						<li class="nav-item"><a href="#four" class="nav-link">Submitting</a></li>
+						<li class="nav-item"><a href="#five" class="nav-link">Baselines & Evaluation</a></li>
+						<li class="nav-item"><a href="#seven" class="nav-link">FAQs</a></li>
+						<li class="nav-item"><a href="#eight" class="nav-link">Organizers</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+
+
+		<!-- Header -->
+			<section id="headerTask2">
+
+				<div class="inner">
+
+					<!-- <a href="https://hereditary-project.eu//" target="_blank"><img class="hereditarylogo" src="images/Hereditary_Icon_white.svg" alt="" /></a> -->
+					<a href="https://hereditary-project.eu/" target="_blank"><img class="hereditarylogo" src="images/gutbrainie_logo_white.png" alt="" /></a> 
+
+					<!--<i class="fas fa-clipboard-list fa-8x fa-clipboard-list"></i>-->
+					<h1><strong>Participation Guidelines</strong><br /> </h1>
+					<h2>
+						GutBrainIE <i class="fa-regular fa-at"></i> <a href="https://clef2027.clef-initiative.eu/" target="_blank">CLEF 2027</a>
+					</h2>
+					<h3>Task #6 of the <a href="https://www.bioasq.org/workshop2027" target="_blank">BioASQ Lab 2027</a></h3>
+					<h4 class="nomargin">(An <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a> challenge)</h4>
+					<!--
+					<p class="textcenter">
+						<span><a href="https://clef-labs-registration.dipintra.it/" target="_blank" class="button"><i class="fa-solid fa-pen-to-square fa-2xl"></i> Register <i class="fa-solid fa-pen-to-square fa-2xl"></i></a></span>
+					</p>
+					-->
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Read</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<div data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" class="scrollspy-example" tabindex="0" style="position:relative !important;">
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="12u 12u$(medium)" style="text-align: left;">
+							<header class="major">
+								<h2 id="tasks">Tasks</h2>
+							</header>
+							<p>GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2027 is the <b>TASK #6 of the <a href="http://participants-area.bioasq.org/general_information/GutBrainIE/" target="_blank">BioASQ CLEF Lab 2027</a></b>, proposing a Natural Language Processing (NLP) challenge on biomedical texts within the context of the EU-supported project <a href="https://hereditary-project.eu/" target="_blank">HEREDITARY</a>. </p>
+							
+							<p>Specifically, it is focused on extracting structured information from biomedical abstracts related to the gut microbiota and its connections with Alzheimer's, Parkinson's, Sclerosis, Dementia, and mental health.
+							The task aims to foster the development of Information Extraction (IE) systems that can support experts in understanding the gut-brain interplay.</p> 
+
+							<p>The GutBrainIE task is divided into two main subtasks. In the first task, participants are asked to identify and classify specific text spans into predefined categories, while in the second one they have to determine if a particular relationship defined between two categories holds or not.</p>
+
+							<p>The training data for all subtasks are available upon registration for the challenge and the test data will be available around two weeks before the run submission deadline. 
+								The training set is divided into five parts: 
+								<ul>
+									<li><b>Gold Collection</b>: An highly curated dataset manually annotated primarily by a team of 10 expert annotators from the University of Padua, Italy, with the involvement of additional external expert contributors; </li>
+									<li><b>Silver Collection</b>: A weakly curated dataset manually annotated by a team of about 65 students of Linguistics and Terminology trained and supervised by the experts. These annotations are reviewed and corrected by the expert annotators; </li>
+									<li><b>Silver Collection 2026</b>: A weakly curated dataset composed entirely of manual annotations, produced for the 2026 edition by a team of about 55 students of Linguistics and Terminology trained and supervised by the experts;</li>
+									<li><b>Silver Collection 2025</b>: A weakly curated dataset manually annotated for the 2025 edition by a team of about 40 students of Linguistics and Terminology trained and supervised by the experts, with automatically generated concept-level annotations;</li>
+									<li><b>Bronze Collection</b>: A distantly supervised dataset comprising automatically generated annotations. Note that no manual revision has been performed on this set.</li>
+								</ul>
+								
+								<p>The <b>test set</b> is a held-out selection of documents from the gold collection, consisting exclusively of titles and abstracts for each document, ensuring representativeness and full coverage of all entity and relation types.</p>
+								
+								<p><b>Please see the <a href="#datasets">Datasets</a> and <a href="#important-dates">Important Dates</a> sections for more information.</b></p>
+
+							<h3 id="task1">Subtask 6.1 - Named Entity Recognition and Disambiguation (NERD)</h3>
+							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to identify and classify specific text spans (entity mentions) into one of the 13 predefined categories, such as <i>bacteria</i>, <i>chemical</i>, or <i>microbiota</i>. 
+							Each identified entity must also be linked to a concept identifier from one of the defined biomedical reference resources.</p>
+
+							<p>Entity mentions are represented as tuples <i>(entityCategory ; entityLocation (title/abstract) ; startOffset ; endOffset ; conceptURI)</i>.</p>
+
+							<h3 id="task2a">Subtask 6.2.1 - Mention-Level Relation Extraction (M-RE)</h3>
+							<p>Participants are provided with PubMed abstracts discussing the gut-brain interplay and are asked to identify relations between specific entity mentions within a document. 
+								Each relation must include the two involved entity mentions and the relation predicate connecting them.</p>
+
+							<p>Relations are expressed as triples <i>(subjectMention ; relationPredicate ; objectMention)</i>.</p>
+
+							<h3 id="task2b">Subtask 6.2.2 - Concept-Level Relation Extraction (C-RE)</h3>
+							<p>This subtask extends the mention-level setting to the concept level. 
+								Participants must identify and classify relations between linked concepts rather than between their textual mentions. 
+								Concept-level relations aim to capture knowledge connections abstracted from surface forms and lexical variations.</p>
+
+							<p>Relations are expressed as tuples <i>(subjectConceptURI ; subjectCategory ; relationPredicate ; objectConceptURI; objectCategory)</i>.</p>
+
+							<br>
+							<p>For Subtasks 6.1, 6.2.1, and 6.2.2, each test document contains only its PubMed ID, title, and abstract.
+								Participants must predict the entity annotations or relations required by the corresponding subtask, using the tuple formats defined above.</p>
+
+							<p>This year's edition also introduces concept-level relation extraction in a non-end-to-end setting:</p>
+
+							<h3 id="task3">Subtask 6.3 - Non-End-to-end Concept-Level Relation Extraction (NE-C-RE)</h3>
+							<p>Participants are provided with test documents together with the ground-truth entity annotations and their concept links.
+								The task is to identify and classify relations between the linked concepts, without performing entity recognition or concept linking.</p>
+
+							<p>Relations are expressed as tuples <i>(subjectConceptURI ; subjectCategory ; relationPredicate ; objectConceptURI ; objectCategory)</i>.</p>
+
+							<hr>
+
+							<p>For more details, please refer to the submission format examples provided in the <a href="#submissionformat">Submitting</a> section.</p>
+							
+							<h2>Participating</h2>
+							<p>
+								To participate in GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2027, groups need to register to the BioASQ Laboratory
+								at the following link:
+							</p>
+							<p class="textcenter">
+								<span><a href="https://clef-labs-registration.dipintra.it/" target="_blank" class="button"><i class="fa-solid fa-pen-to-square fa-2xl"></i> Register <i class="fa-solid fa-pen-to-square fa-2xl"></i></a></span>
+							</p>
+							<p><b>Access to the data will be granted within 24 hours from registration, starting from February 8, 2027.</b></p>
+							<p>Please note that the team name selected during registration will be used in submissions, final results, and publications and cannot be changed afterward.</p>							
+							<!--<p><b>Data are available! Access to the data will be granted within 24 hours from registration.</b></p>-->
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container" style="text-align: left;">
+					<header class="major">
+						<h2 id="important-dates">Important Dates</h2>
+					</header>
+
+					<ul>
+						<li>Training data release: <strong>February 8, 2027</strong> (access granted upon registration)</li>						
+						<li>Registration closes: <strong>April 23, 2027</strong></li>
+						<li>Test data release: <strong>April 28, 2027</strong></li>
+						<li>Runs submission deadline: <strong>May 7, 2027 (23:59 AoE)</strong></li>
+						<li>Evaluation results out: <strong>May 19, 2027</strong></li>
+						<li>Participant and position paper submission deadline: <strong>May 28, 2027</strong></li>
+						<li>Notification of acceptance for participant and position papers: <strong>June 30, 2027</strong></li>
+						<li>Camera-ready participant papers submission: <strong>July 6, 2027</strong></li>
+						<li>GutBrainIE <i class="fa-regular fa-at"></i> CLEF Workshop: <strong>September 14-17, 2027</strong> during the <a href="https://clef2027.clef-initiative.eu/" target="_blank">CLEF Conference in Bucharest</a>, Romania</li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="six" class="main style1 ">
+				<div class="container">
+					<header class="major">
+						<h2>Results</h2>
+					</header>
+
+				<h3><strong>Leaderboards</strong></h3>
+				<p>Available after the systems submission deadline...</p>
+			</section>
+
+		<!-- Four -->
+			<section id="three" class="main style2">
+				<div class="container">
+					<header class="major">
+						<h2 id="datasets">Datasets</h2>
+					</header>
+					
+					<h3><strong>Data Description</strong></h3>
+					<p>The data for this task is a set of titles and abstracts of biomedical articles retrieved from PubMed, focusing on the gut-brain interplay and its implications in neurological and mental health.</p>
+
+					The datasets are organized into:
+					<ul>
+						<li><b>Gold-Standard Annotations</b>: High-quality annotations, expert-curated.</li>
+						<li><b>Silver-Standard Annotations</b>: Mid-quality annotations, created by trained students under expert supervision. The Silver-Standard collection is divided into:
+						<ul style="list-style-type: '&#x25E6; ';">
+
+							<li><b>Silver</b>: Mid-quality annotations created by trained students under expert supervision. The students are organized into two clusters:
+							<ul style="list-style-type: '&#x25E6; ';">
+								<li><i>StudentA</i>, including those with more consistent annotation performance,</li>
+								<li><i>StudentB</i>, including those with less consistent annotation performance.</li>
+							</ul>
+							</li>
+
+							<li><b>Silver 2026</b>: Same as Silver but for the 2026 edition.</li>
+							<li><b>Silver 2025</b>: Same as Silver but for the 2025 edition. Concept-level annotations were automatically generated.</li>
+						</ul>
+						</li>
+						<!--<li><b>Bronze-Standard Annotations</b>: Automatically generated annotations, using fine-tuned <a href="https://doi.org/10.18653/v1/2024.naacl-long.300" target="_blank">GLiNER</a> for Named Entity Recognition (NER) and fine-tuned <a href="https://doi.org/10.1609/aaai.v35i16.17717" target="_blank">ATLOP</a> for Relation Extraction (RE).</li>-->
+						<li><b>Bronze-Standard Annotations</b>: Automatically generated annotations produced using <a href="https://ceur-ws.org/Vol-4283/paper29.pdf" target="_blank" rel="noopener noreferrer">TWIX</a>.</li>
+					</ul>
+
+					To foster the development of effective IE systems for the subtasks proposed within GutBrainIE, the provided datasets include:
+					<ul>
+						<li><b><a href="#table_entity_labels">Entity Mentions</a></b>: Text spans classified into predefined categories and linked to concept URIs from biomedical reference resources.</li>
+						<li><b><a href="#table_relation_labels">Relations</a></b>: Associations between entities, specifying that a particular relationship holds between two entities.</li>
+					</ul>
+					
+					<h3><strong>Collections</strong></h3>
+					<ul>
+						<!--<li><b>Training and Development Data</b>: Available upon registration. After registering, participants will receive an email with a download link (starting from February 2–9, 2027).</li>-->
+						<li><b>Training and Development Data</b>: Available soon...</li>
+						<!--
+						<li><b>Training and Development Data</b>: Participants can download the training and development data 
+							<a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="TODO"><span style="font-size: 1.375rem; text-decoration: underline !important;">HERE</span>
+						  	</a>.</li>
+						-->
+						<li><b>Test Data</b>: The test set will be available from April 28, 2027. This data will be used for final system evaluation.</li>
+					</ul>
+					<p>Collections from previous editions are available on Zenodo:</p>
+					<ul>
+						<li><b>2025 Collection</b>: <a href="https://doi.org/10.5281/zenodo.16845408" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.16845408</a></li>
+						<li><b>2026 Collection</b>: <a href="https://doi.org/10.5281/zenodo.23492329" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.23492329</a></li>
+					</ul>
+
+					<h3><strong>Dataset Format</strong></h3>
+					Annotations are provided in JSON format, for ease of use with NLP systems. Each entry in the dataset corresponds to a PubMed article, identified by its PubMed ID (<i>PMID</i>), and includes the following fields:
+					<ul>
+						<li><code>Metadata</code>: Article-related information, including <i>title</i>, <i>author</i>, <i>journal</i>, <i>year</i>, and <i>abstract</i>. 
+						<!--It also includes the identifier of the annotator, which participants may use to assign different weights to annotations depending on who performed them. </li>-->
+						It also includes the identifier of the annotator: expert annotators are labeled as <i>expert_1</i> to <i>expert_7</i>, student annotators are grouped into two clusters, identified as <i>student_A</i> and <i>student_B</i>, and automatically generated annotations are labeled as <i>distant</i>. 
+						Participants may use this information to assign different weights to annotations based on who performed them.</li>
+						<li><code>Entities</code>: An array of objects where each object represents an annotated entity mention in the article, with the following attributes:</li>
+						<ul style="padding-left: 2em;">
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>start</i> and <i>end</i> indices: Character offsets marking the span of the entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>location</i>: Indicates if the entity mention is located in the <i>title</i> or in the <i>abstract</i>.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>text_span</i>: The actual text span of the entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>label</i>: The label assigned to the entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>uri</i>: The concept URI to which the entity mention is linked, taken from one of the biomedical reference resources.</li>
+						</ul>
+						<li><code>Relations</code>: An array of objects where each object represents an annotated relationship between two entity mentions in the article, with the following attributes:</li>
+						<ul style="padding-left: 2em;">
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_start</i> and <i>subject_end</i> indices: Character offsets marking the span of the subject entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_location</i>: Indicates if the subject entity mention is located in the <i>title</i> or in the <i>abstract</i>.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_text_span</i>: The actual text span of the subject entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_uri</i>: The concept URI to which the subject entity mention is linked, taken from one of the biomedical reference resources.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>subject_label</i>: The label assigned to the subject entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>predicate</i>: The label assigned to the relationship.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_start</i> and <i>object_end</i> indices: Character offsets marking the span of the object entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_location</i>: Indicates if the object entity mention is located in the <i>title</i> or in the <i>abstract</i>.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_text_span</i>: The actual text span of the object entity mention.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_label</i>: The label assigned to the object entity mention (e.g., bacteria, microbiome).</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> <i>object_uri</i>: The concept URI to which the object entity mention is linked, taken from one of the biomedical reference resources.</li>
+						</ul>
+						<li><code>Mention-level Relations</code>: Relations extracted from the <i>Relations</i> array, formatted as mention-based tuples of <i>subject_text_span</i>, <i>subject_label</i>, <i>predicate</i>, <i>object_text_span</i>, and <i>object_label</i>. </li>
+						<li><code>Concept-level Relations</code>: Relations extracted from the <i>Relations</i> array, formatted as concept-based tuples of <i>subject_uri</i>, <i>subject_label</i>, <i>predicate</i>, <i>object_uri</i>, and <i>object_label</i>. </li>
+					</ul>
+                    <h4>Alternative Formats</h4>
+                    For those more familiar with <b>CSV or tabular formats</b>, the dataset is also provided in these formats. In this case, each of the fields mentioned above is stored in a separate file:
+                    <ul>
+                        <li><code>Metadata file</code>
+                        <li><code>Entities file</code>
+                        <li><code>Relations file</code>
+                        <li><code>Mention-level relations file</code>
+                        <li><code>Concept-level relations file</code>
+                    </ul>
+                    The <b>CSV files use the pipe symbol (|) as a separator</b>, while <b>tabular files use the tab character (\t)</b> for separation.
+					
+					<p></p>
+					<h3 style="margin: 0;"><strong>Entity and Relation Labels</strong></h3>
+					<!--
+					The datasets are built on top of the conceptual system represented below, defining the valid entities and their possible relationships.
+					<img class="u-image u-image-contain u-image-default u-image-1" src="images/conceptual_system.png.png" alt="" data-image-width="647" data-image-height="423">
+					-->
+
+					<p>The <b>set of entities</b> considered for annotations includes:</p>
+					
+						<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_entity_labels">
+							<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="21.74%">
+								<col width="17.39%">
+								<col width="60.87%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Entity Label</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">URI </th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Definition</th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr style="height: 48px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C13717" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">NCIT_C13717</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Named locations of or within the body.&nbsp;<br>
+								</td>
+								</tr>
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Animal</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C14182" id="docs-internal-guid-ef4ac612-7fff-1523-b25f-da73c33df1c7" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" target="_blank">NCIT_C14182</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral.</td>
+								</tr>
+								<tr style="height: 73px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Biomedical Technique</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C15188" id="docs-internal-guid-11bb2172-7fff-5c42-210d-d7a131e88489" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" target="_blank">NCIT_C15188</a>
+									<br>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Research concerned with the application of biological and physiological principles to clinical medicine.</td>
+								</tr>
+								<tr style="height: 137px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Bacteria</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCBITaxon_2" id="docs-internal-guid-f5a9455f-7fff-c5ae-3d8c-98696cb9ec0f" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" target="_blank">NCBITaxon_2</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</td>
+								</tr>
+								<tr style="height: 73px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A59999" id="docs-internal-guid-504314a0-7fff-3b15-8f7c-90858aa66bad" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5" target="_blank">CHEBI_59999</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types. This category also includes metabolites, which in biochemistry are the intermediate or end product of metabolism, and neurotransmitters, which are endogenous compounds used to transmit information across the synapses.</td>
+								</tr>
+								<tr style="height: 137px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Dietary Supplement</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ncbi.nlm.nih.gov/mesh/68019587" id="docs-internal-guid-97ed4d5b-7fff-e906-75f4-920ccc432b9e" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6" target="_blank">MESH_68019587</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Products in capsule, tablet or liquid form that provide dietary ingredients, and that are intended to be taken by mouth to increase the intake of nutrients. Dietary supplements can include macronutrients, such as proteins, carbohydrates, and fats; and/or micronutrients, such as vitamins; minerals; and phytochemicals.</td>
+								</tr>
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Disease, Disorder, or Finding (DDF) </td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C7057" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7" target="_blank">NCIT_C7057</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A condition that is relevant to human neoplasms and non-neoplastic disorders. This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions.</td>
+								</tr>
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A23888" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-8" target="_blank">CHEBI_23888</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</td>
+								</tr>
+								<tr style="height: 47px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Food</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C1949" id="docs-internal-guid-9af2484a-7fff-b25d-5175-6cb220fed2fb" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-9" target="_blank">NCIT_C1949</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> &nbsp;A substance consumed by humans and animals for nutritional purpose</td>
+								</tr>
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Gene</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.bioontology.org/ontology/SNOMEDCT/67271001" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-10" target="_blank">SNOMEDCT_67261001</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function.</td>
+								</tr>
+								<tr style="height: 47px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=info&amp;id=9606" id="docs-internal-guid-b61b5d24-7fff-ec7d-2d4e-02ca0abe5d76" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-11" target="_blank">NCBITaxon_9606</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Members of the species Homo sapiens. </td>
+								</tr>
+								<!--
+								<tr style="height: 47px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Metabolite</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A25212" id="docs-internal-guid-ea8795e3-7fff-4512-a8c0-bc2b58403ff9" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-12" target="_blank">CHEBI_25212</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">In biochemistry, a metabolite is an intermediate or end product of metabolism.</td>
+								</tr>
+								-->
+								<tr style="height: 98px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Microbiome</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/OHMI_0000003" id="docs-internal-guid-d73565d3-7fff-fd73-5f84-5b400d03aaa2" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-13" target="_blank">OHMI_0000003</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> This term refers to the entire habitat, including the microorganisms (bacteria, archaea, lower and higher eukaryotes, and viruses), their genomes (i.e., genes), and the surrounding environmental conditions.</td>
+								</tr>
+								<!--
+								<tr style="height: 73px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Neurotransmitter</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A25512" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-14" target="_blank">CHEBI_25512</a>
+								</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> An endogenous compound that is used to transmit information across the synapse between a neuron and another cell.</td>
+								</tr>
+								-->
+								<tr style="height: 73px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> Statistical Technique</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">
+									<a href="http://purl.obolibrary.org/obo/NCIT_C19044" id="docs-internal-guid-11bb2172-7fff-5c42-210d-d7a131e88489" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" target="_blank">NCIT_C19044</a>
+									<br>
+									</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell"> A method of calculating, analyzing, or representing statistical data.</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+					
+
+					<p></p>
+					<p>while the defined <b>set of relations</b> includes:</p>
+					
+						<div class="custom-expanded u-table u-table-responsive u-table-1" id="table_relation_labels">
+							<table class="u-table-entity u-table-entity-1">
+							<colgroup>
+								<col width="33.33%">
+								<col width="33.33%">
+								<col width="33.33%">
+							</colgroup>
+							<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+								<tr style="height: 48px;">
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Head Entity</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Tail Entity</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Predicate </th>
+								</tr>
+							</thead>
+							<tbody class="u-align-left u-table-body">
+								<tr style="height: 48px;">
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+								<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+								</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria / Chemical / Drug</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Interact<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Influence<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Part of<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location / Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Interact / Part of<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Impact / Produced by<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Dietary Supplement / Drug / Food</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria / Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Impact<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Dietary Supplement / Food</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Influence<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Dietary Supplement / Drug / Food</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Dietary Supplement / Drug / Food</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Administered<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Strike<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Bacteria / Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change abundance<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Interact<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Affect / Is a<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Target<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Chemical / Drug</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Interact<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Drug</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change effect<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Human / Animal / Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Biomedical Technique</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Used by<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Anatomical Location / Human / Animal</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Located in<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Gene</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Change expression<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">DDF</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Is linked to<br>
+									</td>
+								</tr>
+								<tr style="height: 48px;">
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Microbiome</td>
+									<td class="u-border-2 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Compared to<br>
+									</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+
+				<p>For more details on entity and relation labels, refer to the <i>Annotation Guidelines</i> available for download <a href="files/GutBrainIE_2027_Annotation_Guidelines.pdf" target="_blank">HERE</a>.</p>
+				<!--<p>For more details on entity and relation labels, refer to the <i>Annotation Guidelines</i>, which will be made available after data release (February 2–9, 2027). 
+					For now, you can refer to the 2025 Annotation Guidelines available for download <a href="files/GutBrainIE_2025_Annotation_Guidelines.pdf" target="_blank">HERE</a>.</p>-->
+
+				<br>
+				<header class="major">
+					<h2 id="datasets">Datasets Statistics</h2>
+				</header>
+				
+				<p>Statistics for the GutBrainIE 2027 datasets will be made available after the data release on February 2–9, 2027.</p>  
+				<p>To check out dataset statistics from the 2026 edition, please refer to  
+				<a href="https://hereditary.dei.unipd.it/challenges/gutbrainie/2026/#three" target="_blank">THIS PAGE</a>.</p>	
+				
+		</section>
+
+		<!-- Four -->
+			<section id="four" class="main style1">
+				<div class="container">
+					<header class="major">
+						<h2>Submitting</h2>
+					</header>
+
+					<p>Participating teams should satisfy the following guidelines:</p>
+					<ul>
+						<li>The runs should be submitted in the format described below;</li>
+						<li>Each group can submit a maximum of <strong>25 runs</strong> for each subtask.</li>
+					</ul>
+					<p>Submissions are handled via the BioASQ submission system linked below:</p>
+					<p class="textcenter">
+						<span><a href=" https://hereditary.dei.unipd.it/challenges/gutbrainie/2027/#four" target="_blank" class="button"><i class="fa-solid fa-check-double fa-2xl"></i> Available after test set release <i class="fa-solid fa-check-double fa-2xl"></i></a></span>
+						<!--<span><a href=" https://participants-area.bioasq.org/Tasks/gutbrainie/" target="_blank" class="button"><i class="fa-solid fa-check-double fa-2xl"></i> Submit your runs <i class="fa-solid fa-check-double fa-2xl"></i></a></span>-->
+					</p>
+
+					<h3><strong>Submission Guidelines</strong></h3>
+					<p>Participants are invited to submit results for any or all of the four subtasks (NERD, M-RE, C-RE, NE-C-RE) independently.</p>
+
+					<p>In the following, a "run" refers to the predictions made by a single system on the test set.</p>
+					
+					<p>All runs must be submitted in a single zipped file named "<b>teamID_GutBrainIE_2027.zip</b>". 
+						Within this zip archive, each run should be placed in a separate folder named "<b>teamID_taskID_runID_systemDesc</b>" without spaces or any special character, where:
+						<ul>
+							<li><b>teamID</b> is the identifier of your team choosen when you registered to CLEF 2027;</li>
+							<li><b>taskID</b> is the identifier of your task choosen, i.e., one of these tokens: <b>T61</b> for task 6.1, <b>T621</b> for task 6.2.1, <b>T622</b> for task 6.2.2, and <b>T63</b> for task 6.3 ;</li>
+							<li><b>runID</b> is the identifier of the run choosen by the participants, containing only letters and numbers (a-z, A-Z, 0-9)</li>
+							<li><b>systemDesc</b> is an optional short string that further describes your submission. This string must be kept to a maximum of 20 characters.</li>
+						</ul>
+						The content of each folder consists of two files:
+					<ul>
+						<li><b>teamID_taskID_runID_systemDesc.json</b>: A JSON file with predictions on the test set.</li>
+						<li><b>teamID_taskID_runID_systemDesc.meta</b>: A metadata briefly describing the approach, including:</li>
+						<ul style="padding-left: 2em;">
+							<li style="list-style-type: none;"><span>&#9702;</span> Team ID.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Task ID.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Run ID.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Type of training applied.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Pre-processing methods.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Training data used.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> Relevant details of the run.</li>
+							<li style="list-style-type: none;"><span>&#9702;</span> A link to a GitHub repository enabling easy reproducibility of the run.</li>
+						</ul>
+					</ul>
+					</p>
+
+					<p>Please ensure that the zip archive you submit strictly adheres to this filenames structure.
+						The team name must remain consistent across all submissions, and the system name shold reflect the approach used by the submitted run. 
+						The run number serves as a progressive identifier for multiple submissions of the same system. An example of a valid submission wil be available soon...</p>
+
+					<p>Submissions not adhering to these guidelines might be rejected. 
+						Please ensure accuracy and completeness of all submitted files to streamline evaluation. </p>
+
+					<!--<p>An example of a valid submission will be made available soon.--> 
+					<p>An example of a valid submission can be downloaded from <a href="files/Organizers_GutBrainIE_2027.zip" target="_blank">HERE</a>. 
+						Please note that the predicted entities and relations included in this example are dummy data, provided solely to illustrate the correct structure and formatting of a valid submission folder.</p>
+					<p>To ensure your submission follows the required structure, you can use the validation script available <a href="files/validate_submission_folder.py" target="_blank" download="validate_submission_folder.py">HERE</a>.</p>
+					<!--<p>To ensure your submission follows the required structure, you can use the validation script which will be made available soon.</p>-->
+
+					<h3 id="submissionformat"><strong>Example of Submission Format</strong></h3>
+					<!--<p>Coming soon...</p>-->
+					<p>Submissions should follow the same JSON format used in the provided datasets and must include only the field associated with the specific subtask for which the submission is made:</p>
+					<ul>
+						<li><b>Subtask 6.1 (NERD)</b>: Include the <code>entities</code> field WITH the uri subfield.</li>
+						<li><b>Subtask 6.2.1 (M-RE)</b>: Include the <code>mention_level_relations</code> field.</li>
+						<li><b>Subtask 6.2.2 and 6.3 (C-RE and NE-C-RE)</b>: Include the <code>concept_level_relations</code> field.</li>
+					</ul>
+
+					<p>Each entry must correspond to the PubMed ID of the article from the test set being considered.</p>
+					
+					<p>Find below samples of valid entries for each submission type:</p>
+					
+					<h4>Subtask 6.1 (NERD) Submission Sample</h4>
+					<pre>
+					<code>
+{
+	"34870091": {
+		"entities": [
+			{
+				"start_idx": 75,
+				"end_idx": 82,
+				"location": "title",
+				"text_span": "patients",
+				"label": "human",
+				"uri": "http://id.nlm.nih.gov/mesh/D010361"
+			},
+			{
+				"start_idx": 250,
+				"end_idx": 270,
+				"location": "abstract",
+				"text_span": "intestinal microbiome",
+				"label": "microbiome",
+				"uri": "http://purl.obolibrary.org/obo/NCIT_C93019"
+			}
+		]
+	}
+}
+				</code>
+				</pre>
+				
+				<h4>Subtask 6.2.1 (M-RE) Submission Sample</h4>
+				<pre>
+				<code>
+{
+	"34870091": {
+		"mention_level_relations": [
+			{
+				"subject_text_span": "intestinal microbiome",
+				"subject_label": "microbiome",
+				"predicate": "located in",
+				"object_text_span": "patients",
+				"object_label": "human"
+			}
+		]
+	}
+}
+				</code>
+				</pre>
+
+				<h4>Subtasks 6.2.2 (C-RE) and 6.3 (NE-C-RE) Submission Sample</h4>
+				<pre>
+				<code>
+{
+	"34870091": {
+		"concept_level_relations": [
+			{
+				"subject_uri": "http://purl.obolibrary.org/obo/NCIT_C93019",
+				"subject_label": "microbiome",
+				"predicate": "located in",
+				"object_uri": "http://id.nlm.nih.gov/mesh/D010361",
+				"object_label": "human"
+			}
+		]
+	}
+}
+				</code>
+				</pre>
+
+				<h4>Validation Script</h4>
+				<p>A validation script that can be used to verify the correctness of the submission format can be downloaded from 
+					<a href="files/validate_submission_files.py" target="_blank" download="validate_submission_files.py">HERE</a>.</p>
+
+				<h3><strong>Participant Papers</strong></h3>
+					<!--<p>Coming soon...</p>-->
+					<p>Participants are expected to write a report describing their participation in GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2027, their proposed solution, what features have been used for prediction, the analysis of the experimental results and insights derived from them.</p>
+					
+					<p>Participant reports will be peer-reviewed and accepted reports will be published in the CLEF 2027 Working Notes at CEUR-WS, indexed in DBLP and Scopus.</p>
+
+					<!--<p>Participants are strongly encouraged to use LaTeX. However, it is possible to also use Word.</p>-->
+					
+					<p>Participants are strongly encouraged to use LaTeX, for which a template is available for download <a href="files/GutBrainIE_CLEF2027_PaperTemplate.zip" target="_blank">HERE</a>. 
+						The template follows the CEURART single-column style and not only defines the layout of the report but also provides a suggested structure and outlines the expected content for each section.</p> 
+					
+					<p>It is also possible to use ODT (LibreOffice) or DOCX (Microsoft Word) formats. 
+						In these cases, participants should download the official CEURART templates directly from the CEUR website <a href="http://ceur-ws.org/Vol-XXX/CEURART.zip" target="_blank">HERE</a> and ensure that the content and structure match those outlined in the provided LaTeX template.</p>
+
+					<p>Participant papers are expected to be 10-20 pages in length, excluding references.</p>
+
+					<p>The schedule for submission, revision, and camera ready of the participant report is detailed above in the <a href="#two">Important Dates</a> section.</p>
+
+					<p>Participant papers can be submitted via Easychair <a href="https://easychair.org/my/conference?conf=clef2027" target="_blank">HERE</a>.</p> 
+				</div>
+			</section>
+
+		<!-- Five -->
+		<section id="five" class="main style2">
+			<div class="container">
+				<header class="major">
+					<h2>Baselines & Evaluation</h2>
+				</header>
+		
+			<h3><strong>Official Baselines</strong></h3>
+			<!--<p>Coming soon...</p>-->
+			<p>The official baselines for the GutBrainIE <i class="fa-regular fa-at"></i> CLEF 2027 challenge can be found and reproduced by accesing this <a href="https://github.com/MMartinelli-hub/GutBrainIE_2027_Baseline" target="_blank"><strong><i class="fa-brands fa-github"></i>GitHub repository</strong></a>.</p>
+	
+			<p>The repository provides a complete implementation of the baseline pipeline, allowing participants to reproduce the results from scratch, test the pre-trained models, or evaluate the provided predictions (i.e., runs) of the baselines for all subtasks (NER, NERD, and RE). These runs can also be used by participants as references of valid submission formats.</p>
+
+			<p>The repository also contains the <u><strong>official evaluation script</strong></u>, which will be used to assess submitted runs after the system submission deadline. It is crucial that participants ensure their submitted runs are compatible with this script, as <u><strong>submissions that cannot be evaluated with it will be considered invalid</strong></u>.
+			The evaluation script can also be used to obtain preliminary performance results on the development set.</p>
+
+			<p>The detailed results of the baselines on the development set can be found in the <a href="#six">Results</a> section.</p>
+
+			<h3><strong>Evaluation Metrics</strong></h3>
+			<p>Submitted runs will be evaluated using standard Information Extraction metrics to assess both per-label and overall system performance. The employed metrics are the same for all the subtasks (a detailed explanation of these can be found <a href="https://sklearn-evaluation.ploomber.io/en/latest/classification/micro_macro.html" target="_blank">HERE</a>):</p>
+
+			<p>In the equations below:</p>
+			<ul>
+				<li><b>\(TP\) (True Positives)</b> refers to the number of correctly predicted entities or relations.</li>
+				<li><b>\(FP\) (False Positives)</b> refers to the number of wrongly predicted entities or relations.</li>
+				<li><b>\(FN\) (False Negatives)</b> refers to the number of entities or relations in the ground truth that were not predicted.</li>
+				<li><b>\(\mathcal{L}\)</b> is the set of labels referring to:</li>
+				<ul>
+					<li style="list-style-type: none;"><span>&#9702;</span> For subtasks 6.1.1 and 6.1.2: <i>entity labels</i>.</li>
+					<li style="list-style-type: none;"><span>&#9702;</span> For subtasks 6.2.1 and 6.2.2: triples of <i>(subject label, predicate, object label)</i>.</li>
+				</ul>
+			</ul>
+
+			<ul style="line-height:300%">
+				<li><b>Macro-average Precision</b>: \( P_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \mathcal{L}} \, \frac{TP_l}{TP_l \,+\, FP_l}}{|\mathcal{L}|} \)</li>
+				<li><b>Macro-average Recall</b>: \( R_{\text{macro}_{\text{avg}}} = \frac{\sum_{l \in \mathcal{L}} \, \frac{TP_l}{TP_l \,+\, FN_l}}{|\mathcal{L}|}  \)</li>
+				<li><b>Macro-average F1-score</b>: \( F1_{\text{macro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{macro}_{\text{avg}}} \; \times \; R_{\text{macro}_{\text{avg}}}}{P_{\text{macro}_{\text{avg}}} \; + \; R_{\text{macro}_{\text{avg}}}} \) </li>
+				<li><b>Micro-average Precision</b>: \( P_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \mathcal{L}} \; TP_l}{\sum_{l \in \mathcal{L}} \; TP_l \; + \; FP_l} \)</li>
+				<li><b>Micro-average Recall</b>: \( R_{\text{micro}_{\text{avg}}} = \frac{\sum_{l \in \mathcal{L}} \; TP_l}{\sum_{l \in \mathcal{L}} \; TP_l \; + \; FN_l} \)</li>
+				<li><b>Micro-average F1-score</b>: \( F1_{\text{micro}_{\text{avg}}} = 2 \, \times \, \frac{P_{\text{micro}_{\text{avg}}} \; \times \; R_{\text{micro}_{\text{avg}}}}{P_{\text{micro}_{\text{avg}}} \; + \; R_{\text{micro}_{\text{avg}}}} \) </li>
+			</ul>
+
+			<p>For each subtask, the <u>reference metric</u> for the final leaderboard will be the <b><u>micro-average F1-score</u></b>, as it better accounts for class imbalances. 
+				However, system rankings will also be provided for each of the metrics detailed above.</p>
+			
+			<h3><strong>Baseline Results</strong></h3>
+			<p>Coming soon...</p>
+			<!--<p>The scores reported in the table below refer to the test set and represent the actual evaluation of the inference capabilities of the proposed baseline models across the four subtasks on unseen documents.</p>
+            
+			<div class="table-scrollable">
+                <div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_baseline">
+                    <table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="22%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+                            <tr style="height: 48px;">
+                                <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Sub-task</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+							</tr>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+                            <tr>
+                                <td>NER</td>
+								<td>0.7114</td>
+								<td>0.7480</td>
+								<td>0.7267</td>
+								<td>0.7782</td>
+								<td>0.8221</td>
+								<td>0.7996</td>
+							</tr>
+							<tr>
+                                <td>NERD</td>
+								<td>0.3820</td>
+								<td>0.4045</td>
+								<td>0.3916</td>
+								<td>0.4281</td>
+								<td>0.4522</td>
+								<td>0.4398</td>
+							</tr>
+							<tr>
+                                <td>Mention-level RE</td>
+								<td>0.3660</td>
+								<td>0.2862</td>
+								<td>0.3003</td>
+								<td>0.4462</td>
+								<td>0.3453</td>
+								<td>0.3893</td>
+							</tr>
+							<tr>
+                                <td>Concept-level RE</td>
+								<td>0.1009</td>
+								<td>0.1021</td>
+								<td>0.0966</td>
+								<td>0.1409</td>
+								<td>0.1292</td>
+								<td>0.1348</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+            <p>The scores reported in the table below refer to the development set.</p>
+            
+            <div class="table-scrollable">
+                <div class="custom-expanded u-table u-table-responsive u-table-1" id="subtask61_baseline">
+                    <table class="u-table-entity u-table-entity-1">
+						<colgroup>
+							<col width="22%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+							<col width="13%">
+						</colgroup>
+						<thead class="u-align-left u-custom-color-1 u-table-header u-table-header-1">
+                            <tr style="height: 48px;">
+                                <th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Sub-task</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Macro-F1</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-P</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-R</th>
+								<th class="u-border-3 u-border-custom-color-2 u-border-no-left u-border-no-right u-table-cell">Micro-F1</th>
+							</tr>
+						</thead>
+						<tbody class="u-align-left u-table-body">
+                            <tr>
+                                <td>NER</td>
+								<td>0.7198</td>
+								<td>0.7765</td>
+								<td>0.7438</td>
+								<td>0.771</td>
+								<td>0.8278</td>
+								<td>0.7984</td>
+							</tr>
+							<tr>
+                                <td>NERD</td>
+								<td>0.5921</td>
+								<td>0.6361</td>
+								<td>0.6102</td>
+								<td>0.5744</td>
+								<td>0.6168</td>
+								<td>0.5949</td>
+							</tr>
+							<tr>
+                                <td>Mention-level RE</td>
+								<td>0.2928</td>
+								<td>0.2912</td>
+								<td>0.2657</td>
+								<td>0.4206</td>
+								<td>0.3652</td>
+								<td>0.391</td>
+							</tr>
+							<tr>
+                                <td>Concept-level RE</td>
+								<td>0.1894</td>
+								<td>0.2154</td>
+								<td>0.1878</td>
+								<td>0.2281</td>
+								<td>0.2227</td>
+								<td>0.2254</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>-->
+		</div>
+		</section>
+
+			<!-- Seven -->
+			<section id="seven" class="main style1">
+				<div class="container">
+					<header class="major">
+						<h2 id="faq">FAQs</h2>
+					</header>
+
+					<p><i>Find answers to common questions about the GutBrainIE challenge, dataset, and submissions.</i></p>
+					<p>Coming soon...</p>
+					
+					<p><i>If you need any additional information, please get in contact with us writing to:</i></p>
+						<ul>
+							<li> Nicola Ferro: &nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:nicola.ferro@unipd.it"><strong>nicola.ferro @ unipd.it</strong></i></a></li>
+							<li> Gianmaria Silvello: &nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:gianmaria.silvello@unipd.it"><strong>gianmaria.silvello @ unipd.it</strong></i></a></li>
+						</ul>
+
+				</div>
+			</section>
+
+			<!-- Eight -->
+			<div id="eight">
+				<section class="main style2">
+					<div class="container">
+						<header class="major">
+							<h2 id="organizers" style="margin: 0;">Organizers</h2>
+							<h5>(For further details about the organizers, visit the official website of the <a href="https://iiia.dei.unipd.it/team" target="_blank">IIIA Hub Research Group</a>.)</h5>
+						</header>
+		
+						<div class="py-5 team4">
+							<div class="container">
+								<!-- Row 1 -->
+								<div class="row justify-content-center">
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/bonato.jpeg" alt="Vanessa Bonato" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Vanessa Bonato</h5>
+										<h6 class="subtitle mb-2">PhD Student</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.disll.unipd.it/en/" target="_blank">Department of Linguistic And Literary Studies</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:vanessa.bonato@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/vanessa-bonato-866301316/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://orcid.org/0009-0002-9918-282X" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/dinunzio.png" alt="Giorgio Maria Di Nunzio" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Giorgio Maria Di Nunzio</h5>
+										<h6 class="subtitle mb-2">Associate Professor</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:giorgiomaria.dinunzio@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/giorgio-maria-di-nunzio/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=Awl_HDoAAAAJ&hl=it&oi=sra" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/ferro.png" alt="Nicola Ferro" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Nicola Ferro</h5>
+										<h6 class="subtitle mb-2">Full Professor</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:nicola.ferro@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/nicolaferro/" class="text-decoration-none d-block px-1"><i class="fa fa-linkedin-square" style="font-size:24px" target="_blank"></i></a></li>
+											<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=MP_m6wgAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Row 2 -->
+								<div class="row justify-content-center">
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/irrera.jpg" alt="Ornella Irrera" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Ornella Irrera</h5>
+										<h6 class="subtitle mb-2">Post-Doc</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:ornella.irrera@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/ornella-irrera/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=Oa4bJMwAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/marchesin.jpg" alt="Stefano Marchesin" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Stefano Marchesin</h5>
+										<h6 class="subtitle mb-2">Assistant Professor</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:stefano.marchesin@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/stefano-marchesin-666608ab/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=AVZdcS8AAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/martinelli.jpg" alt="Marco Martinelli" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Marco Martinelli</h5>
+										<h6 class="subtitle mb-2">PhD Student</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:martinell2@dei.unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/martinelli-marco/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=pqCn-4sAAAAJ&hl=en&oi=ao" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Row 3 -->
+								<div class="row justify-content-center">
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/menotti.jpg" alt="Laura Menotti" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Laura Menotti</h5>
+										<h6 class="subtitle mb-2">PhD Student</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:laura.menotti@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/laura-menotti-b012a8207/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=xyewbnsAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/silvello.jpg" alt="Gianmaria Silvello" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Gianmaria Silvello</h5>
+										<h6 class="subtitle mb-2">Full Professor</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.dei.unipd.it/en/" target="_blank">Department of Information Engineering</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:gianmaria.silvello@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/gianmariasilvello/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=pY24h-YAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+										<img src="images/organizers/vezzani.jpg" alt="Federica Vezzani" class="organizer-img rounded-circle">
+										<h5 class="mt-4 font-weight-medium mb-0">Federica Vezzani</h5>
+										<h6 class="subtitle mb-2">Assistant Professor</h6>
+										<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+										<h6 class="subsubtitle mt-0 mb-2"><a href="https://www.disll.unipd.it/en/" target="_blank">Department of Linguistic And Literary Studies</a></h6>
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="mailto:federica.vezzani@unipd.it" class="text-decoration-none d-block px-1"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/in/federica-vezzani-49633213b/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+											<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=it&user=0BdkEeoAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</section>
+
+				<!-- Nine -->
+				<!-- Organizer Support (added at the end of the Organizers section) -->
+				<section class="main style1">
+				<div class="container">
+					<header class="major">
+					<h2 id="organizers" style="margin: 0;">Organizer Support</h2>
+					<h5>(Supporters of the annotation effort)</h5>
+					</header>
+
+						<!-- Row 1 -->
+						<div class="row justify-content-center">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+							<img src="images/organizers/faggioli.jpg" alt="Guglielmo Faggioli" class="organizer-img rounded-circle">
+							<h5 class="mt-4 font-weight-medium mb-0">Guglielmo Faggioli</h5>
+							<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+							<h6 class="subsubtitle mt-0 mb-2">Italy</h6>
+							<ul class="list-inline">
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/guglielmo-faggioli-858001162/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+							<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=XrpmghMAAAAJ&hl=it&oi=ao" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+							<img src="images/organizers/kantz.jpg" alt="Benedikt Kantz" class="organizer-img rounded-circle">
+							<h5 class="mt-4 font-weight-medium mb-0">Benedikt Kantz</h5>
+							<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.tugraz.at/en/home" target="_blank">Graz University of Technology</a></h6>
+							<h6 class="subsubtitle mt-0 mb-2">Austria</h6>
+							<ul class="list-inline">
+							<li class="list-inline-item"><a href="https://dakantz.at/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+							<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=0mFvmEwAAAAJ&hl=en" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+							<img src="images/organizers/merlo.jpg" alt="Simone Merlo" class="organizer-img rounded-circle">
+							<h5 class="mt-4 font-weight-medium mb-0">Simone Merlo</h5>
+							<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+							<h6 class="subsubtitle mt-0 mb-2">Italy</h6>
+							<ul class="list-inline">
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/simone-merlo-2858882a9/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+							<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=JRbMuwYAAAAJ&hl=it" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+							</ul>
+						</div>
+						</div>
+
+						<!-- Row 2 -->
+						<div class="row justify-content-center">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+							<img src="images/organizers/michelotto.jpg" alt="Riccardo Michelotto" class="organizer-img rounded-circle">
+							<h5 class="mt-4 font-weight-medium mb-0">Riccardo Michelotto</h5>
+							<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+							<h6 class="subsubtitle mt-0 mb-2">Italy</h6>
+							<ul class="list-inline">
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/riccardo-michelotto-a75997331" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+							<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=qm-UelEAAAAJ" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+							<img src="images/organizers/tussardi.jpg" alt="Gaia Tussardi" class="organizer-img rounded-circle">
+							<h5 class="mt-4 font-weight-medium mb-0">Gaia Tussardi</h5>
+							<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.unipd.it/en/" target="_blank">University of Padua</a></h6>
+							<h6 class="subsubtitle mt-0 mb-2">Italy</h6>
+							<ul class="list-inline">
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/gaia-tussardi-029798291/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+							<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=--08GRoAAAAJ&hl=en&oi=ao" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4 text-center">
+							<img src="images/organizers/waldert.jpg" alt="Peter Waldert" class="organizer-img rounded-circle">
+							<h5 class="mt-4 font-weight-medium mb-0">Peter Waldert</h5>
+							<h6 class="subsubtitle mt-0 mb-0"><a href="https://www.tugraz.at/en/home" target="_blank">Graz University of Technology</a></h6>
+							<h6 class="subsubtitle mt-0 mb-2">Austria</h6>
+							<ul class="list-inline">
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/peter-waldert/" class="text-decoration-none d-block px-1" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+							<li class="list-inline-item"><a href="https://scholar.google.com/citations?user=I-TdWp0AAAAJ&hl=en" class="text-decoration-none d-block px-1" target="_blank"><i class="fa-brands fa-google-scholar" style="font-size:24px"></i></a></li>
+							</ul>
+						</div>
+						</div>
+
+					</div>
+					</div>
+
+				</section>
+			</div>
+
+		</div>
+
+		<!-- Six -->
+		<!--
+			<section id="six" class="main style1">
+				<div class="container">
+					<header class="major special">
+						<h2>Elements</h2>
+					</header>
+
+					<section>
+						<h4>Text</h4>
+						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+						<hr />
+						<header>
+							<h4>Heading with a Subtitle</h4>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<header>
+							<h5>Heading with a Subtitle</h5>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<hr />
+						<h2>Heading Level 2</h2>
+						<h3>Heading Level 3</h3>
+						<h4>Heading Level 4</h4>
+						<h5>Heading Level 5</h5>
+						<h6>Heading Level 6</h6>
+						<hr />
+						<h5>Blockquote</h5>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+						<h5>Preformatted</h5>
+						<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+					</section>
+
+					<section>
+						<h4>Lists</h4>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<h5>Unordered</h5>
+								<ul>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+								<h5>Alternate</h5>
+								<ul class="alt">
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<h5>Ordered</h5>
+								<ol>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis viverra.</li>
+									<li>Felis enim feugiat.</li>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis lorem.</li>
+									<li>Felis enim et feugiat.</li>
+								</ol>
+								<h5>Icons</h5>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<h5>Actions</h5>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<ul class="actions">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+								<ul class="actions vertical">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions vertical small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+							</div>
+							<div class="6u 12u$(medium)">
+								<ul class="actions vertical">
+									<li><a href="#" class="button special fit">Default</a></li>
+									<li><a href="#" class="button fit">Default</a></li>
+								</ul>
+								<ul class="actions vertical small">
+									<li><a href="#" class="button special small fit">Small</a></li>
+									<li><a href="#" class="button small fit">Small</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4>Table</h4>
+						<h5>Default</h5>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<h5>Alternate</h5>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h4>Buttons</h4>
+						<ul class="actions">
+							<li><a href="#" class="button special">Special</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button big">Big</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button small">Small</a></li>
+						</ul>
+						<ul class="actions fit">
+							<li><a href="#" class="button fit">Fit</a></li>
+							<li><a href="#" class="button special fit">Fit</a></li>
+							<li><a href="#" class="button fit">Fit</a></li>
+						</ul>
+						<ul class="actions fit small">
+							<li><a href="#" class="button special fit small">Fit + Small</a></li>
+							<li><a href="#" class="button fit small">Fit + Small</a></li>
+							<li><a href="#" class="button special fit small">Fit + Small</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button special icon fa-download">Icon</a></li>
+							<li><a href="#" class="button icon fa-download">Icon</a></li>
+						</ul>
+						<ul class="actions">
+							<li><span class="button special disabled">Disabled</span></li>
+							<li><span class="button disabled">Disabled</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Form</h4>
+						<form method="post" action="#">
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+								</div>
+								<div class="12u$">
+									<div class="select-wrapper">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low</label>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="demo-priority-normal" name="demo-priority">
+									<label for="demo-priority-normal">Normal</label>
+								</div>
+								<div class="4u$ 12u$(small)">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High</label>
+								</div>
+								<div class="6u 12u$(small)">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Email me a copy</label>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">Not a robot</label>
+								</div>
+								<div class="12u$">
+									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section>
+						<h4>Image</h4>
+						<h5>Fit</h5>
+						<div class="box alt">
+							<div class="row uniform 50%">
+								<div class="12u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+							</div>
+						</div>
+						<h5>Left &amp; Right</h5>
+						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+					</section>
+
+				</div>
+			</section>
+		-->
+
+		<!-- Footer -->
+		<section id="footerTask2">
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/company/hereditary-eu" target="_blank" class="icon alt fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://twitter.com/Hereditary_EU" target="_blank" class="icon alt fab fa-x-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/people/Hereditary-Project/61558629290019/" target="_blank" class="icon alt fab fa-square-facebook"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.youtube.com/@Hereditary_EU" target="_blank" class="icon alt fab fa-youtube"><span class="label">Twitter</span></a></li>
+				<!--- <li><a href="https://bitbucket.org/brainteaser-health/" target="_blank" class="icon alt fab fa-bitbucket"><span class="label">Bitbucket</span></a></li> 
+				<li><a href="mailto:ferro@dei.unipd.it?subject=%5BiDPP%40CLEF 2023%5D" class="icon alt far fa-envelope"><span class="label">Email</span></a></li> --->
+			</ul>
+			<ul class="copyright">
+				<li><i class="far fa-copyright"></i> <a href="https://iiia.dei.unipd.it" target="_blank">&nbsp;IIIA Hub&nbsp;</a></li>
+				<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+			</ul>
+			<ul class="EUGA">
+			<!--!<div class="inner">-->
+
+				<!--- <a href="https://hereditary-project.eu//" target="_blank"><img class="hereditarylogo" src="images/Hereditary_Horizontal_primary.svg" alt="" /></a> -->
+				<a href="https://hereditary-project.eu/" target="_blank"><img class="hereditarylogoGA" src="images/Hereditary_Horizontal_white.svg" alt="" /></a>
+				<img class="hereditaryGA" src="images/Hereditary_GA_DISCLAIMER_white.png" alt="" />
+			</ul>
+
+		</section>
+
+
+			<!--- <section id="disclaimer" class="style1">
+				<div class="container">
+					<div class="row euDisclaimer">
+						<div class="1u"><span class="image fit"><img src="images/eu-logo.png" alt="" /></span></div>
+						<div class="11u">This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the grant agreement No GA101017598. The European Commission’s support for this project and the production of this website does not constitute an endorsement of the contents, which reflect the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained therein</div>
+					</div>
+				</div>
+			</section> -->
+
+
+		<!-- Scripts -->
+			<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+					integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/jquery.scrolly@0.0.1/jquery.scrolly.min.js"></script>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/templateAdditions.js"></script>
+
+			
+
+			<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+			<script>
+				$(document).ready(function() {
+					$(window).on('scroll', function() {
+						var scrollTop = $(this).scrollTop();
+						var headerHeight = $('#headerTask2').outerHeight();
+						
+						if (scrollTop < headerHeight) {
+						// At the top, remove any active class
+						$('.nav-link').removeClass('active');
+						} 
+						else if ($('.nav-link.active').length === 0) {
+						// Otherwise, force the "Datasets" link to be active
+							$('.nav-link').removeClass('active');
+							if (scrollTop < headerHeight + 100) {
+								$('.nav-link[href="#one"]').addClass('active');
+							} else {
+								$('.nav-link[href="#three"]').addClass('active');
+							}
+						}
+					});
+					});
+
+			</script>
+	</body>
+</html>
